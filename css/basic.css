@@ -1,0 +1,72 @@
+:root {
+    /* Colors: */
+    --unnamed-color-1E1E1E: #1E1E1E;
+    --unnamed-color-C8C8C8: #C8C8C8;
+    --unnamed-color-184B9F: #184B9F;
+    --unnamed-color-fffff: #ffffff;
+    
+    /* Font/text values */
+    --unnamed-font-family-noto-sans-kr: Noto Sans KR;
+    --unnamed-font-style-normal: normal;
+    --unnamed-text-transform-uppercase: uppercase;
+    --unnamed-font-weight-bold: bold;
+    --unnamed-font-weight-normal: normal;
+    --unnamed-font-weight-medium: medium;
+    --unnamed-font-size-18: 18px;
+    --unnamed-font-size-40: 40px;
+    --unnamed-character-spacing-0: 0px;
+    --unnamed-line-spacing-26: 26px;
+    --unnamed-line-spacing-26: 50px;
+    --unnamed-line-spacing-58: 58px;
+    }
+    
+    /* Character Styles */
+    .header_title {
+    font-family: var(--unnamed-font-family-noto-sans-kr);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-40);
+    line-height: var(--unnamed-line-spacing-58);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-fffff);
+    }
+    .main_title {
+    font-family: var(--unnamed-font-family-noto-sans-kr);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-40);
+    line-height: var(--unnamed-line-spacing-58);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-1E1E1E);
+    }
+    .sub_title {
+    font-family: var(--unnamed-font-family-noto-sans-kr);
+    font-style: var(--unnamed-font-style-normal);
+    text-transform: var(--unnamed-text-transform-uppercase);
+    font-weight: var(--unnamed-font-weight-medium);
+    font-size: var(--unnamed-font-size-18);
+    line-height: var(--unnamed-line-spacing-26);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-C8C8C8);
+    }
+    .ex_text {
+    font-family: var(--unnamed-font-family-noto-sans-kr);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-26);
+    line-height: var(--unnamed-line-spacing-50);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-1E1E1E);
+    }
+*{
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+.hori_margin {
+    margin: 0 240px;
+}
+header .main_nav{
+    color:#fff ;
+}
