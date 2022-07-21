@@ -69,6 +69,7 @@
     left: 240px;
     width: 1441px;
     height: 883px;
+    margin:0;
 }
 .ecoce-img1{
     background: transparent url('../img/에코스\ \(1\).png') 0% 0% no-repeat padding-box;
@@ -97,6 +98,7 @@
     border-radius: 69px;
     opacity: 1;
     margin-top:140px;
+    margin-left:30px;
 }
 .ecoce-store img{
     float:left;
@@ -118,6 +120,7 @@
     top: 1400px;
     width: 100%;
     height: 883px;
+    margin:0;
 }
 #moado .main_title{
     margin-left:240px;
@@ -126,18 +129,18 @@
     margin-left:240px;
 }
 .moado-back{
-    top: 295px;
+    top: 200px;
     left: 0px;
     width: 1920px;
     height: 686px;
-    background: transparent linear-gradient(223deg, #E4CDE800 0%, #339BE133 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(223deg, #339BE133 25%, #E4CDE800 75%, #E4CDE8 100%) 0% 0% no-repeat padding-box;
     position:absolute;
     float:left;
     
 }
 .moado-main{
     background-repeat:no-repeat;
-    margin-top:204px;
+    margin-top:292px;
     margin-left:700px;
     position:absolute;
 }
@@ -154,26 +157,28 @@
 .moado-right img{
     margin-right:239px;
 }
-.moado-right .site {
+.moado-right .site-button {
     margin-top:140px;
     border-radius: 69px;
-    background: #1E1E1E 0% 0% no-repeat padding-box;
+    background: #1E1E1E 153px 57px;
     margin-right:240px;
     text-align:right;
 }
-.moado-right .site a{
+.moado-right .site-button a{
     font: var(--unnamed-font-style-normal) normal medium 14px/22px var(--unnamed-font-family-noto-sans-kr);
     letter-spacing: var(--unnamed-character-spacing-0);
     font: normal normal medium 14px/22px Noto Sans KR;
     letter-spacing: 0px;
     opacity: 1;
+    text-align: left;
     color: #FFFFFF;
     position:relative;
 }
 #etc{
-    top: 2400px;
+    top: 2300px;
     position:absolute;
     align-items:center;
+    margin: 0;
 }
 #etc .main_title{
     margin-left:240px;
@@ -182,6 +187,7 @@
     margin-left:240px;
 }
 .etc-chart{
+    margin-top:10px;
     align-items:center;
     margin-left:200px;
 }
