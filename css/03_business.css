@@ -1,0 +1,172 @@
+.main_title{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 40px/58px var(--unnamed-font-family-noto-sans-kr);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
+    font: normal normal bold 40px/58px Noto Sans KR;
+    letter-spacing: 0px;
+    color: #1E1E1E;
+    opacity: 1;
+    margin-top:100px;
+}
+.sub_title{
+    font: var(--unnamed-font-style-normal) normal medium 18px/26px var(--unnamed-font-family-noto-sans-kr);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
+    font: normal normal medium 18px/26px Noto Sans KR;
+    letter-spacing: 0px;
+    color: #C8C8C8;
+    opacity: 1;
+}
+.sub-logo{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 22px/32px var(--unnamed-font-family-noto-sans-kr);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    font: normal normal bold 22px/32px Noto Sans KR;
+    letter-spacing: 0px;
+    color: #1E1E1E;
+    opacity: 1;
+}
+.hori_margin{
+    margin-right:240px;
+    margin-right:239px;
+    margin-top:100px;
+}
+.bus{
+    background-image:url("../img/사각형\ 64.png");
+    top: 80px;
+    left: 0px;
+    width: 1920px;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.bus h2{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 40px/58px var(--unnamed-font-family-noto-sans-kr);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    font: normal normal bold 40px/58px Noto Sans KR;
+    color: #FFFFFF;
+    text-align:center;
+    position:relative;
+    margin-top:6%;
+}
+.ex_text{
+    text-align:right;
+    margin-bottom:140px;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-30)/var(--unnamed-line-spacing-44) var(--unnamed-font-family-noto-sans-kr);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: right;
+    font: normal normal bold 30px/44px Noto Sans KR;
+    letter-spacing: 0px;
+    color: #1E1E1E;
+    opacity: 1;
+}
+#ecoce{
+    position:absolute;
+    top: 400px;
+    left: 240px;
+    width: 1441px;
+    height: 883px;
+}
+.ecoce-img1{
+    background: transparent url('../img/에코스\ \(1\).png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    float:left;
+}
+.ecoce-img2{
+    margin-left:223px;
+    margin-top:95px;
+}
+.ecoce-right{
+    text-align:right;
+}
+
+.ecoce-right .sub-logo{
+    margin-top:32px;
+}
+.ecoce-store{
+    list-style:none;
+    float:right;
+}
+
+.ecoce-store li{
+    float: left;
+    background: #1E1E1E 0% 0% no-repeat padding-box;
+    border-radius: 69px;
+    opacity: 1;
+    margin-top:140px;
+}
+.ecoce-store img{
+    float:left;
+    margin-left:20px;
+    margin-right:15px;
+    margin-top:11px;
+    margin-bottom:11px;
+}
+.ecoce-store p{
+    text-decoration:none;
+    color:#fff;
+    margin-right:32px;
+    margin-top:6px;
+    margin-bottom:9px;
+    text-align:left;
+}
+#moado{
+    position:absolute;
+    top: 1500px;
+    width: 100%;
+    height: 883px;
+}
+#moado .main_title{
+    margin-left:240px;
+}
+#moado .sub_title{
+    margin-left:240px;
+}
+.moado-back{
+    top: 295px;
+    left: 0px;
+    width: 1920px;
+    height: 686px;
+    background: transparent linear-gradient(223deg, #E4CDE800 0%, #339BE133 100%) 0% 0% no-repeat padding-box;
+    position:absolute;
+    float:left;
+    
+}
+.moado-main{
+    background-repeat:no-repeat;
+    margin-top:204px;
+    margin-left:700px;
+    position:absolute;
+}
+.moado-left{
+    float:left;
+    margin-left:240px;
+}
+.moado-right{
+    float:right;
+}
+.moado-right .ex_text{
+    margin-right:240px;
+}
+.moado-right img{
+    margin-right:239px;
+}
+.moado-right .site {
+    margin-top:140px;
+    border-radius: 69px;
+    background: #1E1E1E 0% 0% no-repeat padding-box;
+    margin-right:240px;
+    text-align:right;
+}
+.moado-right .site a{
+    font: var(--unnamed-font-style-normal) normal medium 14px/22px var(--unnamed-font-family-noto-sans-kr);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    font: normal normal medium 14px/22px Noto Sans KR;
+    letter-spacing: 0px;
+    opacity: 1;
+    color: #FFFFFF;
+    position:relative;
+}
