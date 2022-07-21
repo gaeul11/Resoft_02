@@ -2,7 +2,6 @@
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -14,6 +13,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+a { text-decoration: none;}
 ol, ul {
 	list-style: none;
 }
