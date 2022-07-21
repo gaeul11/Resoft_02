@@ -1,0 +1,14 @@
+:root {
+    /* Colors: */
+    --black-color-1E1E1E: #1E1E1E;
+    --lightgray-color-C8C8C8: #C8C8C8;
+    --unnamed-color-184B9F: #184B9F;
+    --white-color-fffff: #ffffff;
+}
+/* header */
+.nav_wrap{
+    width: 100%;
+}
+.main_gnb{
+    color: var(--white-color-fffff);
+}

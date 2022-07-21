@@ -6,19 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- css -->
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/basic.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/01_home.css">
+    <!-- fontAwesome -->
+    <script src="https://kit.fontawesome.com/5edf30735c.js" crossorigin="anonymous"></script>
+    <!-- bxslider  -->
+    <!-- jQuery library (served from Google) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
 </head> 
 <body>
-   <header>
-        <nav class="nav_wrap"> <!-- nav 영역에 공통 class -->
-            <div class="main_gnb nav_gnb"><!-- main_gnb : 페이지1에 대한 폰트 색상 gnb: 1,2,3,4,5, 폰트크기  -->
-                <div class="left_nav"></div>
-                <div class="right_nav"></div>
+    <header>
+        <nav class="nav_wrap">
+          <!-- nav 영역에 공통 class -->
+            <!-- main_gnb : 페이지1에 대한 폰트 색상 gnb: 1,2,3,4,5, 폰트크기  -->
+          <div class="main_gnb nav_gnb">
+            <div class="left_nav">
+                <img src="../img/color_logo01.svg">
             </div>
+            <div class="right_nav">
+                <ul class="drop_menu">
+                    <li> <a href="#">회사소개</a> </li>
+                    <li> <a href="#">사업현황</a> </li>
+                    <li> <a href="#">정보마당</a> </li>
+                    <li> <i class="fa-solid fa-align-justify"></i> </li>
+                </ul>
+            </div>
+          </div>
         </nav>
-   </header>
-   <div class="container">
+        <div class="Main_slider_wrap">
+            <div class="slider">
+                <div class="slider_items">
+                    <img src="../img/main_01.png" alt="">
+                    <div class="slide_text">
+                        <p class="slide_title">Evolution With New Software</p>
+                        <p class="slide_sub">
+                            Mobil APP(Android/iOS) Development,AI Bigdata Analysis, MetaVerse, 
+                            Responsive WEBsite, Brand Design Launch, ICT Consulting
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- heder end -->
+    <div class="container">
         <!-- st-wrap : 각 섹션 위아래 마진값 및 패딩 class  -->
         <section class="resoft_news st-wrap">
             <div class="NewsTit_wrap Title_wrap">
@@ -29,7 +63,7 @@
                 <div class="News_cards">
                     <a href="#"><!--ReSoft_News 페이지로 이동-->
                         <div class="N_card_Items">
-                            <img src="https://placeimg.com/300/200/tech" alt="" srcset="">
+                            <img src="../img/new_01.png" alt="" srcset="">
                             <p class="N_card_text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt architecto, numquam quia laudantium, facere, repudiandae vero tempore magnam ad vel qui eaque eum veritatis. Hic dolorum ducimus aperiam numquam velit!
                             </p>
@@ -40,7 +74,7 @@
                 <div class="News_cards">
                     <a href="#"><!--ReSoft_News 페이지로 이동-->
                         <div class="N_card_Items">
-                            <img src="http://placehold.it/300x200?text=sample" alt="" srcset="">
+                            <img src="../img/new_01.png" alt="" srcset="">
                             <p class="N_card_text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt architecto, numquam quia laudantium, facere, repudiandae vero tempore magnam ad vel qui eaque eum veritatis. Hic dolorum ducimus aperiam numquam velit!
                             </p>
@@ -51,7 +85,7 @@
                 <div class="News_cards">
                     <a href="#"><!--ReSoft_News 페이지로 이동-->
                         <div class="N_card_Items">
-                            <img src="http://placehold.it/300x200?text=sample" alt="" srcset="">
+                            <img src="../img/new_01.png" alt="" srcset="">
                             <p class="N_card_text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt architecto, numquam quia laudantium, facere, repudiandae vero tempore magnam ad vel qui eaque eum veritatis. Hic dolorum ducimus aperiam numquam velit!
                             </p>
@@ -62,7 +96,7 @@
                 <div class="News_cards">
                     <a href="#"><!--ReSoft_News 페이지로 이동-->
                         <div class="N_card_Items">
-                            <img src="http://placehold.it/300x200?text=sample" alt="" srcset="">
+                            <img src="../img/new_01.png" alt="" srcset="">
                             <p class="N_card_text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt architecto, numquam quia laudantium, facere, repudiandae vero tempore magnam ad vel qui eaque eum veritatis. Hic dolorum ducimus aperiam numquam velit!
                             </p>
@@ -124,14 +158,52 @@
                 </div>
             </div>
             <div class="ser_items_wrap">
-                <div class="ser_card_wrap">
-                    <div class="card_top">
-                        <div class="card_top_img">
-                            <img src="" alt="" srcset="">
+                <div class="card_top">
+                    <div class="card_left">
+                        <div class="txt_front">
+                            <p class="front_title"> 앱 (APP) 개발</p>
+                            <p class="front_sub"> android / ios </p>
                         </div>
+                        <ul class="txt_back">
+                            <li> Android 앱개발</li>
+                            <li> iOS 앱개발</li>
+                            <li> 플랫폼 기획 및 설계 </li>
+                        </ul>
                     </div>
-                    <div class="card_bottom">
-
+                    <div class="card_right">
+                        <div class="txt_front">
+                            <p class="front_title"> 웹(WEB) 구축 </p>
+                            <p class="front_sub"> RESPONSIVE WEB </p>
+                        </div>
+                        <ul class="txt_back">
+                            <li> 반응형 홈페이지 구축</li>
+                            <li> 데이터베이스 구축</li>
+                            <li> 빅데이터구축 </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card_bottom">
+                    <div class="card_left">
+                        <div class="txt_front">
+                            <p class="front_title"> AI기반 기술 개발</p>
+                            <p class="front_sub"> AI BIGDATA </p>
+                        </div>
+                        <ul class="txt_back">
+                            <li> AI 대화형 챗봇</li>
+                            <li> 자동객체 인시 검출기</li>
+                            <li> 딥러닝 학습 모델 </li>
+                        </ul>
+                    </div>
+                    <div class="card_right">
+                        <div class="txt_front">
+                            <p class="front_title"> XR 컨텐츠 구현 </p>
+                            <p class="front_sub"> METAVERSE </p>
+                        </div>
+                        <ul class="txt_back">
+                            <li> 실감형 플랫폼 구축</li>
+                            <li> 가상현실 콘텐츠 제작</li>
+                            <li> 게임 콘텐츠 제작 </li>
+                        </ul>
                     </div>
                 </div>
             </div>
