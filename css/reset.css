@@ -1,64 +1,31 @@
-:root {
-
-    /* Colors: */
-    --unnamed-color-000000: #000000;
-    --unnamed-color-aeaeae: #AEAEAE;
-    
-    /* Font/text values */
-    --unnamed-font-family-noto-sans-kr: Noto Sans KR;
-    --unnamed-font-style-normal: normal;
-    --unnamed-font-weight-bold: bold;
-    --unnamed-font-weight-normal: normal;
-    --unnamed-font-size-30: 30px;
-    --unnamed-font-size-50: 50px;
-    --unnamed-character-spacing-0: 0px;
-    --unnamed-line-spacing-44: 44px;
-    --unnamed-line-spacing-72: 72px;
-    }
-    
-    /* Character Styles */
-    .unnamed-character-style-1 {
-    font-family: var(--unnamed-font-family-noto-sans-kr);
-    font-style: var(--unnamed-font-style-normal);
-    font-weight: var(--unnamed-font-weight-bold);
-    font-size: var(--unnamed-font-size-50);
-    line-height: var(--unnamed-line-spacing-72);
-    letter-spacing: var(--unnamed-character-spacing-0);
-    color: var(--unnamed-color-aeaeae);
-    }
-    .unnamed-character-style-2 {
-    font-family: var(--unnamed-font-family-noto-sans-kr);
-    font-style: var(--unnamed-font-style-normal);
-    font-weight: var(--unnamed-font-weight-bold);
-    font-size: var(--unnamed-font-size-50);
-    line-height: var(--unnamed-line-spacing-72);
-    letter-spacing: var(--unnamed-character-spacing-0);
-    color: var(--unnamed-color-000000);
-    }
-    .unnamed-character-style-3 {
-    font-family: var(--unnamed-font-family-noto-sans-kr);
-    font-style: var(--unnamed-font-style-normal);
-    font-weight: var(--unnamed-font-weight-normal);
-    font-size: var(--unnamed-font-size-30);
-    line-height: var(--unnamed-line-spacing-44);
-    letter-spacing: var(--unnamed-character-spacing-0);
-    color: var(--unnamed-color-000000);
-    }
-    .unnamed-character-style-4 {
-    font-family: var(--unnamed-font-family-noto-sans-kr);
-    font-style: var(--unnamed-font-style-normal);
-    font-weight: var(--unnamed-font-weight-bold);
-    font-size: var(--unnamed-font-size-30);
-    line-height: var(--unnamed-line-spacing-44);
-    letter-spacing: var(--unnamed-character-spacing-0);
-    color: var(--unnamed-color-000000);
-    }
-*{
-    margin: 0; padding: 0; list-style: none; 
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-a {
-    text-decoration: none;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-header .main_nav{
-    color:#fff ;
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
