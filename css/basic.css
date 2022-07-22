@@ -27,6 +27,7 @@ a {
 .main_title {
     font-weight: bold;
     font-size: 40px;
+    padding: 16px 0 16px;
     color: var(--black-color-1E1E1E);
 }
 .sub_title {
@@ -34,8 +35,10 @@ a {
     color: var(--lightgray-color-C8C8C8);
 }
 .ex_text {
-    font-size: 28px;
+    font-size: 20px;
     font-weight: bold;
     color: var(--black-color-1E1E1E);
 }
-
+.margin50{
+    margin-top: 50px;
+}
