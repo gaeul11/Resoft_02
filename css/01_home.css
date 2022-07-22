@@ -83,8 +83,6 @@ header {
 
 
 /* container */
-
-
 /* resoft news */
 .resoft_news .NewsCard_List{
     display: flex; justify-content: space-between;
@@ -112,7 +110,20 @@ header {
 /* project */
 .resoft_proj{
     width: 100%; background-color: #F9F9F9;
+    /* background-color: #964c4c; */
 }
 .resoft_proj .proj_wrap{
-    margin-top: 100px;
+   padding:100px 0; position: relative;
+}
+.resoft_proj .proj_wrap .ProjTit_wrap{
+    position: absolute;
+    right: 0; 
+    text-align: right;
+}
+.resoft_proj .proj_wrap .ProjTit_wrap p{
+    margin-right: 5px; 
+}
+
+.resoft_proj .proj_wrap .proj_items_wrap{
+    margin-top: 76px;
 }
