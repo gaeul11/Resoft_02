@@ -37,6 +37,7 @@ a {
 .sub_title {
     font-size: 18px;
     color: var(--lightgray-color-C8C8C8);
+    text-transform: uppercase;
 }
 .ex_text {
     font-size: 20px;
