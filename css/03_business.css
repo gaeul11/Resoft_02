@@ -32,15 +32,18 @@
 }
 .bus{
     background-image:url("../img/사각형\ 64.png");
-    top: 80px;
-    left: 0px;
-    width: 1920px;
     height: 300px;
-    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    margin-left: auto;
+    margin-right: auto;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 40px/58px var(--unnamed-font-family-noto-sans-kr);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    font: normal normal bold 40px/58px Noto Sans KR;
+    color: #FFFFFF;
+    position:relative;
+    background-size:100%;
+    background-repeat:no-repeat;
 }
 
 .bus h2{
@@ -48,9 +51,9 @@
     letter-spacing: var(--unnamed-character-spacing-0);
     font: normal normal bold 40px/58px Noto Sans KR;
     color: #FFFFFF;
-    text-align:center;
     position:relative;
-    margin-top:6%;
+    left:50%;
+    top:50%;
 }
 .ex_text{
     text-align:right;
@@ -75,10 +78,12 @@
     background: transparent url('../img/에코스\ \(1\).png') 0% 0% no-repeat padding-box;
     opacity: 1;
     float:left;
+    background-size:100%;
 }
 .ecoce-img2{
     margin-left:223px;
     margin-top:95px;
+    background-size:100%;
 }
 .ecoce-right{
     text-align:right;
