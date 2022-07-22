@@ -65,7 +65,7 @@
 }
 #ecoce{
     position:absolute;
-    top: 400px;
+    top: 300px;
     left: 240px;
     width: 1441px;
     height: 883px;
@@ -117,7 +117,7 @@
 }
 #moado{
     position:absolute;
-    top: 1400px;
+    top: 1300px;
     width: 100%;
     height: 883px;
     margin:0;
@@ -132,7 +132,7 @@
     top: 200px;
     left: 0px;
     width: 1920px;
-    height: 686px;
+    height: 598px;
     background: transparent linear-gradient(223deg, #339BE133 25%, #E4CDE800 75%, #E4CDE8 100%) 0% 0% no-repeat padding-box;
     position:absolute;
     float:left;
@@ -140,8 +140,8 @@
 }
 .moado-main{
     background-repeat:no-repeat;
-    margin-top:292px;
-    margin-left:700px;
+    margin-top:204px;
+    padding-left:750px;
     position:absolute;
 }
 .moado-left{
@@ -160,24 +160,23 @@
 .moado-right .site-button {
     margin-top:140px;
     border-radius: 69px;
-    background: #1E1E1E 153px 57px;
+    background: #1E1E1E padding-box;
     margin-right:240px;
-    text-align:right;
+    padding: 19px 30px ;
+    float:right;
 }
 .moado-right .site-button a{
     font: var(--unnamed-font-style-normal) normal medium 14px/22px var(--unnamed-font-family-noto-sans-kr);
     letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
     font: normal normal medium 14px/22px Noto Sans KR;
     letter-spacing: 0px;
-    opacity: 1;
-    text-align: left;
     color: #FFFFFF;
-    position:relative;
+    opacity: 1;
 }
 #etc{
-    top: 2300px;
+    top: 2100px;
     position:absolute;
-    align-items:center;
     margin: 0;
 }
 #etc .main_title{
@@ -193,6 +192,6 @@
 }
 .etc-chart li{
     float:left;
-    margin-left:30px;
+    margin:30px;
     box-shadow:1px 1px 5px 1px black;
 }
