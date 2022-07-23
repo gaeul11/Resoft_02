@@ -127,3 +127,12 @@ header {
 .resoft_proj .proj_wrap .proj_items_wrap{
     margin-top: 76px;
 }
+.resoft_proj .Pro_card_wrap{
+    display: grid; grid-template-columns: 1fr 2fr;
+}
+.resoft_proj .pro_card01{
+    background: url(../img/ecoce_home01.png) no-repeat;
+    background-size: cover;
+    
+
+}
