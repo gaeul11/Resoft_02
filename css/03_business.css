@@ -34,16 +34,14 @@
     background-image:url("../img/사각형\ 64.png");
     height: 300px;
     display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 40px/58px var(--unnamed-font-family-noto-sans-kr);
-    letter-spacing: var(--unnamed-character-spacing-0);
-    font: normal normal bold 40px/58px Noto Sans KR;
-    color: #FFFFFF;
+    flex-direction:column;
     position:relative;
     background-size:100%;
     background-repeat:no-repeat;
+}
+.bus div{
+    align-self:center;
+    vertical-align: middle;
 }
 
 .bus h2{
@@ -51,9 +49,8 @@
     letter-spacing: var(--unnamed-character-spacing-0);
     font: normal normal bold 40px/58px Noto Sans KR;
     color: #FFFFFF;
-    position:relative;
-    left:50%;
-    top:50%;
+    position:absolute;
+    margin-top:150px;
 }
 .ex_text{
     text-align:right;
@@ -123,6 +120,7 @@
 #moado{
     position:absolute;
     top: 1300px;
+    left:0px;
     width: 100%;
     height: 883px;
     margin:0;
@@ -135,8 +133,8 @@
 }
 .moado-back{
     top: 200px;
-    left: 0px;
-    width: 1920px;
+    left:0px;
+    width: 1903px;
     height: 598px;
     background: transparent linear-gradient(223deg, #339BE133 25%, #E4CDE800 75%, #E4CDE8 100%) 0% 0% no-repeat padding-box;
     position:absolute;
@@ -155,6 +153,7 @@
 }
 .moado-right{
     float:right;
+    position:relative;
 }
 .moado-right .ex_text{
     margin-right:240px;
