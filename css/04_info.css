@@ -53,6 +53,14 @@ table {
 }
 
 
+:root {
+    /* Colors: */
+    --black-color-1E1E1E: #1E1E1E;
+    --lightgray-color-C8C8C8: #C8C8C8;
+    --unnamed-color-184B9F: #184B9F;
+    --white-color-fffff: #ffffff;
+}
+
 .info{
     width: 1920px;
     /* padding-left: 240px; */
@@ -101,7 +109,7 @@ table {
 
 .button{
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #1E1E1E;
+    border: 1px solid var(--black-color-1E1E1E);
     border-radius: 43px;
     opacity: 1;
     margin: 0 auto;
@@ -115,7 +123,7 @@ table {
     text-align: center;
     font: normal normal medium 20px/29px Noto Sans KR;
     letter-spacing: 1px;
-    color: #1E1E1E;
+    color: var(--black-color-1E1E1E);
     opacity: 1;
     font-size: 20px;
     cursor: pointer;
@@ -145,17 +153,17 @@ table {
 }
 
 .news_list_item p{
-    color: #1E1E1E;
+    color: var(--black-color-1E1E1E);
 }
 
 .news_list_item a:hover p{
-    color: #184B9F;
+    color: var(--unnamed-color-184B9F);
 }
 
 .text{
     width: 680px;
     height: 29px;
-    color: #1E1E1E;
+    color: var(--black-color-1E1E1E);
     font-weight: bold;
     font-size: 20px;
     letter-spacing: 1px;
