@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>page01</title>
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <!-- css -->
-    <link rel="stylesheet" href="./css/basic.css">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/01_home.css">
+    <link rel="stylesheet" href="../css/basic.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/01_home.css">
+    <link rel="stylesheet" href="../css/06_footer.css">
+    <!-- <link rel="stylesheet" href="../css/06_footer.css"> -->
+    
     <!-- fontAwesome -->
     <script src="https://kit.fontawesome.com/5edf30735c.js" crossorigin="anonymous"></script>
     <!-- bxslider  -->
@@ -20,6 +23,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <!-- animation img js -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head> 
 <body>
     <header>
@@ -27,7 +32,7 @@
             <div class="slider">
                 <div class="slider_items">
                     <div class="items_01">
-                        <img src="./img/main_01.png" alt="" srcset="">
+                        <img src="../img/main_01.png" alt="" srcset="">
                     </div>
                     <div class="items_02"></div>
                     <div class="items_03"></div>
@@ -47,13 +52,13 @@
             <!-- nav 영역에 공통 class -->
             <div class="nav_gnb">
               <div class="left_nav">
-                  <img  class="white_logo" src="./img/color_logo01.svg">
+                  <img  class="white_logo" src="../img/color_logo01.svg">
               </div>
               <div class="right_nav">
                   <ul class="nav_menu">
-                      <li> <a class="nav_text" href="./sub02.html">회사소개</a> </li>
-                      <li> <a class="nav_text" href="./sub03.html">사업현황</a> </li>
-                      <li> <a class="nav_text" href="./sub04.html">정보마당</a> </li>
+                      <li> <a class="nav_text" href="#">회사소개</a> </li>
+                      <li> <a class="nav_text" href="#">사업현황</a> </li>
+                      <li> <a class="nav_text" href="#">정보마당</a> </li>
                       <li id="click_drop"> <a class="nav_text" href="#"><i class="fa-solid fa-align-justify"></i></a> </li>
                   </ul>
               </div>
@@ -94,7 +99,7 @@
                     <div class="News_cards">
                         <a href="#"><!--ReSoft_News 페이지로 이동-->
                             <div class="N_card_Items">
-                                <img src="./img/new_01.png" alt="" srcset="">
+                                <img src="../img/new_01.png" alt="" srcset="">
                                 <p class="N_card_text">
                                     Lorem ipsum dolor sit amet <br/>
                                     consectetur adipisicing elit. 
@@ -108,7 +113,7 @@
                     <div class="News_cards">
                         <a href="#"><!--ReSoft_News 페이지로 이동-->
                             <div class="N_card_Items">
-                                <img src="./img/new_01.png" alt="" srcset="">
+                                <img src="../img/new_01.png" alt="" srcset="">
                                 <p class="N_card_text">
                                     Lorem ipsum dolor sit amet <br/>
                                     consectetur adipisicing elit. 
@@ -122,7 +127,7 @@
                     <div class="News_cards">
                         <a href="#"><!--ReSoft_News 페이지로 이동-->
                             <div class="N_card_Items">
-                                <img src="./img/new_01.png" alt="" srcset="">
+                                <img src="../img/new_01.png" alt="" srcset="">
                                 <p class="N_card_text">
                                     Lorem ipsum dolor sit amet <br/>
                                     consectetur adipisicing elit. 
@@ -136,7 +141,7 @@
                     <div class="News_cards">
                         <a href="#"><!--ReSoft_News 페이지로 이동-->
                             <div class="N_card_Items">
-                                <img src="./img/new_01.png" alt="" srcset="">
+                                <img src="../img/new_01.png" alt="" srcset="">
                                 <p class="N_card_text">
                                     Lorem ipsum dolor sit amet <br/>
                                     consectetur adipisicing elit. 
@@ -150,40 +155,44 @@
             </div>
         </section>
         <!--             resoft_New End             -->
-        <section class="resoft_proj ">
+        <section class="resoft_proj">
             <div class="proj_wrap st-wrap">
-                <div class="ProjTit_wrap Title_wrap">
-                    <h2 class="main_title">프로젝트</h2>
-                    <p class="sub_title">RESOFT PROJECT</p>
-                    <div class="TextImg_item margin50">
-                        <p class="ex_text">
-                            쾌적한 서비스 제공을 위해 사용자 입장에서 
-                            <br/><br/>생각하고 항상 새로운 도전을 시도합니다. 
-                        </p>
-                        <img src="" alt=""> <!-- js import img  -->
+                <div class="proj_Tit">
+                    <div class="Tit_text">
+                        <h2 class="main_title">프로젝트</h2>
+                        <p class="sub_title">RESOFT PROJECT</p>
+                        <div class="TextImg_item margin50">
+                            <p class="ex_text">
+                                쾌적한 서비스 제공을 위해 사용자 입장에서 
+                                <br/><br/>생각하고 항상 새로운 도전을 시도합니다. 
+                            </p>                        
+                        </div>
+                    </div>
+                    <div class="animaiton_img">
+                        <lottie-player src="../animations/lf20_hk8wc3df.json" background="transparent" speed="1" style="width: 680px; height: 680px;" loop autoplay></lottie-player>
                     </div>
                 </div>
-                <div class="proj_items_wrap">
-                    <div class="Pro_card_wrap">
-                        <div class="pro_cards">
-                            <div class="pro_card01">
-                                <div class="Pro_card_txt">
-                                    <p class="card_tit">에코스 ECOCE(ECO-Clean Earth)</p>
-                                    <p class="card_sub">
-                                        국내최초<br/>
-                                        탄소중립 실천인증 플랫폼
-                                    </p>
-                                </div>
-                            </div>
+                <div class="proj_cardItems">
+                    <div class="card_item">
+                        <img src="../img/proj_img01.png" alt="" class="img01 radius30">
+                        <img src="../img/proj_bg_img01.svg" alt="" class="bg_img" id="proj_bg_img01" >
+                        <div class="card_text radius30">
+                            <p class="card_tit">에코스 ECOCE(ECO-Clean Earth)</p>
+                            <p class="card_sub">
+                                국내최초<br/>
+                                탄소중립 실천인증 플랫폼
+                            </p>
                         </div>
-                        <div class="pro_cards">
-                            <div class="pro_card02">
-                                <div class="Pro_card_txt">
-                                    <p class="card_tit">모아두(moaDo)</p>
-                                    <p class="card_sub">
-                                        내 손안의 모바일 회원수첩
-                                    </p>
-                                </div>
+                    </div>
+                    <div class="card_item">
+                        <img src="../img/proj_img02.png" alt="" class="img01 radius30" id="proj_img02">
+                        <img src="../img/proj_bg_img02.svg" alt="" class="bg_img radius30">
+                        <div class="card_text radius30">
+                            <div>
+                                <p class="card_tit">모아두(moaDo)</p>
+                                <p class="card_sub">
+                                    내 손안의 모바일 회원수첩
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -192,8 +201,8 @@
         </section>
         <!--             resoft_ Proj End           -->
         <section class="resoft_service">
-            <div class="st-wrap">
-                <div class="SerTit_wrap Title_wrap">
+            <div class="st-wrap ser_wrap">
+                <div class="serTit Title_wrap">
                     <h2 class="main_title">서비스</h2>
                     <p class="sub_title">SERVICE</p>
                     <div class="TextImg_item">
@@ -202,12 +211,12 @@
                             <br/>
                             의미있는 성공으로 인도하는 서비스를 제공합니다 
                         </p>
-                        <img src="" alt=""> <!-- js import img  -->
+                        <lottie-player  id ="ser_ani" src="../animations/lf20_4bfhlker.json" background="transparent" speed="1" style="width: 680px; height: 680px;" loop autoplay></lottie-player>
                     </div>
                 </div>
-                <div class="ser_items_wrap">
-                    <div class="card_top">
-                        <div class="card_left">
+                <div class="seritems_wrap">
+                    <div class="card_top cards">
+                        <div class="card_left ser_card" id="serCard_bg01">
                             <div class="txt_front">
                                 <p class="front_title"> 앱 (APP) 개발</p>
                                 <p class="front_sub"> android / ios </p>
@@ -218,7 +227,7 @@
                                 <li> 플랫폼 기획 및 설계 </li>
                             </ul>
                         </div>
-                        <div class="card_right">
+                        <div class="card_right ser_card" id="serCard_bg02">
                             <div class="txt_front">
                                 <p class="front_title"> 웹(WEB) 구축 </p>
                                 <p class="front_sub"> RESPONSIVE WEB </p>
@@ -230,8 +239,8 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="card_bottom">
-                        <div class="card_left">
+                    <div class="card_bottom cards" >
+                        <div class="card_left ser_card" id="serCard_bg03">
                             <div class="txt_front">
                                 <p class="front_title"> AI기반 기술 개발</p>
                                 <p class="front_sub"> AI BIGDATA </p>
@@ -242,7 +251,7 @@
                                 <li> 딥러닝 학습 모델 </li>
                             </ul>
                         </div>
-                        <div class="card_right">
+                        <div class="card_right ser_card" id="serCard_bg04">
                             <div class="txt_front">
                                 <p class="front_title"> XR 컨텐츠 구현 </p>
                                 <p class="front_sub"> METAVERSE </p>
@@ -273,26 +282,26 @@
         <!--             resoft_Reference End            -->
    </div>
     <footer class="footer">
-        <div class="footer_wrap">
-            <div class="footer_top">
-                    <span><img src="../img/그룹 41.svg" alt=""></span>
-                    <span>© RESOFT CO.LTD. All Rights Reserved.</span>
+    <div class="footer_wrap">
+        <div class="footer_top">
+                <span><img src="../img/color_logo01.svg" alt=""></span>
+                <span>© RESOFT CO.LTD. All Rights Reserved.</span>
+        </div>
+        <div class="footer_bottom">
+            <div class="footer_bottomL">
+                <span>
+                    상호 : (주)리소프트 <br>
+                    사업자등록번호 : 722-81-02219<br>
+                    주소 : (41260) 대구광역시 동구 동대구로 465, 대구스케일업허브(DASH) 713호 (신천동 106)
+                </span>
             </div>
-            <div class="footer_bottom">
-                <div class="footer_bottomL">
-                    <span>
-                        상호 : (주)리소프트 <br>
-                        사업자등록번호 : 722-81-02219<br>
-                        주소 : (41260) 대구광역시 동구 동대구로 465, 대구스케일업허브(DASH) 713호 (신천동 106)
-                    </span>
-                </div>
-                <div class="footer_bottomR">
-                    <span>
-                        대표이사 : 오유나 개인정보책임자 : 이현지<br>
-                        전화 : (053) 475-2110 팩스 : (0504) 257-5966 이메일 : call@resoft.kr
-                    </span>
-                </div>
-                </div>
+            <div class="footer_bottomR">
+                <span>
+                    대표이사 : 오유나 개인정보책임자 : 이현지<br>
+                    전화 : (053) 475-2110 팩스 : (0504) 257-5966 이메일 : call@resoft.kr
+                </span>
             </div>
+            </div>
+        </div>
     </footer>
 </html>
