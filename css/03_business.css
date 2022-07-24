@@ -6,7 +6,6 @@
     letter-spacing: 0px;
     color: #1E1E1E;
     opacity: 1;
-    margin-top:100px;
 }
 .sub_title{
     font: var(--unnamed-font-style-normal) normal medium 18px/26px var(--unnamed-font-family-noto-sans-kr);
@@ -26,35 +25,14 @@
     opacity: 1;
 }
 .hori_margin{
-    margin-right:240px;
-    margin-right:239px;
-    margin-top:100px;
-}
-.bus{
-    background-image:url("../img/사각형\ 64.png");
-    height: 300px;
-    display: flex;
-    flex-direction:column;
-    position:relative;
-    background-size:100%;
-    background-repeat:no-repeat;
-}
-.bus div{
-    align-self:center;
-    vertical-align: middle;
+    margin-right:7%;
+    margin-right:7%;
+    margin-top:5%;
 }
 
-.bus h2{
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 40px/58px var(--unnamed-font-family-noto-sans-kr);
-    letter-spacing: var(--unnamed-character-spacing-0);
-    font: normal normal bold 40px/58px Noto Sans KR;
-    color: #FFFFFF;
-    position:absolute;
-    margin-top:150px;
-}
 .ex_text{
     text-align:right;
-    margin-bottom:140px;
+    margin-bottom:10%;
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-30)/var(--unnamed-line-spacing-44) var(--unnamed-font-family-noto-sans-kr);
     letter-spacing: var(--unnamed-character-spacing-0);
     text-align: right;
@@ -63,32 +41,30 @@
     color: #1E1E1E;
     opacity: 1;
 }
-#ecoce{
-    position:absolute;
-    top: 300px;
-    left: 240px;
-    width: 1441px;
-    height: 883px;
-    margin:0;
+#ecoce {
+    position:relative;
+    left: 10%;
 }
 .ecoce-img1{
-    background: transparent url('../img/에코스\ \(1\).png') 0% 0% no-repeat padding-box;
-    opacity: 1;
+    background-image:url("../img/에코스\ \(1\).png");
     float:left;
-    background-size:100%;
+    max-width: 679px;
+    max-height: 592px;
+    margin:0%;
+    
 }
-.ecoce-img2{
-    margin-left:223px;
-    margin-top:95px;
-    background-size:100%;
+.ecoce-img1 img{
+    padding-left:229px;
+    padding-top:95px;
+    margin:0%;
 }
-.ecoce-right{
+.ecoce-right {
     text-align:right;
+    margin:0%;
+    margin-right:10%;
+    position:relative;
 }
 
-.ecoce-right .sub-logo{
-    margin-top:32px;
-}
 .ecoce-store{
     list-style:none;
     float:right;
@@ -104,70 +80,67 @@
 }
 .ecoce-store img{
     float:left;
+    margin-top:11px;
     margin-left:20px;
     margin-right:15px;
-    margin-top:11px;
     margin-bottom:11px;
 }
 .ecoce-store p{
     text-decoration:none;
     color:#fff;
-    margin-right:32px;
-    margin-top:6px;
+    margin-top:10px;
     margin-bottom:9px;
+    margin-left:12px;
     text-align:left;
 }
 #moado{
-    position:absolute;
-    top: 1300px;
-    left:0px;
-    width: 100%;
-    height: 883px;
-    margin:0;
+    position:relative;
+    max-width: auto;
+    max-height: auto;
+    margin-top:40%;
 }
-#moado .main_title{
-    margin-left:240px;
+#moado h2, p{
+    margin-left:10%;
 }
-#moado .sub_title{
-    margin-left:240px;
-}
+
 .moado-back{
-    top: 200px;
-    left:0px;
-    width: 1903px;
-    height: 598px;
-    background: transparent linear-gradient(223deg, #339BE133 25%, #E4CDE800 75%, #E4CDE8 100%) 0% 0% no-repeat padding-box;
-    position:absolute;
+    background: transparent linear-gradient(223deg, #E4CDE800 0%, #339BE133 100%) 0% 0% no-repeat padding-box;
     float:left;
-    
-}
-.moado-main{
-    background-repeat:no-repeat;
-    margin-top:204px;
-    padding-left:750px;
-    position:absolute;
+    background-size:cover;
+    top: 295px;
+    left:0%;
+    right:0%;
+    width: 1920px;
+    height: 686px;
+    margin-top:50px;
 }
 .moado-left{
     float:left;
-    margin-left:240px;
+    margin:0%;
+    margin-left: 8.5%;
 }
+.moado-middle{
+    position:absolute;
+    margin-left:38%;
+    margin-top:203px;
+}
+
 .moado-right{
-    float:right;
+    position:absolute;
+    margin-left:73%;
+}
+.moado-right div img{
+    margin-top:10%;
     position:relative;
 }
-.moado-right .ex_text{
-    margin-right:240px;
-}
-.moado-right img{
-    margin-right:239px;
-}
+
 .moado-right .site-button {
-    margin-top:140px;
+    margin-top:150px;
     border-radius: 69px;
     background: #1E1E1E padding-box;
-    margin-right:240px;
-    padding: 19px 30px ;
+    padding: 19px 30px;
     float:right;
+    position:relative;
 }
 .moado-right .site-button a{
     font: var(--unnamed-font-style-normal) normal medium 14px/22px var(--unnamed-font-family-noto-sans-kr);
@@ -178,24 +151,26 @@
     color: #FFFFFF;
     opacity: 1;
 }
+
 #etc{
-    top: 2100px;
-    position:absolute;
-    margin: 0;
+    position:relative;
+    margin-left:7%;
+    margin-right:7%;
 }
 #etc .main_title{
-    margin-left:240px;
+    margin-left:3%;
 }
 #etc .sub_title{
-    margin-left:240px;
+    margin-left:3%;
 }
 .etc-chart{
     margin-top:10px;
-    align-items:center;
-    margin-left:200px;
+    position:relative;
+    margin-left:3%;
+    text-align: center;
 }
 .etc-chart li{
     float:left;
-    margin:30px;
+    margin:1%;
     box-shadow:1px 1px 5px 1px black;
 }
