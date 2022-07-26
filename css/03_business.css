@@ -124,7 +124,7 @@
 .site-button {
     border-radius: 69px;
     background: #1E1E1E padding-box;
-    padding: 19px 18px 30px;
+    padding: 19px 30px;
     margin-top:140px;
     float:right;
 }
@@ -141,28 +141,26 @@
 #etc{
     align-items:center;
     margin-top:2%;
+    background-color:#ffffff;
 }
 
 .etc-box{
     width: 1440px auto;
+    height: 484px;
     margin: 0 auto;
-    left:50%;
-    top: 50%;
 
 }
 .etc-chart{
     margin-top:10px;
-    text-align: center;
-    white-space: nowrap;
     align-items: center;
 }
 
-.etc-chart li{
+.etc-chart img{
     float:left;
     box-shadow:1px 1px 5px 1px black;
-    display: flex;
-    justify-content:flex-start;
-    margin: 30px;
-    margin-bottom:10%;
+    margin: 75px;
+    margin-bottom:200px;
     text-align: center;
+    max-width: 100%;
+    height:auto;
 }
