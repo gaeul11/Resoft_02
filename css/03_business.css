@@ -43,8 +43,8 @@
 #ecoce {
     margin-bottom:100px;
     max-width:100%;
-    width:1440px auto;
-    margin-bottom:35%;
+    width:auto;
+    margin-bottom:387px;
 }
 .ecoce-img1{
     background-image:url("../img/에코스\ \(1\).png");
@@ -52,6 +52,7 @@
     float:left;
     margin: auto 0;
     margin-left:5%;
+    display:block;
 }
 .ecoce-img1 img{
     margin-top:95px;
@@ -97,13 +98,13 @@
 #moado{
     max-width:100%;
     margin:0 auto;
-    
+    max-height:820px;
+    width:auto;
 }
 
 .moado-back{
     background: transparent linear-gradient(223deg, #E4CDE800 0%, #339BE133 100%) 0% 0% no-repeat padding-box;
     margin:0 auto;
-    width: 1440px auto;
 }
 .moado-middle{
     background-image:url("../img/main-visual.png");
@@ -116,6 +117,8 @@
 .moado-left{
     float:left;
     margin-left:5%;
+    max-width : 30%;
+    display:block;
 }
 
 .moado-right{
@@ -141,12 +144,12 @@
 
 #etc{
     align-items:center;
-    margin-top:2%;
+    margin-top:50px;
     background-color:#ffffff;
 }
 
 .etc-box{
-    width: 1440px auto;
+    width: auto;
     height: 484px;
     margin: 0 auto;
 
@@ -154,14 +157,36 @@
 .etc-chart{
     margin-top:10px;
     align-items: center;
+    margin-left:5%;
+    margin-right:5%;
+    justify-content: space-around;
+    display:flex;
 }
 
 .etc-chart img{
-    float:left;
     box-shadow:1px 1px 5px 1px black;
-    margin: 75px;
     margin-bottom:200px;
-    text-align: center;
-    max-width: 100%;
-    height:auto;
+    width:228px;
+    height:350px;
+}
+/*1024px 기준*/
+@media screen and (max-width:1305px){
+    .ecoce-img1{
+        display:none;
+    }
+    .moado-left{
+        display:none;
+    }
+}
+@media screen and (max-width:1500px){
+    .etc-chart img{
+        height:80%;
+        width:80%;
+    }
+}
+@media screen and (max-width:1300px){
+    .etc-chart img{
+        height:70%;
+        width:70%;
+    }
 }
