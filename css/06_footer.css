@@ -45,3 +45,12 @@
     padding-left: 128px;
     text-align: left;
 }
+
+@media (max-width:1024px) {
+    .footer_wrap {
+        width: 800px;
+    }
+    .footer_bottomR{
+        padding-left: 50px;
+    }
+}
