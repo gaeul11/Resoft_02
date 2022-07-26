@@ -45,3 +45,30 @@
     padding-left: 128px;
     text-align: left;
 }
+
+@media (max-width:1024px) {
+    .footer_wrap {
+        width: 800px;
+    }
+    .footer_bottomR{
+        padding-left: 50px;
+    }
+}
+@media (max-width:768px) {
+    .footer_wrap {
+        width: 704px;
+        margin-left: 5%;
+    }
+    .footer {
+        height: 331px;
+    }
+    .footer_bottomR{
+        padding-left: 0px;
+    }
+    .footer_bottomR:last-child{
+        padding-top: 40px;
+    }
+    .footer_bottom {
+        display: block;
+    }
+}
