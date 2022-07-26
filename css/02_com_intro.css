@@ -23,6 +23,7 @@
     font-size: 24px;
     letter-spacing: 1.2px;
     font-weight: var(--unnamed-font-weight-bold);
+    vertical-align: middle;
 }
 .font_data {
     font-size: 20px;
@@ -75,7 +76,7 @@
     margin: 25px 0px;
 }
 .his_container .month {
-    color: var(--unnamed-color-184B9F);
+    color: var(--blue-color-184B9F);
     font-weight: var(--unnamed-font-weight-bold);
     font-size: 32px;
     float: right;
@@ -85,7 +86,7 @@
     content: '';
     width: 20px;
     height: 20px;
-    background-color: var(--unnamed-color-184B9F);
+    background-color: var(--blue-color-184B9F);
     border-radius: 50%;
     left: 415px;
     margin-top: 40px;
@@ -146,13 +147,13 @@
 .organi_container p {
     text-align: center;
     font-size: 26px;
-    padding: 25px 0;
+    padding: 20px 0;
 }
 .organi_box {
     position: relative;
     width: 200px;
     height: 80px;
-    border: 3px solid var(--unnamed-color-184B9F);
+    border: 3px solid var(--blue-color-184B9F);
     border-radius: 20px;
     z-index: 10;
 }
@@ -169,7 +170,7 @@ li .organi_box {
 }
 .level-1 {
     margin: 0 auto 120px;
-    background-color: var(--unnamed-color-184B9F);
+    background-color: var(--blue-color-184B9F);
     color: white;
 }
 .level-1::before {
@@ -341,6 +342,8 @@ li .organi_box {
         max-width: 800px;
         margin: 0 auto;
     }
+
+    
     /* 
      *1280 intro
      */
@@ -359,6 +362,8 @@ li .organi_box {
         padding-left: 1rem;
         line-height: 2;
     }
+
+
     /* 
      *1280 timeline media
      */
@@ -390,7 +395,7 @@ li .organi_box {
         margin-left: -60px;
     }
     .year22, .year21 {
-        font-size: 45px;
+        font-size: 50px;
     }
     .his_ex {
         width: 500px;
@@ -400,18 +405,13 @@ li .organi_box {
     .his_container .circle {
         margin-left: -60px;
     }
-
-
-
     
+
     /* 
      *1280 certifi media
      */
     .organi_container {
         max-width: 800px;
-    }
-    .organi_container p {
-        padding: 20px 0;
     }
 
     /* 
@@ -449,8 +449,6 @@ li .organi_box {
     }
 
 
-
-
     /* 
      *1280 certifi media
      */
@@ -480,6 +478,7 @@ li .organi_box {
         top: 15px;
     }
 
+
     /* 
      *1280 map
      */
@@ -488,9 +487,122 @@ li .organi_box {
         height: 480px;
     }
     .mapFont_head {
-        padding-left: 0;
+        text-align: center;
     }
 }
 
 @media (max-width:768px) {
+    .intro_wrap, .his_wrap, .organi_wrap, .certifi_wrap, .map_wrap {
+
+        /* di 220725 중간정렬 */
+        max-width: 704px;
+        margin: 0 auto;
+    }
+
+    
+    /* 
+     *768 intro
+     */
+    .intro_border, .map_border {
+        max-width: 100%;
+    }
+    .font_head {
+        font-size: 20px;
+        width: 30%;
+    }
+    .font_data {
+        font-size: 18px;
+    }
+    .intro_head, .intro_data{
+        text-align: left;
+        padding: 1rem;
+        padding-left: 1rem;
+        line-height: 2;
+    }
+
+
+    /* 
+     *768 timeline media
+     */
+    .his_timeline {
+        height: 1310px;
+    }
+    .timeline_container {
+        width: 704px;
+    }
+    .timeline_container::after {
+        height: 895px;
+    }
+    .timeline_container ul {
+        margin-left: -80px;
+    }
+    .year22, .year21 {
+        font-size: 50px;
+    }
+    .year21 {
+        top: 160px;
+    }
+    .his_ex {
+        width: 310px;
+        margin-left: 380px;
+        font-size: 17px;
+        line-height: 2rem;
+    }
+    .his_container .circle {
+        margin-left: -80px;
+    }
+    
+
+    /* 
+     *768 certifi media
+     */
+    
+
+    /* 
+     *768 certifi media
+     */
+    .certifi_img_wrap {
+        width: 100%;
+        height: 1524px;
+    }
+    .certifi_container {
+
+        /* 액자 image 배치 */
+        margin-left: 0px;
+    }
+    .certifi_grid {
+
+        /* 액자 margin */
+        margin-right: 100px;
+    }
+    .certifi_front {
+
+        /* image margin */
+        margin-right: 112px;
+    }
+    .certifi_container {
+
+        /* 액자 image 배치 */
+        margin-left: 100px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .certifi_overlap{
+    
+        /* 액자 위 image 배치 */
+        margin-left: 100px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .certifi_overlap{
+
+        /* 액자 위 image 배치 */
+        top: 15px;
+    }    
+
+    /* 
+     *768 map
+     */
+    #map {
+        width: 704px;
+        height: 480px;
+    }
 }
