@@ -97,19 +97,20 @@
 #moado{
     max-width:100%;
     margin:0 auto;
+    
 }
 
 .moado-back{
     background: transparent linear-gradient(223deg, #E4CDE800 0%, #339BE133 100%) 0% 0% no-repeat padding-box;
     margin:0 auto;
     width: 1440px auto;
-    height: 686px;
 }
 .moado-middle{
     background-image:url("../img/main-visual.png");
     margin:0 auto;
+    background-repeat:no-repeat;
     width:680px;
-    height:482px;
+    height:686px;
     background-position:center bottom;
 }
 .moado-left{
