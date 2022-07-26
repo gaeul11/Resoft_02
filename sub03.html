@@ -5,12 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>page03</title>
-    <link rel="stylesheet" href="../css/basic.css">
-    <link rel="stylesheet" href="../css/03_business.css">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/06_footer.css">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/00_header2.css">
+    <link rel="stylesheet" href="./css/03_business.css">
+    <link rel="stylesheet" href="./css/06_footer.css">
+    <link rel="stylesheet" href="./css/basic.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    
+    <!-- js -->
+    <script src="./js/00_header2.js"></script>
+    
 </head>
 <body>
+    <header id="header">
+        <a class="logo" href="index.html"><img src="./img/color_logo01.svg" alt="로고"></a>
+        <div id="nav_gnb">
+            <nav>
+                <ul id="main_nav">
+                    <li><a href="./sub02.html">회사소개</a>
+                        <ul class="nav_menu close">
+                            <li><a href="">REsoft소개</a></li>
+                            <li><a href="">연혁</a></li>
+                            <li><a href="">조직도</a></li>
+                            <li><a href="">특허&인증</a></li>
+                            <li><a href="">오시는 길</a></li>
+                        </ul>
+                </li>
+                    <li><a href="./sub03.html">사업현황</a>
+                    <ul class="nav_menu close">
+                        <li><a href="">ECOCE</a></li>
+                        <li><a href="">moaDo</a></li>
+                        <li><a href="">Etc</a></li>
+                    </ul>
+                </li>
+                    <li><a href="./sub04.html">정보마당</a>
+                    <ul class="nav_menu close">
+                        <li><a href="">REsoft소식</a></li>
+                    </ul>
+                    </li>
+                </ul>
+            </nav>  
+            <div class="nav_menu close"></div>
+        </div>
+        <a class="menubar"><img src="./img/04.menu.svg" alt="" ></a>
+        <div class="visual">
+            <div class="infonav_text">
+                <p>정보마당</p>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
     <div class="container">
         <!-- 에코스 부분-->
         <section id="ecoce">
@@ -18,22 +62,22 @@
                 <h2 class="main_title">에코스</h2>
                 <p class="sub_title">ECO-Clean Earth</p>
                 <div class="ecoce-img1">
-                    <img src="../img/에코스 (2).png" alt="">
+                    <img src="./img/에코스 (2).png" alt="">
                 </div>
                 <div class="ecoce-right">
                     <p class="ex_text">국내 최초<br>탄소중립 실천인증 플랫폼</p>
-                    <img src="../img/그룹 76.png" alt="">
+                    <img src="./img/그룹 76.png" alt="">
                     <p class="sub-logo">ECO-Clean Earth</p>
                     <ul class="ecoce-store">
                         <li>
                             <a href="">
-                                <img src="../img/그룹 100.png" alt="">
+                                <img src="./img/그룹 100.png" alt="">
                                 <p>Play Store에서 다운로드</p>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src="../img/그룹 102.png" alt="">
+                                <img src="./img/그룹 102.png" alt="">
                                 <p>App Store에서 다운로드</p>
                             </a>
                         </li>
@@ -48,12 +92,12 @@
                 <p class="sub_title">moaDo</p>
                 <div class="moado-back">
                 <div class="moado-left">
-                    <img src="../img/모아두 (2).png" alt="">
+                    <img src="./img/모아두 (2).png" alt="">
                 </div>
                 <div class="moado-right">
                     <p class="ex_text">내 손안의 모바일 회원수첩</p>
                     <div>
-                        <img src="../img/패스 649.png" alt="">
+                        <img src="./img/패스 649.png" alt="">
                     </div>
                     <div class="site-button">
                         <a href="">사이트 바로가기</a>
@@ -71,27 +115,29 @@
                 <!--ETC 이미지 부분 -->
                 <div class="etc-chart">
                     <div>
-                        <img src="../img/마스크 그룹 22.png" alt="">
+                        <img src="./img/마스크 그룹 22.png" alt="">
                     </div>
                     <div>
-                        <img src="../img/마스크 그룹 21.png" alt="">
+                        <img src="./img/마스크 그룹 21.png" alt="">
                     </div>
                     <div>
-                        <img src="../img/마스크 그룹 20.png" alt="">
+                        <img src="./img/마스크 그룹 20.png" alt="">
                     </div>
                     <div>
-                        <img src="../img/마스크 그룹 23.png" alt="">
+                        <img src="./img/마스크 그룹 23.png" alt="">
                     </div>
                     <div>
-                        <img src="../img/마스크 그룹 24.png" alt="">
+                        <img src="./img/마스크 그룹 24.png" alt="">
                     </div>
                 </div>
             </div>
         </section>
+    </div>
+    <!-- container end -->
     <footer class="footer">
         <div class="footer_wrap">
             <div class="footer_top">
-                    <span><img src="../img/그룹 41.svg" alt=""></span>
+                    <span><img src="./img/color_logo01.svg" alt=""></span>
                     <span>© RESOFT CO.LTD. All Rights Reserved.</span>
             </div>
             <div class="footer_bottom">
@@ -111,5 +157,5 @@
                 </div>
             </div>
     </footer>
-    </body>
+</body>
 </html>

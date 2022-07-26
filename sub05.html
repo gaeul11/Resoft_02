@@ -8,13 +8,55 @@
     <!-- css 연결 -->
     <link rel="stylesheet" href="./css/basic.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/00_header2.css">
     <link rel="stylesheet" href="./css/05_infonews.css">
     <link rel="stylesheet" href="./css/06_footer.css">
+    <!-- js -->
+    <script src="./js/00_header2.js"></script>
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <!-- fontawsome -->
     <script src="https://kit.fontawesome.com/5edf30735c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header> header </header>
+    <header id="header">
+        <a class="logo" href="index.html"><img src="./img/color_logo01.svg" alt="로고"></a>
+        <div id="nav_gnb">
+            <nav>
+                <ul id="main_nav">
+                    <li><a href="./sub02.html">회사소개</a>
+                        <ul class="nav_menu close">
+                            <li><a href="">REsoft소개</a></li>
+                            <li><a href="">연혁</a></li>
+                            <li><a href="">조직도</a></li>
+                            <li><a href="">특허&인증</a></li>
+                            <li><a href="">오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./sub03.html">사업현황</a>
+                        <ul class="nav_menu close">
+                            <li><a href="">ECOCE</a></li>
+                            <li><a href="">moaDo</a></li>
+                            <li><a href="">Etc</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./sub05.html">정보마당</a>
+                    <ul class="nav_menu close">
+                        <li><a href="">REsoft소식</a></li>
+                    </ul>
+                    </li>
+                </ul>
+            </nav>  
+            <div class="nav_menu close"></div>
+        </div>
+        <a class="menubar"><img src="./img/04.menu.svg" alt="" ></a>
+        <div class="visual">
+            <div class="infonav_text">
+                <p>정보마당</p>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
     <div class="container"> 
         <div class="InfoNews_wrap st-wrap">
             <div class="InfoNews_title Title_wrap">
@@ -22,12 +64,12 @@
                 <p class="sub_title">NEWS</p>
             </div>
             <div class="InfoNews_lists margin50">
-                <div class="InfoNews_turn">
+                <a href="./sub04.html" class="InfoNews_turn">
                     <div class="trun_icon circle">
                         <i class="fa-solid fa-rotate-left"></i>
                     </div>
                     <p class="trun_text"> 목록으로 </p>
-                </div>
+                </a>
                 <div class="InfoNews_list">
                     <div class="News_headline">
                         <p class="headline">
@@ -92,25 +134,25 @@
                         </div>
                     </div>
                     <div class="pre_next_btn">
-                        <div class="btn_box">
+                        <a href="#" class="btn_box">
                             <div class="btn_icon circle">
                                 <i class="fa-solid fa-arrow-left-long"></i>    
                             </div>
                             <p class="btn_text"> 이전글 </p>
-                        </div>
-                        <div class="btn_box">
+                        </a>
+                        <a href="#" class="btn_box">
                             <div class="btn_icon circle">
                                 <i class="fa-solid fa-arrow-right"></i>
                             </div>
                             <p class="btn_text"> 다음글 </p>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 
             </div>
         </div>    
     </div>
-
+    <!-- container end -->
     <footer class="footer">
         <div class="footer_wrap">
             <div class="footer_top">
