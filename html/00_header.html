@@ -1,93 +1,78 @@
 <!DOCTYPE html>
-<html lang="kr">
-
+<html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resoft</title>
-  <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css//basic.css">
-  <link rel="stylesheet" href="../css/00_header.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resoft</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/basic.css">
+    <link rel="stylesheet" href="../css/00_header.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    </style>    
 </head>
-
 <body>
-  <header>
-    <h2 class="main_title">리소프트의 새로운 소식</h2>
-    <p class="sub_title">resoft news</p>
-
-    <nav class="nav_wrap">
-      <p class="main_title">실험중</p>
-      <!-- nav 영역에 공통 class -->
-      <div class="main_gnb nav_gnb">
-        <!-- main_gnb : 페이지1에 대한 폰트 색상 gnb: 1,2,3,4,5, 폰트크기  -->
-        <div class="left_nav"></div>
-        <div class="right_nav"></div>
-      </div>
-    </nav>
-  </header>
-
-  <div class="container">
-    <!-- st-wrap : 각 섹션 위아래 마진값  -->
-    <section class="resoft_news st-wrap"></section>
-    <section class="resoft_proj st-wrap">
-      <div class="proj_wrap st-wrap">
-        <div class="ProjTit_wrap Title_wrap">
-            <h2 class="main_title">프로젝트</h2>
-            <p class="sub_title">RESOFT PROJECT</p>
-            <div class="TextImg_item margin50">
-                <p class="ex_text">
-                    쾌적한 서비스 제공을 위해 사용자 입장에서 
-                    <br/><br/>생각하고 항상 새로운 도전을 시도합니다. 
-                </p>                        
-            </div>
-            <div class="animaiton_img margin50">
-                <lottie-player src="../animations/lf20_hk8wc3df.json" background="transparent" speed="1" style="width: 680px; height: 680px;" loop autoplay></lottie-player>
-            </div>
-        </div>
-        
-        <div class="proj_items_wrap">
-            <div class="card_items margin50"></div>
-            <div class="card_items margin50"></div>
-            <!-- <div class="Proj_card_wrap">
-                <div class="proj_cards">
-                    <div class="card_bg_img">
-                        <img  class="bg_img01" src="../img/proj_bg_img01.svg" alt="">
-                    </div>
-                    <div class="card_img">
-                        <img src="../img/proj_img01.png" alt="">
-                        <div class="Pro_card_txt">
-                            <p class="card_tit">에코스 ECOCE(ECO-Clean Earth)</p>
-                            <p class="card_sub">
-                                국내최초<br/>
-                                탄소중립 실천인증 플랫폼
-                            </p>
-                        </div>
-                    </div> 
-                </div>
-                <div class="proj_cards">
-                    <div class="card_bg_img">
-                        <img src="../img/proj_bg_img02.svg" alt="">
-                    </div>
-                    <div class="card_img">
-                        <img src="../img/proj_img02.png" alt="">
-                        <div class="Pro_card_txt">
-                            <p class="card_tit">모아두(moaDo)</p>
-                            <p class="card_sub">
-                                내 손안의 모바일 회원수첩
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-                 -->
-            </div>
-        </div>
+    <header class="header">
+        <a class="white_logo" href="">
+            <img src="../img/00.logo.svg" alt="로고">
+        </a>
+        <div id="nav_gnb">
+        <nav>
+            <ul id="main_nav">
+                <li><a href="">회사소개</a>
+                    <ul class="nav_menu close">
+                        <li><a href="">REsoft소개</a></li>
+                        <li><a href="">연혁</a></li>
+                        <li><a href="">조직도</a></li>
+                        <li><a href="">특허&인증</a></li>
+                        <li><a href="">오시는 길</a></li>
+                    </ul>
+                </li>
+                <li><a href="">사업현황</a>
+                    <ul class="nav_menu close">
+                        <li><a href="">ECOCE</a></li>
+                        <li><a href="">moaDo</a></li>
+                        <li><a href="">Etc</a></li>
+                    </ul>
+                </li>
+                <li><a href="">정보마당</a>
+                    <ul class="nav_menu close">
+                        <li>
+                            <a href="">REsoft소식</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>  
+        <div class="nav_menu close"></div>
     </div>
-    </section>
-    <section class="resoft_service st-wrap"></section>
-    <section class="resoft_reference st-wrap"></section>
-  </div>
-  <footer></footer>
-
+        <a class="menubar">
+            <img src="../img/00.menu.svg" alt="" >
+        </a>
+        <div class="header_text-wrap">
+            <div class="header_text">
+                <p class="header_title">Evolution <br>With New Software</p>
+                <p class="header_sub">Mobil APP(Android/iOS) Development, AI Bigdata Analysis, MetaVerse, <br>
+                    Responsive WEBsite, Brand Design Launch, ICT Consulting</p>
+            </div>
+        </div>
+        <div class="visual">
+            <div class="slide">
+                <div><img src="../img/04.slide1.png" alt=""></div>
+                <div><img src="../img/04.slide2.png" alt=""></div>
+                <div><img src="../img/04.slide3.png" alt=""></div>
+            </div>
+            <div class="btn_1">
+                <button class="start" type="submit"><img src="../img/00.pause.svg" ></button>
+                <button class="stop" type="submit"><img src="../img/00.play.svg" ></button>
+            </div>
+        </div>
+    </header>
+    <script src="../js/00_header.js"></script>
+    <script src="../js/00_header2.js"></script>
+</body>
 </html>
