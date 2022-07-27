@@ -8,7 +8,7 @@
     font: normal normal bold 40px/58px Noto Sans KR;
     letter-spacing: 0px;
     color: #1E1E1E;
-    margin-left:5%;
+    margin-left:11%;
 }
 .sub_title{
     font: var(--unnamed-font-style-normal) normal medium 18px/26px var(--unnamed-font-family-noto-sans-kr);
@@ -17,7 +17,7 @@
     font: normal normal medium 18px/26px Noto Sans KR;
     letter-spacing: 0px;
     color: #C8C8C8;
-    margin-left:5%;
+    margin-left:11%;
 }
 .sub-logo{
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 22px/32px var(--unnamed-font-family-noto-sans-kr);
@@ -33,7 +33,7 @@
     margin-bottom:10%;
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-30)/var(--unnamed-line-spacing-44) var(--unnamed-font-family-noto-sans-kr);
     letter-spacing: var(--unnamed-character-spacing-0);
-    font: normal normal bold 30px/44px Noto Sans KR;
+    font: normal bold 30px/44px Noto Sans KR;
     color: #1E1E1E;
     opacity: 1;
     margin:0%;
@@ -51,7 +51,7 @@
     background-repeat:no-repeat;
     float:left;
     margin: auto 0;
-    margin-left:5%;
+    margin-left:11%;
     display:block;
 }
 .ecoce-img1 img{
@@ -60,7 +60,7 @@
 }
 .ecoce-right {
     text-align:right;
-    margin-right:5%;
+    margin-right:11%;
 }
 .ecoce-right .sub-logo{
     text-align:right;
@@ -82,17 +82,17 @@
 }
 .ecoce-store img{
     float:left;
-    margin-top:11px;
-    margin-left:20px;
-    margin-right:15px;
-    margin-bottom:11px;
+    padding-top:11px;
+    padding-left:20px;
+    padding-right:15px;
+    padding-bottom:11px;
 }
 .ecoce-store p{
     text-decoration:none;
     color:#fff;
-    margin-top:10px;
-    margin-bottom:9px;
-    margin-left:12px;
+    padding-top:10px;
+    padding-bottom:9px;
+    padding-left:12px;
     text-align:left;
 }
 #moado{
@@ -103,7 +103,8 @@
 }
 
 .moado-back{
-    background: transparent linear-gradient(223deg, #E4CDE800 0%, #339BE133 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(180deg, #E4CDE800 0%, #339BE133 100%) 0% 0% no-repeat padding-box;
+    filter: inset 0px 0px 15px 15px #E4CDE800;
     margin:0 auto;
 }
 .moado-middle{
@@ -113,17 +114,18 @@
     width:680px;
     height:686px;
     background-position:center bottom;
+    margin-left:36%;
 }
 .moado-left{
     float:left;
-    margin-left:5%;
+    margin-left:11%;
     max-width : 30%;
     display:block;
 }
 
 .moado-right{
     float:right;
-    margin-right:5%;
+    margin-right:11%;
 }
 .site-button {
     border-radius: 69px;
@@ -157,8 +159,8 @@
 .etc-chart{
     margin-top:10px;
     align-items: center;
-    margin-left:5%;
-    margin-right:5%;
+    margin-left:10%;
+    margin-right:10%;
     justify-content: space-around;
     display:flex;
 }
@@ -170,7 +172,7 @@
     height:350px;
 }
 /*1024px 기준*/
-@media screen and (max-width:1305px){
+@media screen and (max-width:1500px){
     .ecoce-img1{
         display:none;
     }
@@ -188,5 +190,39 @@
     .etc-chart img{
         height:70%;
         width:70%;
+    }
+}
+@media screen and (max-width:600px){
+    .ecoce-right img{
+        max-width:90%;
+    }
+    .ecoce-store li{
+        max-width:90%;
+        margin-left:10px;
+    }
+    .ecoce-store img{
+        align-items:center;
+        max-width:40%;
+    }
+    .ecoce-store p{
+        font-size:13px;
+    }
+    .moado-right img{
+        max-width:80%;
+        float:right;
+    }
+    .moado-middle{
+        margin:0 auto;
+        flex:auto;
+    }
+    
+}
+@media screen and (max-width:365px){
+    .ecoce-store p{
+        font-size:4px;
+    }
+    .ecoce-store li{
+        max-width:90%;
+        margin-left:3px;
     }
 }
