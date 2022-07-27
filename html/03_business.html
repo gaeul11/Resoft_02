@@ -5,43 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>page03</title>
-    <link rel="stylesheet" href="../css/basic.css">
+    <!-- css -->
+    <link rel="stylesheet" href="../css/00_header2.css">
     <link rel="stylesheet" href="../css/03_business.css">
-    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/06_footer.css">
+    <link rel="stylesheet" href="../css/basic.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    
+    <!-- js -->
+    <script src="../js/00_header2.js"></script>
+    
 </head>
 <body>
     <header id="header">
-        <a class="logo" href="index.html"><img src="./img/color_logo01.svg" alt="로고"></a>
+        <a class="logo" href="index.html"><img src="../img/color_logo01.svg" alt="로고"></a>
         <div id="nav_gnb">
-        <nav>
-            <ul id="main_nav">
-                <li><a href="">회사소개</a>
-                    <ul class="nav_menu close">
-                        <li><a href="">REsoft소개</a></li>
-                        <li><a href="">연혁</a></li>
-                        <li><a href="">조직도</a></li>
-                        <li><a href="">특허&인증</a></li>
-                        <li><a href="">오시는 길</a></li>
-                    </ul>
-            </li>
-                <li><a href="">사업현황</a>
-                <ul class="nav_menu close">
-                    <li><a href="">ECOCE</a></li>
-                    <li><a href="">moaDo</a></li>
-                    <li><a href="">Etc</a></li>
-                </ul>
-            </li>
-                <li><a href="">정보마당</a>
-                <ul class="nav_menu close">
-                    <li><a href="">REsoft소식</a></li>
-                </ul>
+            <nav>
+                <ul id="main_nav">
+                    <li><a href="../sub02.html">회사소개</a>
+                        <ul class="nav_menu close">
+                            <li><a href="">REsoft소개</a></li>
+                            <li><a href="">연혁</a></li>
+                            <li><a href="">조직도</a></li>
+                            <li><a href="">특허&인증</a></li>
+                            <li><a href="">오시는 길</a></li>
+                        </ul>
                 </li>
-            </ul>
-        </nav>  
-        <div class="nav_menu close"></div>
+                    <li><a href="../sub03.html">사업현황</a>
+                    <ul class="nav_menu close">
+                        <li><a href="">ECOCE</a></li>
+                        <li><a href="">moaDo</a></li>
+                        <li><a href="">Etc</a></li>
+                    </ul>
+                </li>
+                    <li><a href="../sub04.html">정보마당</a>
+                    <ul class="nav_menu close">
+                        <li><a href="">REsoft소식</a></li>
+                    </ul>
+                    </li>
+                </ul>
+            </nav>  
+            <div class="nav_menu close"></div>
         </div>
-        <a class="menubar"><img src="./img/04.menu.svg" alt="" ></a>
+        <a class="menubar"><img src="../img/04.menu.svg" alt="" ></a>
         <div class="visual">
             <div class="infonav_text">
                 <p>정보마당</p>
@@ -81,10 +87,10 @@
         </section>
         <!-- 모아두 부분-->
         <section id="moado">
-            <div>
+            <div class="moado-back">
                 <h2 class="main_title">모아두</h2>
                 <p class="sub_title">moaDo</p>
-                <div class="moado-back">
+                <div>
                 <div class="moado-left">
                     <img src="../img/모아두 (2).png" alt="">
                 </div>
@@ -126,11 +132,12 @@
                 </div>
             </div>
         </section>
-    </div>    
+    </div>
+    <!-- container end -->
     <footer class="footer">
         <div class="footer_wrap">
             <div class="footer_top">
-                    <span><img src="../img/그룹 41.svg" alt=""></span>
+                    <span><img src="../img/color_logo01.svg" alt=""></span>
                     <span>© RESOFT CO.LTD. All Rights Reserved.</span>
             </div>
             <div class="footer_bottom">
@@ -147,8 +154,8 @@
                         전화 : (053) 475-2110 팩스 : (0504) 257-5966 이메일 : call@resoft.kr
                     </span>
                 </div>
+                </div>
             </div>
-        </div>
     </footer>
-    </body>
+</body>
 </html>
