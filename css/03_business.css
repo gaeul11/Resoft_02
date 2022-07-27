@@ -117,6 +117,7 @@
     margin-left:36%;
 }
 .moado-left{
+    background:transparent linear-gradient(180deg, #E4CDE8);
     float:left;
     margin-left:11%;
     max-width : 30%;
@@ -193,6 +194,18 @@
     }
 }
 @media screen and (max-width:600px){
+    .main_title{
+        text-align:center;
+        margin:0 auto;
+    }
+    .sub_title{
+        text-align:center;
+        margin:0 auto;
+    }
+    .ex_text{
+        float:none;
+        text-align:center;
+    }
     .ecoce-right img{
         max-width:90%;
     }
@@ -208,14 +221,16 @@
         font-size:13px;
     }
     .moado-right img{
-        max-width:80%;
+        max-width:90%;
         float:right;
     }
     .moado-middle{
         margin:0 auto;
         flex:auto;
     }
-    
+    .site-button{
+        justify-content:center;
+    }
 }
 @media screen and (max-width:365px){
     .ecoce-store p{
