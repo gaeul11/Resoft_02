@@ -105,6 +105,8 @@ header {
 .resoft_news .N_card_date{
     color: #AAAAAA;
 }
+
+
 /* project */
 /* 프로젝트 - 타이틀 */
 .resoft_proj{
@@ -378,8 +380,20 @@ header {
     width: 100%;
 } */
 
-
-
 .Ref_items_wrap {
     margin-bottom: 100px;
+}
+
+@media (max-width : 768px) {
+    .NewsCard_List{
+        flex-wrap: wrap;
+        flex-basis: 50%;
+        flex-grow: 0.5;
+    }
+}
+/* 태블릿 */
+@media (max-width : 1024px) {
+    .st-wrap{
+        max-width: 800px; margin:0 auto;
+    }
 }
