@@ -53,7 +53,7 @@
     float:left;
     margin: auto 0;
     margin-left:11%;
-    display:block;
+    object-fit:contain;
 }
 .ecoce-img1 img{
     margin-top:95px;
@@ -105,9 +105,12 @@
 }
 
 .moado-back{
-    background: transparent linear-gradient(180deg, #E4CDE800 0%, #339BE133 100%) 0% 0% no-repeat padding-box;
-    filter: inset 0px 0px 15px 15px #E4CDE800;
+    background: linear-gradient(171deg, rgba(255,255,255,1) 44%, rgba(228,205,232,1) 100%);
     margin:0 auto;
+    
+}
+.moado-back-2{
+    background: linear-gradient(217deg, rgba(255,255,255,0) 90%, rgba(51,155,225,0.5) 95%);
 }
 .moado-middle{
     background-image:url("../img/main-visual.png");
@@ -119,11 +122,9 @@
     margin-left:36%;
 }
 .moado-left{
-    background:transparent linear-gradient(180deg, #E4CDE8);
     float:left;
     margin-left:11%;
     max-width : 30%;
-    display:block;
 }
 
 .moado-right{
@@ -175,8 +176,33 @@
     width:228px;
     height:350px;
 }
-/*1024px 기준*/
-@media screen and (max-width:1500px){
+
+/*화면조정*/
+@media screen and (max-width:1600px){
+    .ecoce-img1{
+        max-width: 40%; 
+    }
+
+    .moado-left{
+        max-width:30%;
+    }
+    .etc-chart img{
+        height:80%;
+        width:80%;
+    }
+}
+/*1280px(테블릿) 기준*/
+@media screen and (max-width:1280px){
+
+    .moado-middle{
+        margin:0 auto;
+    }
+    .etc-chart img{
+        height:70%;
+        width:70%;
+    }
+}
+@media screen and (max-width:1201px){
     .ecoce-img1{
         display:none;
     }
@@ -184,31 +210,8 @@
         display:none;
     }
 }
-@media screen and (max-width:1500px){
-    .etc-chart img{
-        height:80%;
-        width:80%;
-    }
-}
-@media screen and (max-width:1300px){
-    .etc-chart img{
-        height:70%;
-        width:70%;
-    }
-}
-@media screen and (max-width:600px){
-    .main_title{
-        text-align:center;
-        margin:0 auto;
-    }
-    .sub_title{
-        text-align:center;
-        margin:0 auto;
-    }
-    .ex_text{
-        float:none;
-        text-align:center;
-    }
+/*768px(모바일) 기준*/
+@media screen and (max-width:768px){
     .ecoce-right img{
         max-width:90%;
     }
@@ -220,27 +223,17 @@
         align-items:center;
         max-width:40%;
     }
-    .ecoce-store p{
-        font-size:13px;
+    .moado-left{
+        display:none;
     }
     .moado-right img{
         max-width:90%;
         float:right;
     }
-    .moado-middle{
-        margin:0 auto;
-        flex:auto;
+    .site-button{
+        text-align:center;
     }
     .site-button{
         justify-content:center;
-    }
-}
-@media screen and (max-width:365px){
-    .ecoce-store p{
-        font-size:4px;
-    }
-    .ecoce-store li{
-        max-width:90%;
-        margin-left:3px;
     }
 }

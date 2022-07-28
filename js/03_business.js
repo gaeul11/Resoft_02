@@ -23,7 +23,7 @@ $(document).ready(function(){
             var bottom_of_window = $(window).scrollTop() + $(window).height();/*윈도우창의 스크롤과 높이*/
             /*윈도우 창 밑부분이 오브젝트 바닥보다 높으면 opacity가 1로 바뀐다.*/
             if(bottom_of_window > bottom_of_object/1){
-                $(this).animate({'opacity':'1'},500);
+                $(this).animate({'opacity':'1'},600);
             }
         });
     });
@@ -38,7 +38,7 @@ $(document).ready(function(){
             var bottom_of_window = $(window).scrollTop() + $(window).height();/*윈도우창의 스크롤과 높이*/
             /*윈도우 창 밑부분이 오브젝트 바닥보다 높으면 opacity가 1로 바뀐다.*/
             if(bottom_of_window > bottom_of_object/1){
-                $(this).animate({'opacity':'1'},500);
+                $(this).animate({'opacity':'1'},700);
             }
         });
     });
