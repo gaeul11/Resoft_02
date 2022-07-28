@@ -1,7 +1,22 @@
-
-header a {
-    text-decoration: none; 
+body{
+    padding-top: 80px;
 }
+#nav_gnb{
+    position: fixed;
+    border-bottom: 1px solid #000000;
+    background-color: #ffffff;
+}
+.fix{
+    position: fixed;
+}
+
+.logo img{
+    position: absolute;
+    width: 133px;
+    height: 30px;
+    left: -103%;
+}
+
 header .logo {
     position: absolute; 
     text-align: left;
@@ -41,6 +56,7 @@ header #nav_gnb nav + div {
     z-index: 0;
 }
 header #nav_gnb nav > ul >li {
+    left: -8%;
     display: inline-block; 
     position: relative;
     z-index: 2;
@@ -65,10 +81,14 @@ header #nav_gnb nav > ul > li > a:after {
     bottom: 10px; 
     left: 40px; 
     width: 0; 
-    height: 2px; 
+    height: 5px; 
     background: #184B9F;
     transition: all 0.5s; 
-    border-radius: 18%;
+    border-radius: 20px;
+}
+#main_nav a:hover{
+    color: #184B9F;
+    cursor: pointer;
 }
 header #nav_gnb nav > ul > li:hover > a:after{
     width: 50%;
