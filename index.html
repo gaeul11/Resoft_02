@@ -13,77 +13,79 @@
     <link rel="stylesheet" href="./css/basic.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/01_home.css">
+    <link rel="stylesheet" href="./css/00_header.css">
     <link rel="stylesheet" href="./css/06_footer.css">    
     <!-- fontAwesome -->
     <script src="https://kit.fontawesome.com/5edf30735c.js" crossorigin="anonymous"></script>
-    <!-- bxslider  -->
-    <!-- jQuery library (served from Google) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
     <!-- animation img js -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- main slide -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 </head> 
 <body>
-    <header>
-        <div class="Main_wrap">
-            <div class="slider">
-                <div class="slider_items">
-                    <div class="items_01">
-                        <img src="./img/main_01.png" alt="" srcset="">
-                    </div>
-                    <div class="items_02"></div>
-                    <div class="items_03"></div>
-                </div>
-            </div>
+    <header class="header">
+        <a class="white_logo" href="">
+            <img src="./img/00.logo.svg" alt="로고">
+        </a>
+        <div id="nav_gnb">
+        <nav>
+            <ul id="main_nav">
+                <li><a href="./sub02.html">회사소개</a>
+                    <ul class="nav_menu close">
+                        <li><a href="">REsoft소개</a></li>
+                        <li><a href="">연혁</a></li>
+                        <li><a href="">조직도</a></li>
+                        <li><a href="">특허&인증</a></li>
+                        <li><a href="">오시는 길</a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub03.html">사업현황</a>
+                    <ul class="nav_menu close">
+                        <li><a href="">ECOCE</a></li>
+                        <li><a href="">moaDo</a></li>
+                        <li><a href="">Etc</a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub04.html">정보마당</a>
+                    <ul class="nav_menu close">
+                        <li>
+                            <a href="">REsoft소식</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>  
+        <div class="nav_menu close"></div>
+    </div>
+        <a class="menubar">
+            <img src="./img/00.menu.svg" alt="" >
+        </a>
+        <div class="header_text-wrap">
             <div class="header_text">
-                <p class="header_title">Evolution With <br/> New Software</p>
-                <p class="header_sub">
-                    Mobil APP(Android/iOS) Development,AI Bigdata Analysis, MetaVerse,
-                    <br/> <br/>
-                    Responsive WEBsite, Brand Design Launch, ICT Consulting
-                </p>
+                <p class="header_title">Evolution <br>With New Software</p>
+                <p class="header_sub">Mobil APP(Android/iOS) Development, AI Bigdata Analysis, MetaVerse, <br>
+                    Responsive WEBsite, Brand Design Launch, ICT Consulting</p>
             </div>
         </div>
-
-        <nav class="nav_wrap">
-            <!-- nav 영역에 공통 class -->
-            <div class="nav_gnb">
-              <div class="left_nav">
-                  <img  class="white_logo" src="./img/color_logo01.svg">
-              </div>
-              <div class="right_nav">
-                  <ul class="nav_menu">
-                      <li> <a class="nav_text" href="./sub02.html">회사소개</a> </li>
-                      <li> <a class="nav_text" href="./sub03.html">사업현황</a> </li>
-                      <li> <a class="nav_text" href="./sub04.html">정보마당</a> </li>
-                      <li id="click_drop"> <a class="nav_text" href="#"><i class="fa-solid fa-align-justify"></i></a> </li>
-                  </ul>
-              </div>
+        <div class="visual">
+            <div class="slide">
+                <div><img src="./img/04.slide1.png" alt=""></div>
+                <div><img src="./img/04.slide2.png" alt=""></div>
+                <div><img src="./img/04.slide3.png" alt=""></div>
             </div>
-            <div class="drop_wrap">
-                <div class="drop_st">
-                    <div class="drop_menu">
-                        <ul class="drop_menu_list">
-                            <li><a href="#"> REsoft소개</a></li>
-                            <li><a href="#"> 연혁 </a></li>
-                            <li><a href="#"> 조직도 </a></li>
-                            <li><a href="#"> 특허 & 인증 </a></li>
-                            <li><a href="#"> 오시는 길 </a></li>
-                        </ul>
-                        <ul class="drop_menu_list">
-                            <li><a href="#"> ECOCE </a></li>
-                            <li><a href="#"> moaDo </a></li>
-                            <li><a href="#"> Etc </a></li>
-                        </ul>
-                        <ul class="drop_menu_list">
-                            <li><a href="#"> REsoft소식</a></li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="btn_1">
+                <button class="start" type="submit"><img src="./img/00.pause.svg" ></button>
+                <button class="stop" type="submit"><img src="./img/00.play.svg" ></button>
             </div>
-        </nav>
+        </div>
     </header>
+    <!-- header js -->
+    <script src="./js/00_header.js"></script>
+    <script src="./js/00_header2.js"></script>
     <!-- heder end -->
     <div class="container">
         <!-- st-wrap : 각 섹션 위아래 마진값 및 패딩 class  -->
