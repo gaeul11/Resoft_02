@@ -1,0 +1,242 @@
+.container{
+    margin:0 auto;
+    max-width:100%;
+}
+.main_title{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 40px/58px var(--unnamed-font-family-noto-sans-kr);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    font: normal normal bold 40px/58px Noto Sans KR;
+    letter-spacing: 0px;
+    color: #1E1E1E;
+    margin-left:11%;
+}
+.sub_title{
+    font: var(--unnamed-font-style-normal) normal medium 18px/26px var(--unnamed-font-family-noto-sans-kr);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
+    font: normal normal medium 18px/26px Noto Sans KR;
+    letter-spacing: 0px;
+    color: #C8C8C8;
+    margin-left:11%;
+}
+.sub-logo{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 22px/32px var(--unnamed-font-family-noto-sans-kr);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    font: normal normal bold 22px/32px Noto Sans KR;
+    letter-spacing: 0px;
+    color: #1E1E1E;
+    opacity: 1;
+}
+
+.ex_text{
+    text-align:right;
+    margin-bottom:10%;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-30)/var(--unnamed-line-spacing-44) var(--unnamed-font-family-noto-sans-kr);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    font: normal bold 30px/44px Noto Sans KR;
+    color: #1E1E1E;
+    opacity: 1;
+    margin:0%;
+    margin-bottom:140px;
+    word-break:normal;
+}
+#ecoce {
+    margin-bottom:100px;
+    max-width:100%;
+    width:auto;
+    margin-bottom:387px;
+    opacity:0;
+}
+.ecoce-img1{
+    background-image:url("../img/에코스\ \(1\).png");
+    background-repeat:no-repeat;
+    float:left;
+    margin: auto 0;
+    object-fit:contain;
+    z-index:-1;
+}
+.ecoce-img1 img{
+    margin-top:95px;
+    margin-left:229px;
+}
+.ecoce-right {
+    text-align:right;
+}
+.ecoce-right .sub-logo{
+    text-align:right;
+    
+}
+.ecoce-store{
+    list-style:none;
+    margin:0 auto;
+    float:right;
+    margin-top:140px;
+}
+
+.ecoce-store li{
+    float: left;
+    background: #1E1E1E 0% 0% no-repeat padding-box;
+    border-radius: 69px;
+    opacity: 1;
+    margin-left:30px;
+}
+.ecoce-store img{
+    float:left;
+    padding-top:11px;
+    padding-left:20px;
+    padding-right:15px;
+    padding-bottom:11px;
+}
+.ecoce-store p{
+    text-decoration:none;
+    color:#fff;
+    padding-top:10px;
+    padding-bottom:9px;
+    padding-left:12px;
+    text-align:left;
+}
+#moado{
+    max-width:100%;
+    margin:0 auto;
+    max-height:820px;
+    width:auto;
+    opacity: 0;
+}
+
+.moado-back{
+    background: linear-gradient(171deg, rgba(255,255,255,1) 44%, rgba(228,205,232,1) 100%);
+    margin:0 auto;
+    
+}
+.moado-back-2{
+    background: linear-gradient(217deg, rgba(255,255,255,0) 90%, rgba(51,155,225,0.5) 95%);
+}
+.moado-middle{
+    background-image:url("../img/main-visual.png");
+    margin:0 auto;
+    background-repeat:no-repeat;
+    width:680px;
+    height:686px;
+    background-position:center bottom;
+    margin-left:36%;
+}
+.moado-left{
+    float:left;
+    margin-left:11%;
+    max-width : 30%;
+}
+
+.moado-right{
+    float:right;
+    margin-right:11%;
+}
+.site-button {
+    border-radius: 69px;
+    background: #1E1E1E padding-box;
+    padding: 19px 30px;
+    margin-top:140px;
+    float:right;
+}
+.moado-right .site-button a{
+    font: var(--unnamed-font-style-normal) normal medium 14px/22px var(--unnamed-font-family-noto-sans-kr);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
+    font: normal normal medium 14px/22px Noto Sans KR;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+#etc{
+    align-items:center;
+    margin-top:50px;
+    background-color:#ffffff;
+    opacity: 0;
+}
+
+.etc-box{
+    width: auto;
+    height: 484px;
+    margin: 0 auto;
+
+}
+.etc-chart{
+    margin-top:10px;
+    align-items: center;
+    margin-left:10%;
+    margin-right:10%;
+    justify-content: space-around;
+    display:flex;
+}
+
+.etc-chart img{
+    box-shadow:1px 1px 5px 1px black;
+    margin-bottom:200px;
+    width:228px;
+    height:350px;
+}
+
+/*화면조정*/
+@media screen and (max-width:1600px){
+    .ecoce-img1{
+        width: 40%;
+        height: 40%;
+        background-size: contain;
+        opacity: .5;
+    }
+    .ecoce-img1 img{
+        width: 70%;
+        height: 80%;
+        background-size: contain;
+    }
+
+    .moado-left{
+        max-width:30%;
+        opacity: .5;
+    }
+    .etc-chart img{
+        height:80%;
+        width:80%;
+    }
+}
+
+/*1280px(테블릿) 기준*/
+
+@media screen and (max-width:1207px){
+    .ecoce-img1{
+        display:none;
+    }
+    .moado-left{
+        display:none;
+    }
+}
+/*768px(모바일) 기준*/
+@media screen and (max-width:768px){
+    .ecoce-right img{
+        max-width:90%;
+    }
+    .ecoce-store li{
+        max-width:90%;
+        margin-left:10px
+    }
+    .ecoce-store img{
+        align-items:center;
+        max-width:40%;
+    }
+    .moado-left{
+        display:none;
+    }
+    .moado-middle{
+        margin:0 auto;
+    }
+    .moado-right img{
+        max-width:90%;
+        float:right;
+    }
+    .site-button{
+        text-align:center;
+    }
+    .site-button{
+        justify-content:center;
+    }
+}
