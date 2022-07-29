@@ -180,7 +180,14 @@
 /*화면조정*/
 @media screen and (max-width:1600px){
     .ecoce-img1{
-        max-width: 40%; 
+        width: 40%;
+        height: 40%;
+        background-size: contain;
+    }
+    .ecoce-img1 img{
+        width: 70%;
+        height: 80%;
+        background-size: contain;
     }
 
     .moado-left{
@@ -191,18 +198,10 @@
         width:80%;
     }
 }
-/*1280px(테블릿) 기준*/
-@media screen and (max-width:1280px){
 
-    .moado-middle{
-        margin:0 auto;
-    }
-    .etc-chart img{
-        height:70%;
-        width:70%;
-    }
-}
-@media screen and (max-width:1201px){
+/*1280px(테블릿) 기준*/
+
+@media screen and (max-width:1207px){
     .ecoce-img1{
         display:none;
     }
@@ -217,7 +216,7 @@
     }
     .ecoce-store li{
         max-width:90%;
-        margin-left:10px;
+        margin-left:10px
     }
     .ecoce-store img{
         align-items:center;
@@ -225,6 +224,9 @@
     }
     .moado-left{
         display:none;
+    }
+    .moado-middle{
+        margin:0 auto;
     }
     .moado-right img{
         max-width:90%;
