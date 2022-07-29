@@ -52,7 +52,6 @@
     background-repeat:no-repeat;
     float:left;
     margin: auto 0;
-    margin-left:11%;
     object-fit:contain;
     z-index:-1;
 }
@@ -62,7 +61,6 @@
 }
 .ecoce-right {
     text-align:right;
-    margin-right:11%;
 }
 .ecoce-right .sub-logo{
     text-align:right;
