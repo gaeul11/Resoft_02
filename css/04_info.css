@@ -9,18 +9,11 @@
     --unnamed-color-184B9F: #184B9F;
     --white-color-fffff: #ffffff;
 }
-
-.info{
-    width: 1920px;
+.info{    
     /* padding-left: 240px; */
+    width: 100%;
     display: block;
-    text-align: center;
 }
-
-.info_news{
-    padding-left: 240px;
-}
-
 .info_news, .text, .year{
     text-align: left;
 }
@@ -34,11 +27,12 @@
     font-size: 18px;
     
 }
+.img_mr {
+    margin-right: 75px;
+}
 
 .news_list_item {
-    /* width: 680px; */
     height: 360px;
-    padding-right: 80px;
     display: inline-block;
 }
 
@@ -50,9 +44,8 @@
 }
 
 .news_list {
-    width: 1920px;
+    width: 1530px;
     margin-top: 50px;
-    /* padding-right: 80px; */
     display: inline-block;
 }
 
@@ -88,6 +81,7 @@
 }
 
 .news_list img{
+    object-fit:cover;
     width: 680px;
     transition: all 0.3s linear;
     transform: scale(1);
@@ -127,4 +121,69 @@
     color: #AAAAAA;
     font-size: 16px;
     letter-spacing: 0.8px;
+}
+
+/* di 미디어쿼리 */
+@media (max-width:1024px) {
+    .info {
+        max-width: 1024px;
+    }
+    .info_wrap {
+        width: 800px;
+        margin: 0 auto;
+    }
+    .news_list {
+        width: 810px;
+    }
+    .news_list_item .text {
+        width: 380px;
+        white-space: pre-line;
+        margin-bottom: 30px;
+    }
+    .news_list_item {
+        width: 380px;
+    }
+    .img_mr {
+        margin-right: 40px;
+    }
+    .news_list_item img{
+        width: 380px;
+    }
+    .news_list a:hover img{
+        width: 380px;
+    }
+}
+
+@media (max-width:768px){
+    .info {
+        max-width: 768px;
+    }
+    .info_wrap {
+        width: 704px;
+    }
+    .news_list {
+        width: 100%;
+    }
+    .news_list_item .text {
+        width: 580px;
+        white-space: pre-line;
+        margin-bottom: 0px;
+    }
+    .news_list_item {
+        width: 580px;
+        margin-top: 40px;
+        margin-left: 9.5%;
+    }
+    .news_list_item:first-child {
+        margin-top: 0px;
+    }
+    .img_mr {
+        margin-right: 0px;
+    }
+    .news_list_item img{
+        width: 580px;
+    }
+    .news_list a:hover img{
+        width: 580px;
+    }
 }
