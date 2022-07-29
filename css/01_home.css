@@ -105,7 +105,19 @@ header {
 .resoft_news .N_card_date{
     color: #AAAAAA;
 }
-
+/* resoft - news 반응형  */
+/* 모바일 */
+@media (max-width : 768px) {
+    .NewsCard_List{
+        flex-wrap: wrap;
+        flex-basis: 50%;
+        flex-grow: 0.5;
+    }
+}
+/* 태블릿  */
+@media (max-width : 1024px) {
+   
+}
 
 /* project */
 /* 프로젝트 - 타이틀 */
@@ -116,7 +128,6 @@ header {
 }
 .resoft_proj .proj_wrap{ 
    display: flex; justify-content: space-between;
-   flex-direction: row-reverse;
 }
 .resoft_proj .proj_wrap .proj_Tit{
     text-align: end;
@@ -178,6 +189,28 @@ header {
 }
 .card_sub{
     font-size: 14px;
+}
+/* 모바일 */
+@media (max-width : 768px) {
+    .proj_wrap{
+        display: flex;
+        flex-direction: column;
+    }
+    .proj_Tit{
+        text-align: right;
+    }
+    .animaiton_img{
+        width: 704px;
+        margin: 0 auto;
+        scale: 0.9;
+    }
+    .animaiton_img #lottie01{
+        text-align: center;
+    }
+}
+/* 태블릿  */
+@media (max-width : 1024px) {
+   
 }
 
 /*  resogft _ service 영역*/
@@ -383,17 +416,15 @@ header {
 .Ref_items_wrap {
     margin-bottom: 100px;
 }
-
+/* 모바일 */
 @media (max-width : 768px) {
-    .NewsCard_List{
-        flex-wrap: wrap;
-        flex-basis: 50%;
-        flex-grow: 0.5;
+    .Ref_items_wrap{
+        display: flex;
+        flex-direction: column;
     }
+    
 }
-/* 태블릿 */
+/* 태블릿  */
 @media (max-width : 1024px) {
-    .st-wrap{
-        max-width: 800px; margin:0 auto;
-    }
+   
 }
