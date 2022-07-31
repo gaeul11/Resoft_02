@@ -32,6 +32,10 @@
 /* resoft - news 반응형  */
 /* 모바일 */
 @media (max-width : 768px) {
+    .resoft_news{
+        max-width: 704px;
+        margin:0 auto ;
+    }
     .NewsCard_List{
         flex-wrap: wrap;
         flex-basis: 50%;
@@ -40,8 +44,17 @@
 }
 /* 태블릿  */
 @media (max-width : 1024px) {
-   
+   .resoft_news{
+    max-width: 800px;
+    margin: 0 auto;
+   }
+   .NewsCard_List{
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    flex-grow: 0.5;
 }
+}
+
 
 /* project */
 /* 프로젝트 - 타이틀 */
@@ -118,6 +131,8 @@
 @media (max-width : 768px) {
     .proj_wrap{
         flex-direction: column-reverse;
+        max-width: 704px;
+        margin:0 auto ;
     }
     .proj_Tit{
         text-align: right;
@@ -130,10 +145,15 @@
     .animaiton_img #lottie01{
         text-align: center;
     }
+    
 }
 /* 태블릿  */
 @media (max-width : 1024px) {
-   
+    .proj_wrap{
+        flex-direction: column-reverse;
+        margin:0 auto ;
+        max-width: 800px;
+    }
 }
 
 /*  resogft _ service 영역*/
@@ -212,6 +232,31 @@
     display: none;
 }
 
+@media (max-width : 768px){
+    .resoft_service{
+        background: #F2F6FC 0% 0% no-repeat
+    }
+    .resoft_service .ser_wrap{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        max-width: 704px;
+        margin:0 auto ; 
+    }
+}
+/* 태블릿  */
+@media (max-width : 1024px) {
+    .resoft_service{
+        background: #F2F6FC 0% 0% no-repeat
+    }
+    .resoft_service .ser_wrap{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        max-width: 800px;
+        margin:0 auto ; 
+    }
+}
 /* resoft - Reference */
 
 .resoft_reference .RefTit_wrap {
@@ -342,6 +387,8 @@
 /* 모바일 */
 @media (max-width : 768px) {
     .Ref_items_wrap{
+        max-width: 704px;
+        margin:  0 auto;
         display: flex;
         flex-direction: column;
     }
@@ -349,5 +396,11 @@
 }
 /* 태블릿  */
 @media (max-width : 1024px) {
-   
+    
+    .Ref_items_wrap{
+        max-width: 800px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
 }
