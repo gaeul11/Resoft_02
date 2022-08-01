@@ -236,6 +236,9 @@
     .resoft_service{
         background: #F2F6FC 0% 0% no-repeat
     }
+    .serTit{
+        margin: 0 auto;
+    }
     .resoft_service .ser_wrap{
         display: flex;
         justify-content: space-between;
@@ -386,13 +389,18 @@
 }
 /* 모바일 */
 @media (max-width : 768px) {
-    .Ref_items_wrap{
+    .resoft_reference{
         max-width: 704px;
         margin:  0 auto;
+    }
+    .Ref_items_wrap{
         display: flex;
         flex-direction: column;
     }
-    
+    .Ref_img_wrap{
+        display: flex;
+        justify-content: space-between;
+    }
 }
 /* 태블릿  */
 @media (max-width : 1024px) {
