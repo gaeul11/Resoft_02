@@ -3,6 +3,8 @@ console.clear();
             autoplay: true,
             autoplaySpeed:1500,
             
+            prevArrow:$('.slick-prev'),
+            nextArrow:$('.slick-next'),
         });
         
         $('.start').click(function(){

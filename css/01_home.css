@@ -77,48 +77,48 @@
     margin-top: 100px;
 }
 .proj_cardItems .card_item{
-    position: relative;
-    width: 534px;
-    height: 393px;
-    border-radius: 30px;
-    overflow: hidden;
-    margin-bottom: 80px;
+    width: 534px; height: 393px;
 }
-.proj_cardItems .card_item .img01{
-    position: absolute;
-    top: 12%;
-    left: 20%; 
-    z-index: 99;
-    transform: scale(0.8);
+.proj_cardItems #proj_bg01{
+    background: url(../img/proj_bg01-1.png) no-repeat;
+    background-size: cover;
+}
+
+.proj_cardItems #proj_bg02{
+    background: url(../img/proj_bg_img02.svg);
+    background-size: cover;
 }
 .radius30{
     border-radius: 30px; 
 }
-.proj_cardItems .card_item .bg_img{
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-}
-#proj_bg_img01{
-    border-radius: 0 0 30px 30px;
-}
+
 .card_text{
-    display: none;
+    color:var(--white-color-fffff);
+    position: relative;
+    overflow: hidden;    
 }
-.proj_cardItems .card_item:hover .img01{
-    transform: scale(1);
-    transition: 1s;
+.card_text:hover{
+    background-color:rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
 }
-.proj_cardItems .card_item:hover .card_text{
-    display: block;
-    text-align: left;
-    position: absolute;
-    width: 100%;
+.card_text > img{
+    text-align: end;
     height: 100%;
-    background-color: rgba(58, 58, 58, 0.5);
-    z-index: 99;
-    color: var(--white-color-fffff);
-    padding:56% 0 5% 5%;
+    border-radius: 30px;
+}
+.card_text:hover > img{
+    transform: scale(1.1);
+    transition: 1s;
+    object-fit: cover;
+}
+.card_text > div {
+    display:none;
+}
+.card_text:hover > div{
+    display: block;
+    position: absolute;
+    top: 70%;
+    left: 10%;
 }
 .card_tit{
     font-size: 18px;
@@ -127,6 +127,26 @@
 .card_sub{
     font-size: 14px;
 }
+
+/* 태블릿  */
+@media (max-width : 1024px) {
+    .resoft_proj{
+        margin-bottom: 50px;
+    }
+    .proj_wrap{
+        flex-direction: column-reverse;
+        margin:0 auto ;
+        max-width: 800px;
+    }
+    .proj_cardItems{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .proj_cardItems .card_item{
+        margin: 30px;
+    }
+}
+
 /* 모바일 */
 @media (max-width : 768px) {
     .proj_wrap{
@@ -147,14 +167,7 @@
     }
     
 }
-/* 태블릿  */
-@media (max-width : 1024px) {
-    .proj_wrap{
-        flex-direction: column-reverse;
-        margin:0 auto ;
-        max-width: 800px;
-    }
-}
+
 
 /*  resogft _ service 영역*/
 
@@ -231,23 +244,11 @@
 .txt_back{
     display: none;
 }
-
-@media (max-width : 768px){
-    .resoft_service{
-        background: #F2F6FC 0% 0% no-repeat
-    }
-    .resoft_service .ser_wrap{
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        max-width: 704px;
-        margin:0 auto ; 
-    }
-}
 /* 태블릿  */
 @media (max-width : 1024px) {
     .resoft_service{
-        background: #F2F6FC 0% 0% no-repeat
+        background: #F2F6FC 0% 0% no-repeat;
+        margin-bottom: 50pxgit;
     }
     .resoft_service .ser_wrap{
         display: flex;
@@ -257,6 +258,23 @@
         margin:0 auto ; 
     }
 }
+
+@media (max-width : 768px){
+    .resoft_service{
+        background: #F2F6FC 0% 0% no-repeat
+    }
+    .serTit{
+        margin: 0 auto;
+    }
+    .resoft_service .ser_wrap{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        max-width: 704px;
+        margin:0 auto ; 
+    }
+}
+
 /* resoft - Reference */
 
 .resoft_reference .RefTit_wrap {
@@ -386,13 +404,18 @@
 }
 /* 모바일 */
 @media (max-width : 768px) {
-    .Ref_items_wrap{
+    .resoft_reference{
         max-width: 704px;
         margin:  0 auto;
+    }
+    .Ref_items_wrap{
         display: flex;
         flex-direction: column;
     }
-    
+    .Ref_img_wrap{
+        display: flex;
+        justify-content: space-between;
+    }
 }
 /* 태블릿  */
 @media (max-width : 1024px) {

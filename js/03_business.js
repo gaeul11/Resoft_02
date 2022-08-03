@@ -1,45 +1,47 @@
-/*ecoce 부분에 스크롤을 내리면 ecoce파트가 화면에서 나타남.*/
-$(document).ready(function(){
-    /*윈도우 스크롤*/
-    $(window).scroll(function(){
-        /*에코스가 나타나게 하는데, 필요한 계산식*/
-        $('#ecoce').each(function(i){
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();/*오브젝트의 위치*/
-            var bottom_of_window = $(window).scrollTop() + $(window).height();/*윈도우창의 스크롤과 높이*/
-            /*윈도우 창 밑부분이 오브젝트 바닥보다 높으면 opacity가 1로 바뀐다.*/
-            if(bottom_of_window > bottom_of_object/1){
-                $(this).animate({'opacity':'1'},500);
-            }
-        });
-    });
-});
-/*moado 부분에 스크롤을 내리면 moado파트가 화면에서 나타남*/
-$(document).ready(function(){
-    /*윈도우 스크롤*/
-    $(window).scroll(function(){
-        /*모아두가 나타나게 하는데, 필요한 계산식*/
-        $('#moado').each(function(){
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();/*오브젝트의 위치*/
-            var bottom_of_window = $(window).scrollTop() + $(window).height();/*윈도우창의 스크롤과 높이*/
-            /*윈도우 창 밑부분이 오브젝트 바닥보다 높으면 opacity가 1로 바뀐다.*/
-            if(bottom_of_window > bottom_of_object/1){
-                $(this).animate({'opacity':'1'},600);
-            }
-        });
-    });
-});
-/*etc 부분에 스크롤을 내리면 etc 파트가 화면에서 나타남.*/
-$(document).ready(function(){
-    /*윈도우 스크롤*/
-    $(window).scroll(function(){
-        /*2*/
-        $('#etc').each(function(i){
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();/*오브젝트의 위치*/
-            var bottom_of_window = $(window).scrollTop() + $(window).height();/*윈도우창의 스크롤과 높이*/
-            /*윈도우 창 밑부분이 오브젝트 바닥보다 높으면 opacity가 1로 바뀐다.*/
-            if(bottom_of_window > bottom_of_object/1){
-                $(this).animate({'opacity':'1'},700);
-            }
-        });
-    });
+$(function(){
+  $('.slider-div').slick({
+      slide: 'div',		//슬라이드 되어야 할 태그 ex) div, li 
+      infinite : true, 	//무한 반복 옵션
+
+      slidesToShow : 5,		// 한 화면에 보여질 컨텐츠 개수
+      slidesToScroll : 1,		//스크롤 한번에 움직일 컨텐츠 개수
+      speed : 500,	 // 다음 버튼 누르고 다음 화면 뜨는데까지 걸리는 시간(ms)
+      //arrows : true, 		// 옆으로 이동하는 화살표 표시 여부
+      //dots : true, 		// 스크롤바 아래 점으로 페이지네이션 여부
+      autoplay : true,			// 자동 스크롤 사용 여부
+      autoplaySpeed : 1400, 		// 자동 스크롤 시 다음으로 넘어가는데 걸리는 시간 (ms)
+      pauseOnHover : true,		// 슬라이드 이동	시 마우스 호버하면 슬라이더 멈추게 설정
+      vertical : false,		// 세로 방향 슬라이드 옵션
+      //prevArrow : "<button type='button' class='slick-prev'>Previous</button>",		// 이전 화살표 모양 설정
+      //nextArrow : "<button type='button' class='slick-next'>Next</button>",		// 다음 화살표 모양 설정
+      //dotsClass : "slick-dots", 	//아래 나오는 페이지네이션(점) css class 지정
+      draggable : true, 	//드래그 가능 여부 
+      
+      responsive: [ // 반응형 웹 구현 옵션
+                  // breakpoint : 적용할 화면 크기 px
+          {  
+          breakpoint: 1527, 
+          settings: {
+              //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+              slidesToShow:4
+          } 
+          },
+          {  
+              breakpoint: 1080, 
+              settings: {
+                  //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                  slidesToShow:3
+              } 
+          },
+          { 
+              breakpoint: 824, 
+              settings: {	
+                  //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                  slidesToShow:2
+              } 
+          }
+         
+      ]
+
+  });
 });

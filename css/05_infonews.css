@@ -3,7 +3,8 @@
     display: grid; grid-template-columns: 20% 80%;
 }
 .InfoNews_lists .InfoNews_turn{
-    display: flex; justify-content: flex-start;
+    display: flex; 
+    /* justify-content: flex-start; */
 }
 
 /* circle - 사이즈 지정 */
@@ -71,7 +72,8 @@
     margin-top: 30px;
 }
 .InfoNews_lists .pre_next_btn .btn_box{
-    display: flex; justify-content: flex-start;
+    display: flex; 
+    /* justify-content: flex-start; */
 }
 .InfoNews_lists .pre_next_btn .btn_icon{
     border: 1px solid var(--black-color-1E1E1E);
@@ -87,4 +89,85 @@
      margin-left: 30px; line-height: 42px;
      font-size: 16px; letter-spacing: 0.8;
      font-weight: bold;
+}
+
+/* 미디어 쿼리 */
+@media (max-width:1024px){
+    .info {
+        max-width: 1024px;
+        /* max-width: 704px; */
+        margin: 0 auto;
+    }
+
+    .InfoNews_wrap .InfoNews_lists{
+        /* display: flex;
+        flex-direction: column; */
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 20px;
+    }
+    .InfoNews_lists>a{
+        text-align: end;
+    }
+    /* 리소프트소식*/
+    .InfoNews_title{
+        justify-content:center; 
+        width: 100%;
+        /* grid-column: InfoNews_title / span InfoNews_list; */
+    }
+    /* 목록으로 */
+    .InfoNews_turn{        
+        width: 100%;
+        justify-content:right
+
+    }
+    /* 제목 */
+    .News_headline{
+        display: flex;
+        margin: 0 auto;
+        max-width: 100%;
+        width: 100%;
+    }
+    /* 사진 */
+    .News_con_img{
+        display: flex;
+        margin: 0 auto;
+        max-width: 100%;
+        width: 100%;
+    }
+    /* 내용 */
+    .News_con_text{
+        display: flex;
+        margin: 0 auto;
+        max-width: 100%;
+        width: 100%;
+    }    
+}
+
+
+@media (max-width:768px){
+    .info {
+        max-width: 768px;
+    }
+    .info_news {
+        width: 768px;
+    }
+    .InfoNews_list {
+        width: 100%;
+    }
+    .News_headline{
+        width: 100%;
+    }
+    .News_con {
+        width: 100%;
+    }
+    .pre_next_btn:first-child {
+        margin-top: 0px;
+    }
+    .News_con_img {
+        width: 100%;
+    }
+    .News_con_img a:hover img{
+        width: 100%;
+    }
 }

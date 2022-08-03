@@ -80,7 +80,6 @@ header #nav_gnb nav > ul ul a {
 
 
 header #nav_gnb nav > ul ul a:hover :after {
-    /* left: 0;  */
     width: 100%;
 }
 
@@ -108,7 +107,6 @@ header >a {
     top: 30px;
     width: 50px;
     z-index: 100;
-    /* margin-left: 20%; */
 }
 
 header .menubar:hover  nav + div{
@@ -133,34 +131,29 @@ header .visual .slide img{
 
 }
 
-.slide button::before {
-    font-family:"xeicon";
-    display:block;
-    color:#fff;
-    font-size:0;
-}
-
-.btn_1{
-    top: 771px;
-    left: 321px;
-}
-
-.slide button.slick-prev {
-    top: 780px;
-    left: 240px;
-    width: 60px;
+.startstop{
+    width: 20px;
     height: 40px;
-    background:transparent url(../img/00.right.svg) 0% 0% no-repeat padding-box;
-    z-index: 10;
+    display: flex;
+	justify-content: center;
 }
 
-.slide button.slick-next{
-    top: 780px;
-    left: 358px;
-    width: 60px;
-    height: 40px;
-    background:transparent url(../img/00.left.svg) 0% 0% no-repeat padding-box;
+.btn_1 {
+    gap: 3.3%;
+    left: 12.4%;
+    padding-top: 100px;
+    background: transparent;    
+    display: flex;
+}
+.slick-arrow{
+    background: transparent;
+}
 
+.start{
+    background: transparent;
+}
+.stop{
+    background: transparent;
 }
 
 
@@ -207,27 +200,60 @@ header .visual .slide img{
     -webkit-backdrop-filter: blur(0px);
     filter: brightness(72%);
 }
-
-.header .visual .btn_1 .start{
-    position: absolute;
-    z-index: 1;
-    border: none;
-    top: 771px;
-    left: 321px;
-    width: 18px;
-    height: 21px;
-    background: transparent;
+.btn_1 .start{
     display: none;
+}
+.btn_1>button{
     cursor: pointer;
 }
-.header .visual .btn_1 .stop{
-    position: absolute;
-    z-index: 1;
-    border: none;
-    top: 771px;
-    left: 321px;
-    width: 15px;
-    height: 21px;
-    background: transparent;
+.btn_1>span>button{
     cursor: pointer;
 }
+
+/* nav 상단고정 */
+
+.header #nav_gnb{
+    position: fixed;
+    z-index: 100;
+}
+
+.header>a>img{
+    position: fixed;
+    z-index: 101;
+}
+
+.header .white_logo{
+    position: fixed;
+    z-index: 100;
+}
+
+/* nav 내렸을떄 css */
+
+header.active #nav_gnb{
+    position: fixed;
+    border-bottom: 1px solid #000000;
+    background-color: #ffffff;
+    z-index: 100;
+}
+header.active .white_logo{
+    filter: brightness(1);
+    z-index: 101;
+}
+
+header.active #nav_gnb nav > ul > li > a {
+    color: #000000;
+}
+/* header.active #nav_gnb nav > ul ul a {
+    font-size: 20px;
+    color: #000000;
+} */
+header .menubar{
+    filter: brightness();
+}
+header.active .menubar{
+    filter: brightness(0);
+    position: fixed;
+} 
+
+
+

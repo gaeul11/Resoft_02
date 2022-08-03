@@ -1,6 +1,6 @@
 .container{
-    margin:0 auto;
-    max-width:100%;
+    width: 100%;
+    height: 100%;
 }
 .main_title{
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 40px/58px var(--unnamed-font-family-noto-sans-kr);
@@ -8,16 +8,22 @@
     font: normal normal bold 40px/58px Noto Sans KR;
     letter-spacing: 0px;
     color: #1E1E1E;
-    margin-left:11%;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 58px;
+    text-align: left;
 }
 .sub_title{
     font: var(--unnamed-font-style-normal) normal medium 18px/26px var(--unnamed-font-family-noto-sans-kr);
     letter-spacing: var(--unnamed-character-spacing-0);
-    text-align: left;
     font: normal normal medium 18px/26px Noto Sans KR;
     letter-spacing: 0px;
     color: #C8C8C8;
-    margin-left:11%;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 26px;
+    text-align: left;
+    color: #C8C8C8;
 }
 .sub-logo{
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 22px/32px var(--unnamed-font-family-noto-sans-kr);
@@ -41,202 +47,221 @@
     word-break:normal;
 }
 #ecoce {
-    margin-bottom:100px;
-    max-width:100%;
-    width:auto;
-    margin-bottom:387px;
-    opacity:0;
+    max-width: 1440px;
+    width: 75%;
+    height: 883px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
 }
-.ecoce-img1{
-    background-image:url("../img/에코스\ \(1\).png");
-    background-repeat:no-repeat;
-    float:left;
-    margin: auto 0;
-    object-fit:contain;
-    z-index:-1;
+.ecoce-left{
+    width: 50%;
+    margin: 0;
+    box-sizing: border-box;
 }
-.ecoce-img1 img{
-    margin-top:95px;
-    margin-left:229px;
+.ecoce-left-top .main_title{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 58px;
+    text-align: left;
+}
+.ecoce-left-top .sub_title{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 26px;
+    text-align: left;
+    color: #C8C8C8;
+}
+.ecoce-left-bottom{
+    margin-top: 54px;
+    background: url("../img/에코스\ \(1\).png") no-repeat;
+    background-size: 100%;
+}
+.ecoce-left-bottom img{
+    width: 100%;
+    padding: 8% 0 0 35%;
 }
 .ecoce-right {
-    text-align:right;
+    width: 50%;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    flex-direction: column;
 }
 .ecoce-right .sub-logo{
     text-align:right;
-    
+    width:auto;
 }
-.ecoce-store{
-    list-style:none;
-    margin:0 auto;
-    float:right;
-    margin-top:140px;
+.ecoce-right .ecoce-store{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15%;
 }
-
-.ecoce-store li{
-    float: left;
-    background: #1E1E1E 0% 0% no-repeat padding-box;
-    border-radius: 69px;
-    opacity: 1;
-    margin-left:30px;
+.ecoce-store .app-store{
+    width: 188px;
+    height: 57px;
+    background-color: #1e1e1e;
+    border-radius: 30px;
+    margin-left: 6%;
+}
+.ecoce-store a{
+    width: 188px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
 }
 .ecoce-store img{
-    float:left;
-    padding-top:11px;
-    padding-left:20px;
-    padding-right:15px;
-    padding-bottom:11px;
+    word-break: keep-all;
+    padding: 11px 12px 11px 20px;
 }
-.ecoce-store p{
-    text-decoration:none;
-    color:#fff;
-    padding-top:10px;
-    padding-bottom:9px;
-    padding-left:12px;
-    text-align:left;
+.ecoce-store span{
+    display: inline-block;
+    width: 93px;
+    height: 42px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 22px;
+    color: #fff;
+    word-break: keep-all;
+}
+.moado-back{
+    width: 100%;
+    height: 820px;
+    background: linear-gradient(180deg, rgba(255,255,255,1), rgba(255,0,0,0) 100%), linear-gradient(30deg, #339be14c, rgba(0,255,0,0) 30.71%), linear-gradient(300deg, #e4cde8, rgba(0,0,255,0) 70.71%);
+    margin-top: 80px;
 }
 #moado{
-    max-width:100%;
-    margin:0 auto;
-    max-height:820px;
-    width:auto;
-    opacity: 0;
-}
-
-.moado-back{
-    background: linear-gradient(171deg, rgba(255,255,255,1) 44%, rgba(228,205,232,1) 100%);
-    margin:0 auto;
-    
-}
-.moado-back-2{
-    background: linear-gradient(217deg, rgba(255,255,255,0) 90%, rgba(51,155,225,0.5) 95%);
-}
-.moado-middle{
-    background-image:url("../img/main-visual.png");
-    margin:0 auto;
-    background-repeat:no-repeat;
-    width:680px;
-    height:686px;
-    background-position:center bottom;
-    margin-left:36%;
+    max-width: 1440px;
+    width: 75vw;
+    height: 820px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    position: relative;
 }
 .moado-left{
-    float:left;
-    margin-left:11%;
-    max-width : 30%;
+    width: 50%;
+    margin: 0;
+    box-sizing: border-box;
 }
-
+.moado-left-bottom img{
+    width: 115%;
+    padding: 8% 0 22% 0;
+}
+.moado-middle{
+    width: 46%;
+    position: absolute;
+    left: 35%;
+    bottom: 0;
+}
 .moado-right{
-    float:right;
-    margin-right:11%;
+    width: 50%;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    flex-direction: column;
 }
-.site-button {
-    border-radius: 69px;
-    background: #1E1E1E padding-box;
-    padding: 19px 30px;
-    margin-top:140px;
-    float:right;
+.moado-right p:nth-child(1){
+    font-size: 30px;
+     font-weight: bold;
+     line-height: 44px;
+    text-align: right;
+    margin-bottom: 18%;
+}
+.moado-logo{
+    width: 62%;
+    margin-bottom: 18%;
+}
+.moado-right .site-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .moado-right .site-button a{
-    font: var(--unnamed-font-style-normal) normal medium 14px/22px var(--unnamed-font-family-noto-sans-kr);
-    letter-spacing: var(--unnamed-character-spacing-0);
-    text-align: left;
-    font: normal normal medium 14px/22px Noto Sans KR;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
+    width: 153px;
+    height: 57px;
+    border-radius: 69px;
+    background-color: #1e1e1e;
+    text-decoration: none;
+    color: #fff;
 }
-
+.moado-right .site-button span{
+    display: inline-block;
+    width: 153px;
+    height: 57px;
+    font-size: 14px; font-weight:normal; line-height: 57px;
+    text-align: center;
+}
 #etc{
-    align-items:center;
-    margin-top:50px;
-    background-color:#ffffff;
-    opacity: 0;
-}
-
-.etc-box{
+    margin:0 auto;
     width: auto;
-    height: 484px;
-    margin: 0 auto;
-
+    height: auto;
+    margin-bottom:200px;
+    margin-top:100px;
 }
-.etc-chart{
-    margin-top:10px;
-    align-items: center;
+#etc .main_title{
+    margin-left:12%;
+}
+#etc .sub_title{
+    margin-left:12%;
+}
+.etc_slider {
+    max-width: 100%;
+    clear: both;
+    margin:0 auto;
     margin-left:10%;
     margin-right:10%;
-    justify-content: space-around;
-    display:flex;
-}
-
-.etc-chart img{
-    box-shadow:1px 1px 5px 1px black;
-    margin-bottom:200px;
-    width:228px;
-    height:350px;
-}
+    
+  }
+  .etc_slider .slide_box{
+    overflow: hidden;
+  } 
+  .slide_box .slide_list {
+    background-color: #fff;
+    box-sizing: border-box;
+  }
+  .slide_box .slide_list .slide_list_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 5% 37.5px;
+    box-sizing: border-box;
+  }
+  .slide_box .slide_list_item:hover img{
+    transform: scale(1.2);
+  }
+  .slide_box img {
+    width: 100%;
+    transform: scale(1);
+    transition: transform .3s;
+    object-fit: contain;
+    box-shadow:1px 1px 5px;
+  }
 
 /*화면조정*/
 @media screen and (max-width:1600px){
-    .ecoce-img1{
-        width: 40%;
-        height: 40%;
-        background-size: contain;
-        opacity: .5;
-    }
-    .ecoce-img1 img{
-        width: 70%;
-        height: 80%;
-        background-size: contain;
-    }
 
-    .moado-left{
-        max-width:30%;
-        opacity: .5;
-    }
-    .etc-chart img{
-        height:80%;
-        width:80%;
-    }
 }
 
 /*1280px(테블릿) 기준*/
 
 @media screen and (max-width:1207px){
-    .ecoce-img1{
-        display:none;
-    }
-    .moado-left{
-        display:none;
-    }
+
 }
 /*768px(모바일) 기준*/
 @media screen and (max-width:768px){
-    .ecoce-right img{
-        max-width:90%;
-    }
-    .ecoce-store li{
-        max-width:90%;
-        margin-left:10px
-    }
-    .ecoce-store img{
-        align-items:center;
-        max-width:40%;
-    }
-    .moado-left{
-        display:none;
-    }
-    .moado-middle{
-        margin:0 auto;
-    }
-    .moado-right img{
-        max-width:90%;
-        float:right;
-    }
-    .site-button{
-        text-align:center;
-    }
-    .site-button{
-        justify-content:center;
-    }
+
 }

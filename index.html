@@ -23,8 +23,7 @@
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./css/00_slick.css">
 </head> 
 <body>
     <header class="header">
@@ -37,10 +36,10 @@
                 <li><a href="sub02.html">회사소개</a>
                     <ul class="nav_menu close">
                         <li><a href="sub02.html#intro">REsoft소개</a></li>
-                            <li><a href="sub02.html#his_timeline">연혁</a></li>
-                            <li><a href="sub02.html#organi">조직도</a></li>
-                            <li><a href="sub02.html#certifi">특허&인증</a></li>
-                            <li><a href="sub02.html#kakaomap">오시는 길</a></li>
+                        <li><a href="sub02.html#his_timeline">연혁</a></li>
+                        <li><a href="sub02.html#organi">조직도</a></li>
+                        <li><a href="sub02.html#certifi">특허&인증</a></li>
+                        <li><a href="sub02.html#kakaomap">오시는 길</a></li>
                     </ul>
                 </li>
                 <li><a href="sub03.html">사업현황</a>
@@ -69,6 +68,15 @@
                 <p class="header_title">Evolution <br>With New Software</p>
                 <p class="header_sub">Mobil APP(Android/iOS) Development, AI Bigdata Analysis, MetaVerse, <br>
                     Responsive WEBsite, Brand Design Launch, ICT Consulting</p>
+                    <div class="btn_1">
+                        <button class="slick-prev"><img src="./img/00.right.svg"></button>
+                        <span class="startstop">
+                            <button class="start" type="submit"><img src="./img/00.pause.svg" ></button>
+                            <button class="stop" type="submit"><img src="./img/00.play.svg" ></button>
+                        </span>
+                        <button class="slick-next"><img src="./img/00.left.svg"></button>
+                        
+                    </div> 
             </div>
         </div>
         <div class="visual">
@@ -77,13 +85,19 @@
                 <div><img src="./img/04.slide2.png" alt=""></div>
                 <div><img src="./img/04.slide3.png" alt=""></div>
             </div>
-            <div class="btn_1">
-                <button class="start" type="submit"><img src="./img/00.pause.svg" ></button>
-                <button class="stop" type="submit"><img src="./img/00.play.svg" ></button>
-            </div>
+            
         </div>
     </header>
     <!-- header js -->
+    <script>
+            $(window).on('scroll',function(){
+                if($(window).scrollTop()){
+                    $('.header').addClass('active');
+                }else{
+                    $('.header').removeClass('active');
+                }
+            });
+    </script>
     <script src="./js/00_header.js"></script>
     <script src="./js/00_header2.js"></script>
     <!-- heder end -->
@@ -101,7 +115,7 @@
                             <div class="N_card_Items">
                                 <img src="./img/new_01.png" alt="" srcset="">
                                 <p class="N_card_text">
-                                    Lorem ipsum dolor sit amet <br/>
+                                    Lorem ipsum dolor sit amet 
                                     consectetur adipisicing elit. 
                                     Sunt architecto!
                                 </p>
@@ -115,7 +129,7 @@
                             <div class="N_card_Items">
                                 <img src="./img/new_01.png" alt="" srcset="">
                                 <p class="N_card_text">
-                                    Lorem ipsum dolor sit amet <br/>
+                                    Lorem ipsum dolor sit amet 
                                     consectetur adipisicing elit. 
                                     Sunt architecto
                                 </p>
@@ -129,7 +143,7 @@
                             <div class="N_card_Items">
                                 <img src="./img/new_01.png" alt="" srcset="">
                                 <p class="N_card_text">
-                                    Lorem ipsum dolor sit amet <br/>
+                                    Lorem ipsum dolor sit amet
                                     consectetur adipisicing elit. 
                                     Sunt architecto
                                 </p>
@@ -143,7 +157,7 @@
                             <div class="N_card_Items">
                                 <img src="./img/new_01.png" alt="" srcset="">
                                 <p class="N_card_text">
-                                    Lorem ipsum dolor sit amet <br/>
+                                    Lorem ipsum dolor sit amet
                                     consectetur adipisicing elit. 
                                     Sunt architecto
                                 </p>
@@ -158,21 +172,25 @@
         <section class="resoft_proj">
             <div class="proj_wrap st-wrap">
                 <div class="proj_cardItems">
-                    <div class="card_item">
-                        <img src="./img/proj_img01.png" alt="" class="img01 radius30">
-                        <img src="./img/proj_bg_img01.svg" alt="" class="bg_img" id="proj_bg_img01" >
-                        <div class="card_text radius30">
-                            <p class="card_tit">에코스 ECOCE(ECO-Clean Earth)</p>
-                            <p class="card_sub">
-                                국내최초<br/>
-                                탄소중립 실천인증 플랫폼
-                            </p>
+                    <div class="card_item radius30" id="proj_bg01">
+                        
+                        <div class="card_text">
+                            <img src="./img/proj_img01.png" alt="">
+                            <div>
+                                <p class="card_tit">에코스 ECOCE(ECO-Clean Earth)</p>
+                                <p class="card_sub">
+                                    국내최초<br/>
+                                    탄소중립 실천인증 플랫폼
+                                </p>
+                            </div>
                         </div>
+
                     </div>
-                    <div class="card_item">
-                        <img src="./img/proj_img02.png" alt="" class="img01 radius30" id="proj_img02">
-                        <img src="./img/proj_bg_img02.svg" alt="" class="bg_img radius30">
-                        <div class="card_text radius30">
+                    
+                    <div class="card_item radius30" id="proj_bg02">
+                        
+                        <div class="card_text">
+                            <img src="./img/proj_img02.png" alt="">
                             <div>
                                 <p class="card_tit">모아두(moaDo)</p>
                                 <p class="card_sub">
@@ -180,6 +198,8 @@
                                 </p>
                             </div>
                         </div>
+
+                    
                     </div>
                 </div>
                 <div class="proj_Tit">
