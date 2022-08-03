@@ -47,6 +47,8 @@
     word-break:normal;
 }
 #ecoce {
+    width: auto;
+    height: auto;
     max-width: 1440px;
     width: 75%;
     height: 883px;
@@ -253,15 +255,39 @@
 
 /*화면조정*/
 @media screen and (max-width:1600px){
-
+    #ecoce{
+        height:95%;
+    }
+    #moado{
+        height:95%;
+    }
+    .moado-back{
+        height:95%;
+    }
 }
 
 /*1280px(테블릿) 기준*/
 
 @media screen and (max-width:1207px){
+    header #nav_gnb {
+        visibility:collapse;
+    }
+}
+@media screen and (max-width:1075px){
+
+}
+@media screen and (max-width:930px){
 
 }
 /*768px(모바일) 기준*/
 @media screen and (max-width:768px){
+    .moado-right .site-button {
+        z-index:2;
+    }
+    .ecoce-right >img{
+        width :25em;
+    }
+}
+@media screen and (max-width:600px){
 
 }

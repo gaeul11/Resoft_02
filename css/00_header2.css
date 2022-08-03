@@ -22,8 +22,9 @@ body{
 .logo img{
     width: 133px;
     height: 30px;
-    top: 3%;
-    left: 20%;
+    top: 25px;
+    left: 25px;
+    margin-left:18%;
 }
 
 header .logo {
@@ -97,7 +98,7 @@ header #nav_gnb nav > ul > li > a:after {
     z-index: 99999;
 }
 #main_nav a:hover{
-    color: #184B9F;
+    color: red;
     cursor: pointer;
 }
 header #nav_gnb nav > ul > li:hover > a:after{
@@ -162,4 +163,9 @@ header #nav_gnb nav > ul ul a:hover :after {
 }
 .more{
     opacity: 1;
+}
+@media screen and (max-width :768px){
+    #main_nav li a{
+        visibility:collapse;
+    }
 }
