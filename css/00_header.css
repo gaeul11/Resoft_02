@@ -22,7 +22,7 @@ header #nav_gnb nav > ul > li > a {
     /* left: -68%; */
     display: block;
     position: relative;
-    width: 160px;
+    width: 140px;
     height: 70px;
     font-size: 20px;
     color: white;
@@ -97,7 +97,7 @@ header #nav_gnb nav > ul ul {
     position: absolute;
     width: 133px;
     height: 30px;
-    left: -103%;
+    left: -300%;
 }
 
 header >a {
@@ -255,5 +255,9 @@ header.active .menubar{
     position: fixed;
 } 
 
-
-
+/* @media screen and (max-width:1070px){
+    #nav_gnb nav li{
+        visibility:collapse;
+    }
+}
+ */
