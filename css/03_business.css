@@ -32,7 +32,7 @@
     color: #1E1E1E;
     opacity: 1;
     margin:0%;
-    margin-bottom:140px;
+    margin-bottom:20%;
     word-break:normal;
 }
 #ecoce {
@@ -41,7 +41,6 @@
     flex-direction: row;
     align-items: center;
     flex-wrap: nowrap;
-    margin-bottom:100px;
 }
 
 .ecoce-left{
@@ -71,6 +70,7 @@
     align-items: flex-end;
     flex-direction: column;
 }
+
 .ecoce-right .sub-logo{
     text-align:right;
     width:auto;
@@ -230,6 +230,11 @@
     }
     .moado-back{
         height:100%;
+    }
+}
+@media screen and (max-width:1028px){
+    .moado-title{
+        margin-top:100px;
     }
 }
 
