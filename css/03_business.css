@@ -88,7 +88,7 @@
 .ecoce-right .ecoce-store{
     display: flex;
     justify-content: flex-end;
-    margin-top: 15%;
+    margin-top: 140px;
 }
 .ecoce-store .app-store{
     width: 188px;
@@ -257,8 +257,14 @@
         margin-top:50px;
     }
     }
-    .moado-back{
+    .moado-title{
+        margin-top:100px;
+    }
+    #moado{
         margin-top:50px;
+    }
+    #etc{
+        margin-top:100px;
     }
     .etc_slider{
         margin-bottom:200px;
