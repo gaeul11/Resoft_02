@@ -3,30 +3,22 @@
     height: 100%;
 }
 
+
 .main_title{
-    letter-spacing: var(--unnamed-character-spacing-0);
     letter-spacing: 0px;
     color: #1E1E1E;
-    font-size: 40px;
-    font-weight: bold;
     line-height: 58px;
     text-align: left;
 }
 .sub_title{
-    font: var(--unnamed-font-style-normal) normal medium 18px/26px var(--unnamed-font-family-noto-sans-kr);
-    letter-spacing: var(--unnamed-character-spacing-0);
-    font: normal normal medium 18px/26px Noto Sans KR;
     letter-spacing: 0px;
     color: #C8C8C8;
     font-size: 18px;
     font-weight: bold;
     line-height: 26px;
     text-align: left;
-    color: #C8C8C8;
 }
 .sub-logo{
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 22px/32px var(--unnamed-font-family-noto-sans-kr);
-    letter-spacing: var(--unnamed-character-spacing-0);
     font: normal normal bold 22px/32px Noto Sans KR;
     letter-spacing: 0px;
     color: #1E1E1E;
@@ -36,8 +28,6 @@
 .ex_text{
     text-align:right;
     margin-bottom:10%;
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-30)/var(--unnamed-line-spacing-44) var(--unnamed-font-family-noto-sans-kr);
-    letter-spacing: var(--unnamed-character-spacing-0);
     font: normal bold 30px/44px Noto Sans KR;
     color: #1E1E1E;
     opacity: 1;
@@ -126,16 +116,13 @@
     margin-bottom:100px;
 }
 #moado{
+    margin-top:50px;
     height: 820px;
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: nowrap;
     position: relative;
-}
-.moado-title{
-    max-width: 1440px;
-    margin: 0 auto;
 }
 .moado-left{
     width: 50%;
@@ -144,12 +131,13 @@
 }
 .moado-left-bottom img{
     width: 115%;
-    padding: 8% 0 22% 0;
+    padding: 0% 0 22% 0;
 }
 .moado-middle{
-    width: 46%;
+    width: 44%;
+    height: 67%;
     position: absolute;
-    left: 35%;
+    left: 31%;
     bottom:0%;
 }
 .moado-right{
@@ -253,10 +241,7 @@
     #moado, #etc, #ecoce, .moado-title, .ecoce-title{
         max-width:708px; margin:0 auto;
     }
-    .ecoce-left-bottom{
-        margin-top:50px;
-    }
-    }
+    
     .moado-title{
         margin-top:100px;
     }
@@ -269,3 +254,4 @@
     .etc_slider{
         margin-bottom:200px;
     }
+}
