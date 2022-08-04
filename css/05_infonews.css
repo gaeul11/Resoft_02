@@ -112,18 +112,18 @@
     /* 리소프트소식*/
     .InfoNews_title{
         justify-content:center; 
-        width: 100%;
+        width: 50%;
         /* grid-column: InfoNews_title / span InfoNews_list; */
     }
     /* 목록으로 */
     .InfoNews_turn{        
-        width: 100%;
+        width: 97%;
         justify-content:right
 
     }
     /* 제목 */
     .News_headline{
-        display: flex;
+        display: auto;
         margin: 0 auto;
         max-width: 100%;
         width: 100%;
