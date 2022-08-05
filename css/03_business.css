@@ -2,32 +2,23 @@
     width: 100%;
     height: 100%;
 }
+
+
 .main_title{
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 40px/58px var(--unnamed-font-family-noto-sans-kr);
-    letter-spacing: var(--unnamed-character-spacing-0);
-    font: normal normal bold 40px/58px Noto Sans KR;
     letter-spacing: 0px;
     color: #1E1E1E;
-    font-size: 40px;
-    font-weight: bold;
     line-height: 58px;
     text-align: left;
 }
 .sub_title{
-    font: var(--unnamed-font-style-normal) normal medium 18px/26px var(--unnamed-font-family-noto-sans-kr);
-    letter-spacing: var(--unnamed-character-spacing-0);
-    font: normal normal medium 18px/26px Noto Sans KR;
     letter-spacing: 0px;
     color: #C8C8C8;
     font-size: 18px;
     font-weight: bold;
     line-height: 26px;
     text-align: left;
-    color: #C8C8C8;
 }
 .sub-logo{
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 22px/32px var(--unnamed-font-family-noto-sans-kr);
-    letter-spacing: var(--unnamed-character-spacing-0);
     font: normal normal bold 22px/32px Noto Sans KR;
     letter-spacing: 0px;
     color: #1E1E1E;
@@ -37,45 +28,29 @@
 .ex_text{
     text-align:right;
     margin-bottom:10%;
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-30)/var(--unnamed-line-spacing-44) var(--unnamed-font-family-noto-sans-kr);
-    letter-spacing: var(--unnamed-character-spacing-0);
     font: normal bold 30px/44px Noto Sans KR;
     color: #1E1E1E;
     opacity: 1;
     margin:0%;
-    margin-bottom:140px;
+    margin-bottom:20%;
     word-break:normal;
 }
 #ecoce {
-    width: auto;
-    height: auto;
-    max-width: 1440px;
-    width: 75%;
     height: 883px;
-    margin: 0 auto;
-    margin-top: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: nowrap;
 }
+
 .ecoce-left{
     width: 50%;
     margin: 0;
     box-sizing: border-box;
 }
-.ecoce-left-top .main_title{
-    font-size: 40px;
-    font-weight: bold;
-    line-height: 58px;
-    text-align: left;
-}
-.ecoce-left-top .sub_title{
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 26px;
-    text-align: left;
-    color: #C8C8C8;
+.ecoce-left-title{
+    max-width: 1440px;
+    margin: 0 auto;
 }
 .ecoce-left-bottom{
     margin-top: 54px;
@@ -95,14 +70,16 @@
     align-items: flex-end;
     flex-direction: column;
 }
+
 .ecoce-right .sub-logo{
     text-align:right;
+    margin-top:32px;
     width:auto;
 }
 .ecoce-right .ecoce-store{
     display: flex;
     justify-content: flex-end;
-    margin-top: 15%;
+    margin-top: 140px;
 }
 .ecoce-store .app-store{
     width: 188px;
@@ -137,13 +114,11 @@
     width: 100%;
     height: 820px;
     background: linear-gradient(180deg, rgba(255,255,255,1), rgba(255,0,0,0) 100%), linear-gradient(30deg, #339be14c, rgba(0,255,0,0) 30.71%), linear-gradient(300deg, #e4cde8, rgba(0,0,255,0) 70.71%);
-    margin-top: 80px;
+    margin-bottom:100px;
 }
 #moado{
-    max-width: 1440px;
-    width: 75vw;
+    margin-top:50px;
     height: 820px;
-    margin: 0 auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -157,13 +132,14 @@
 }
 .moado-left-bottom img{
     width: 115%;
-    padding: 8% 0 22% 0;
+    padding: 0% 0 22% 0;
 }
 .moado-middle{
-    width: 46%;
+    width: 44%;
+    height: 67%;
     position: absolute;
-    left: 35%;
-    bottom: 0;
+    left: 31%;
+    bottom:0%;
 }
 .moado-right{
     width: 50%;
@@ -202,29 +178,21 @@
     display: inline-block;
     width: 153px;
     height: 57px;
-    font-size: 14px; font-weight:normal; line-height: 57px;
+    font-size: 14px;
+    font-weight:normal;
+    line-height: 57px;
     text-align: center;
 }
 #etc{
-    margin:0 auto;
     width: auto;
     height: auto;
     margin-bottom:200px;
-    margin-top:100px;
 }
-#etc .main_title{
-    margin-left:12%;
-}
-#etc .sub_title{
-    margin-left:12%;
-}
+
 .etc_slider {
     max-width: 100%;
     clear: both;
     margin:0 auto;
-    margin-left:10%;
-    margin-right:10%;
-    
   }
   .etc_slider .slide_box{
     overflow: hidden;
@@ -254,38 +222,42 @@
   }
 
 /*화면조정*/
-@media screen and (max-width:1600px){
+@media screen and (max-width:4000px){
     #ecoce{
-        height:95%;
+        height:100%;
     }
     #moado{
-        height:95%;
+        height:100%;
     }
     .moado-back{
-        height:95%;
+        height:100%;
+    }
+}
+@media screen and (max-width:1028px){
+    .moado-title{
+        margin-top:100px;
     }
 }
 
-/*1280px(테블릿) 기준*/
-
-@media screen and (max-width:1207px){
-
-}
-@media screen and (max-width:1075px){
-
-}
-@media screen and (max-width:930px){
-
-}
 /*768px(모바일) 기준*/
 @media screen and (max-width:768px){
     .moado-right .site-button {
         z-index:2;
     }
-    .ecoce-right >img{
-        width :25em;
+    #moado, #etc, #ecoce, .moado-title, .ecoce-title{
+        max-width:708px; margin:0 auto;
     }
-}
-@media screen and (max-width:600px){
-
+    
+    .moado-title{
+        margin-top:100px;
+    }
+    #moado{
+        margin-top:50px;
+    }
+    #etc{
+        margin-top:100px;
+    }
+    .etc_slider{
+        margin-bottom:200px;
+    }
 }
