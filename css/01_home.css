@@ -30,6 +30,20 @@
     color: #AAAAAA;
 }
 /* resoft - news 반응형  */
+/* 태블릿  */
+@media (max-width : 1024px) {
+    .resoft_news{
+     max-width: 800px;
+     margin: 0 auto;
+    }
+    .NewsCard_List{
+     flex-wrap: wrap;
+     display: grid;
+ }
+     .boder_div{
+     display: none;
+ }
+ }
 /* 모바일 */
 @media (max-width : 768px) {
     .resoft_news{
@@ -41,22 +55,13 @@
         flex-basis: 50%;
         flex-grow: 0.5;
     }
+    .boder_div{
+        display: none;
+    }
 }
-/* 태블릿  */
-@media (max-width : 1024px) {
-   .resoft_news{
-    max-width: 800px;
-    margin: 0 auto;
-   }
-   .NewsCard_List{
-    flex-wrap: wrap;
-    flex-basis: 50%;
-    flex-grow: 0.5;
-}
-}
-
 
 /* project */
+
 /* 프로젝트 - 타이틀 */
 .resoft_proj{
      width: 100%; 
@@ -69,6 +74,7 @@
 .resoft_proj .proj_wrap .proj_Tit{
     text-align: end;
 }
+
 /* 프로젝트 - 카드영역 */
 .resoft_proj .proj_cardItems{
     display: flex; 
@@ -131,7 +137,7 @@
 /* 태블릿  */
 @media (max-width : 1024px) {
     .resoft_proj{
-        margin-bottom: 50px;
+        margin: 100px 0;
     }
     .proj_wrap{
         flex-direction: column-reverse;
@@ -144,6 +150,11 @@
     }
     .proj_cardItems .card_item{
         margin: 30px;
+    }
+   
+    .Tit_text{
+        margin: 0 auto;
+        text-align: center;
     }
 }
 
@@ -164,6 +175,9 @@
     }
     .animaiton_img #lottie01{
         text-align: center;
+    }
+    .Tit_text{
+        text-align: end;
     }
     
 }
@@ -244,6 +258,7 @@
 .txt_back{
     display: none;
 }
+
 /* 태블릿  */
 @media (max-width : 1024px) {
     .resoft_service{
@@ -256,6 +271,10 @@
         flex-direction: column;
         max-width: 800px;
         margin:0 auto ; 
+    }
+    .serTit{
+        text-align: center;
+        margin: 0 auto;
     }
 }
 
@@ -272,6 +291,9 @@
         flex-direction: column;
         max-width: 704px;
         margin:0 auto ; 
+    }
+    .serTit{
+        text-align: end;
     }
 }
 
@@ -419,11 +441,14 @@
 }
 /* 태블릿  */
 @media (max-width : 1024px) {
-    
+    .RefTit_wrap{
+        margin-top: 100px;
+    } 
     .Ref_items_wrap{
         max-width: 800px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
+        margin-bottom: 200px;
     }
 }
