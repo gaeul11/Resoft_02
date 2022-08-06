@@ -625,7 +625,7 @@ li .organi_box {
         width: 120px;
     }
     
-    .button[value="더보기"] {
+    .button[value="더보기"], .button[value="접기"] {
         font: var(--unnamed-font-style-normal) normal medium 20px/29px var(--unnamed-font-family-noto-sans-kr);
         text-align: center;
         font: normal normal medium 20px/29px Noto Sans KR;
