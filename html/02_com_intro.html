@@ -14,6 +14,10 @@
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <!--daum map api-->
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b5738d59a1234aafad1f9ad8f0979df6"></script>
+    <!-- js 더보기/접기 -->
+    <script src="../js/02_certifi_more.js"></script>
+    <!-- header -->
+    <script src="../js/00_header2.js"></script>
     <title>page2</title>
 </head>
 <body>
@@ -285,7 +289,7 @@
 
                     </div>
                         <div class="btn">
-                            <button class="button" onclick="more()"><p>더보기</p></button>
+                            <input id="more_btn" class="button" type="button" value="더보기" onclick="changeText();">                            
                         </div>
                     </div>
 
@@ -343,13 +347,7 @@
                 </div>
                 </div>
             </div>
-    </footer>
-    
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b5738d59a1234aafad1f9ad8f0979df6"></script>
+    </footer>        
     <script src="../js/02_kakao_api.js"></script>
-    <script src="../js/02_certifi_more.js"></script>
-
-    <!-- header -->
-    <script src="../js/00_header2.js"></script>
 </body>
 </html>

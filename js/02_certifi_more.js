@@ -1,56 +1,68 @@
-if(matchMedia("screen and (max-width: 768px)").matches) {
-    $(document).ready(function(){
-                $('.certifi_container>.certifi_grid').hide();
-        $('.certifi_container>.certifi_front').hide();
-        $('.certifi_container>.certifi_grid').slice(0,6).show();
-        $('.certifi_container>.certifi_front').slice(0,6).show();
-    })
-
-    function more(){
-        $('.certifi_container>.certifi_grid').slice(6,9).show();
-        $('.certifi_container>.certifi_front').slice(6,9).show();
+/**
+ * di 더보기 접기 구현
+ * @param {} event 
+ */
+//현재 화면에 보이는 웹 브라우저 페이지 크기
+window.onresize = function(event) {
+    let innerWidth = window.innerWidth;
+    if(innerWidth<768) {
+        fn_screenMax768();
+    } else{
+        fn_screenMin768();
     }
-} else {}
+}
 
-// let btn_click = $(".button").click
-// if(matchMedia("screen and (max-width: 768px)").matches) {
-//     $(document).ready(function(){
-//         if(this.value === '더보기') {
-//             $(".button").click(function(){
-//                 $(".certifi_img_wrap").css({"height":"auto"})
-//                 $(".certifi_container").css({"height":"auto"})
-//                 $(".certifi_container>.certifi_grid").css({"height":"330px"})
-//                 $(".certifi_container>.certifi_front").css({"height":"330px"})
-//                 $('.certifi_container>.certifi_grid').hide();
-//                 $('.certifi_container>.certifi_front').hide();
-//                 $('.certifi_container>.certifi_grid').slice(0,6).show();
-//                 $('.certifi_container>.certifi_front').slice(0,6).show();             
-//             })
-//             this.value='원래대로';
-//         } else {            
-//             $(".certifi_img_wrap").css({"height":"auto"})    
-//             $(".certifi_container").css({"height":"auto"})
-//             $(".btn").css({"margin-top":"30px"})
-//             function more(){
-//                 $('.certifi_container>.certifi_grid').slice(6,9).show();
-//                 $('.certifi_container>.certifi_front').slice(6,9).show();
-//             }
-//         }
-        
-//     });
-// } else {}
 
-let grid_diplay_chk = $('.certifi_container>.certifi_grid').is(':visible');
-console.log('grid_diplay_chk : ',grid_diplay_chk)
-if(matchMedia("screen and (max-width: 768px)").matches) {
-    if(!!grid_diplay_chk) {
-        $(".certifi_img_wrap").css({"height":"auto"})
-        $(".certifi_container").css({"height":"auto"})
-        $(".certifi_container>.certifi_grid").css({"height":"330px"})
-        $(".certifi_container>.certifi_front").css({"height":"330px"})
-    } else if(!grid_diplay_chk) {
-        $(".certifi_img_wrap").css({"height":"auto"})    
-        $(".certifi_container").css({"height":"auto"})
-        $(".btn").css({"margin-top":"30px"})
+/**
+ * load는 돔트리,리소스까지 로드되고 실행
+ * DOMContentLoaded는 돔트리만 로드되고 실행
+ */
+
+//768px 이하 width로 로드되었을때 보여지는 특허&인증 카드갯수
+window.addEventListener('DOMContentLoaded', function(){
+    let innerWidth = window.innerWidth;
+    if(innerWidth<768) {
+        fn_screenMax768();
+    } else{
+        fn_screenMin768();
     }
-} else {}
+});
+
+function fn_screenMin768() {
+    $('.certifi_container>.certifi_grid').show();
+    $('.certifi_container>.certifi_front').show();
+};
+
+function fn_screenMax768() {
+    let btn = document.getElementById('more_btn');
+    btn.value='더보기';
+    $('.certifi_container>.certifi_grid').slice(6,9).hide();
+    $('.certifi_container>.certifi_front').slice(6,9).hide();
+}
+
+function changeText() {
+    let btn = document.getElementById('more_btn');
+    let runData = 1
+    if(btn.value === '더보기') {
+        btn.value = '접기';
+        runData = 0;
+    } else {
+        btn.value = '더보기';
+        runData = 1;
+    }
+    fn_more_less(runData)
+}
+
+function fn_more_less(data) {
+    if(data !== 1) {
+        $(".certifi_img_wrap").css({"height":"auto"});
+        $(".certifi_container").css({"height":"auto"});
+        $(".certifi_container>.certifi_grid").css({"height":"330px"});
+        $(".certifi_container>.certifi_front").css({"height":"330px"});
+        $('.certifi_container>.certifi_grid').slice(6,9).fadeIn(600);
+        $('.certifi_container>.certifi_front').slice(6,9).fadeIn(600);
+    } else {
+        $('.certifi_container>.certifi_grid').slice(6,9).fadeOut(300);
+        $('.certifi_container>.certifi_front').slice(6,9).fadeOut(300);
+    }
+}

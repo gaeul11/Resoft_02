@@ -387,7 +387,7 @@ li .organi_box {
         border-right: 3px solid var(--lightgray-color-C8C8C8);
     }
     .his_line {
-        width: 100%
+        width: 100%;
         border-bottom: 1px solid #dbdbdb;
         top: 140px;
         margin-left: 8.5%;
@@ -625,7 +625,7 @@ li .organi_box {
         width: 120px;
     }
     
-    .button[value="더보기"] {
+    .button[value="더보기"], .button[value="접기"] {
         font: var(--unnamed-font-style-normal) normal medium 20px/29px var(--unnamed-font-family-noto-sans-kr);
         text-align: center;
         font: normal normal medium 20px/29px Noto Sans KR;
