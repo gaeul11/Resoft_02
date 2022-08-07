@@ -30,28 +30,28 @@
 <body>
     <header class="header">
         <a class="white_logo" href="">
-            <img src="../img/00.logo.svg" alt="로고">
+            <img src="./img/00.logo.svg" alt="로고">
         </a>
         <div id="nav_gnb">
         <nav>
             <ul id="main_nav">
-                <li><a href="">회사소개</a>
+                <li><a href="sub02.html">회사소개</a>
                     <ul class="nav_menu close">
-                        <li><a href="">REsoft소개</a></li>
-                        <li><a href="">연혁</a></li>
-                        <li><a href="">조직도</a></li>
-                        <li><a href="">특허&인증</a></li>
-                        <li><a href="">오시는 길</a></li>
+                        <li><a href="sub02.html#intro">REsoft소개</a></li>
+                        <li><a href="sub02.html#his_timeline">연혁</a></li>
+                        <li><a href="sub02.html#organi">조직도</a></li>
+                        <li><a href="sub02.html#certifi">특허&인증</a></li>
+                        <li><a href="sub02.html#kakaomap">오시는 길</a></li>
                     </ul>
                 </li>
-                <li><a href="">사업현황</a>
+                <li><a href="sub03.html">사업현황</a>
                     <ul class="nav_menu close">
-                        <li><a href="">ECOCE</a></li>
-                        <li><a href="">moaDo</a></li>
-                        <li><a href="">Etc</a></li>
+                        <li><a href="sub03.html#ecoce">ECOCE</a></li>
+                        <li><a href="sub03.html#moado">moaDo</a></li>
+                        <li><a href="sub03.html#etc">Etc</a></li>
                     </ul>
                 </li>
-                <li><a href="">정보마당</a>
+                <li><a href="sub04.html">정보마당</a>
                     <ul class="nav_menu close">
                         <li>
                             <a href="">REsoft소식</a>
@@ -70,6 +70,15 @@
                 <p class="header_title">Evolution <br>With New Software</p>
                 <p class="header_sub">Mobil APP(Android/iOS) Development, AI Bigdata Analysis, MetaVerse, <br>
                     Responsive WEBsite, Brand Design Launch, ICT Consulting</p>
+                    <div class="btn_1">
+                        <button class="slick-prev"><img src="../img/00.right.svg"></button>
+                        <span class="startstop">
+                            <button class="start" type="submit"><img src="../img/00.pause.svg" ></button>
+                            <button class="stop" type="submit"><img src="../img/00.play.svg" ></button>
+                        </span>
+                        <button class="slick-next"><img src="../img/00.left.svg"></button>
+                        
+                    </div> 
             </div>
         </div>
         <div class="visual">
@@ -78,13 +87,19 @@
                 <div><img src="../img/04.slide2.png" alt=""></div>
                 <div><img src="../img/04.slide3.png" alt=""></div>
             </div>
-            <div class="btn_1">
-                <button class="start" type="submit"><img src="../img/00.pause.svg" ></button>
-                <button class="stop" type="submit"><img src="../img/00.play.svg" ></button>
-            </div>
+            
         </div>
     </header>
     <!-- header js -->
+    <script>
+            $(window).on('scroll',function(){
+                if($(window).scrollTop()){
+                    $('.header').addClass('active');
+                }else{
+                    $('.header').removeClass('active');
+                }
+            });
+    </script>
     <script src="../js/00_header.js"></script>
     <script src="../js/00_header2.js"></script>
     <!-- heder end -->

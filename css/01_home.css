@@ -84,6 +84,7 @@
 }
 .proj_cardItems .card_item{
     width: 534px; height: 393px;
+    margin-bottom: 50px;
 }
 .proj_cardItems #proj_bg01{
     background: url(../img/proj_bg01-1.png) no-repeat;
@@ -91,7 +92,7 @@
 }
 
 .proj_cardItems #proj_bg02{
-    background: url(../img/proj_bg_img02.svg);
+    background: url(../img/proj_bg_img02.svg) no-repeat;
     background-size: cover;
 }
 .radius30{
