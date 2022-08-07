@@ -387,7 +387,7 @@ li .organi_box {
         border-right: 3px solid var(--lightgray-color-C8C8C8);
     }
     .his_line {
-        width: 100%
+        width: 100%;
         border-bottom: 1px solid #dbdbdb;
         top: 140px;
         margin-left: 8.5%;

@@ -3,9 +3,7 @@
     height: 100%;
 }
 
-
 .main_title{
-    letter-spacing: 0px;
     color: #1E1E1E;
     line-height: 58px;
     text-align: left;
@@ -35,8 +33,16 @@
     margin-bottom:20%;
     word-break:normal;
 }
-#ecoce {
-    height: 883px;
+#ecoce{
+    margin-top:300px;
+}
+.ecoce-back{
+    width: 100%;
+}
+.ecoce {
+    width: 1441px;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -48,12 +54,12 @@
     margin: 0;
     box-sizing: border-box;
 }
-.ecoce-left-title{
-    max-width: 1440px;
+.ecoce-title{
     margin: 0 auto;
+    margin-bottom:54px;
+    padding-top:100px;
 }
 .ecoce-left-bottom{
-    margin-top: 54px;
     background: url("../img/에코스\ \(1\).png") no-repeat;
     background-size: 100%;
 }
@@ -61,6 +67,7 @@
     width: 100%;
     padding: 8% 0 0 35%;
 }
+
 .ecoce-right {
     width: 50%;
     margin: 0;
@@ -112,13 +119,14 @@
 }
 .moado-back{
     width: 100%;
-    height: 820px;
+    height: auto;
     background: linear-gradient(180deg, rgba(255,255,255,1), rgba(255,0,0,0) 100%), linear-gradient(30deg, #339be14c, rgba(0,255,0,0) 30.71%), linear-gradient(300deg, #e4cde8, rgba(0,0,255,0) 70.71%);
-    margin-bottom:100px;
 }
-#moado{
-    margin-top:50px;
-    height: 820px;
+.moado-title{
+    padding-top:100px;
+    margin-bottom:54px;
+}
+.moado-body{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -184,15 +192,20 @@
     text-align: center;
 }
 #etc{
-    width: auto;
+    width: 1440px;
     height: auto;
-    margin-bottom:200px;
+    margin:0 auto;
 }
-
+.etc_title{
+    padding-top:100px;
+    margin-bottom:50px;
+    margin: 0 auto;
+}
 .etc_slider {
     max-width: 100%;
     clear: both;
     margin:0 auto;
+    margin-bottom:200px;
   }
   .etc_slider .slide_box{
     overflow: hidden;
@@ -232,11 +245,18 @@
     .moado-back{
         height:100%;
     }
+    #etc{
+        height:10%;
+    }
+
 }
 @media screen and (max-width:1028px){
-    .moado-title{
-        margin-top:100px;
+
+
+    #etc{
+        max-width: 800px; margin:0 auto;
     }
+
 }
 
 /*768px(모바일) 기준*/
@@ -244,20 +264,12 @@
     .moado-right .site-button {
         z-index:2;
     }
-    #moado, #etc, #ecoce, .moado-title, .ecoce-title{
+    .moado-body, #etc, .ecoce, .moado-title, .ecoce-title{
         max-width:708px; margin:0 auto;
     }
-    
-    .moado-title{
-        margin-top:100px;
-    }
-    #moado{
+
+    .moado-body{
         margin-top:50px;
     }
-    #etc{
-        margin-top:100px;
-    }
-    .etc_slider{
-        margin-bottom:200px;
-    }
+
 }
