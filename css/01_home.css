@@ -72,7 +72,7 @@
    display: flex; justify-content: space-between;
 }
 .resoft_proj .proj_wrap .proj_Tit{
-    text-align: end;
+    text-align: right;
 }
 
 /* 프로젝트 - 카드영역 */
@@ -177,8 +177,9 @@
     .animaiton_img #lottie01{
         text-align: center;
     }
-    .Tit_text{
-        text-align: end;
+    .resoft_proj .Tit_text{
+        margin-right: 30px; 
+        text-align: right;
     }
     
 }
@@ -293,8 +294,11 @@
         max-width: 704px;
         margin:0 auto ; 
     }
-    .serTit{
-        text-align: end;
+    .resoft_service .main_title,
+    .resoft_service .sub_title,
+    .resoft_service .TextImg_item{
+        text-align: left;
+        margin-left: 30px; 
     }
 }
 
