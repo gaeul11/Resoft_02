@@ -124,13 +124,14 @@
 }
 .moado-wrap{
     margin: 0 auto;
-    max-width: 1440px;
+    max-width:1440px;
 }
 .moado-title{
     padding-top:100px;
     margin-bottom:54px;
 }
 .moado-body{
+    max-width:1440px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -257,7 +258,7 @@
 @media screen and (max-width:1028px){
 
 
-    #etc{
+    .moado-wrap, #etc{
         max-width: 800px; margin:0 auto;
     }
 
