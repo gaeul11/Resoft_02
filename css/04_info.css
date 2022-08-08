@@ -145,7 +145,7 @@
         white-space: pre-line;
         margin-bottom: 30px;
     }
-    .news_list_item {
+    .news_list_item .year{
         width: 380px;
     }
     .img_mr {
