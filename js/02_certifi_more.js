@@ -57,8 +57,6 @@ function fn_more_less(data) {
     if(data !== 1) {
         $(".certifi_img_wrap").css({"height":"auto"});
         $(".certifi_container").css({"height":"auto"});
-        $(".certifi_container>.certifi_grid").css({"height":"330px"});
-        $(".certifi_container>.certifi_front").css({"height":"330px"});
         $('.certifi_container>.certifi_grid').slice(6,9).fadeIn(600);
         $('.certifi_container>.certifi_front').slice(6,9).fadeIn(600);
     } else {

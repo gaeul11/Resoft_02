@@ -45,13 +45,16 @@
     padding-left: 128px;
     text-align: left;
 }
+span {
+    width: 100%;
+}
 
-@media (max-width:1024px) {
+@media (max-width:1280px) {
     .footer_wrap {
-        width: 800px;
+        width: 1140px;
     }
     .footer_bottomR{
-        padding-left: 50px;
+        padding-left: 4%;
     }
 }
 @media (max-width:768px) {
