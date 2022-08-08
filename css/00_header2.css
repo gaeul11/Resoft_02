@@ -7,9 +7,9 @@ body{
     background-color: aliceblue;
 }
 #header {
-    width: 100%;
     z-index: 99999;
-    position: absolute;
+    /* position: absolute; */
+    position: relative;
 }
 #nav_gnb{
     position: fixed;
@@ -21,11 +21,10 @@ body{
 }
 
 .logo img{
-    width: 140px;
+    width: 133px;
     height: 30px;
-    top: 25px;
-    left: 25px;
-    margin-left:12%;
+    top: 3%;
+    left: 20%;
 }
 
 header .logo {
@@ -67,7 +66,7 @@ header #nav_gnb nav + div {
     z-index: 0;
 }
 header #nav_gnb nav > ul >li {
-    left: -6%;
+    left: -8%;
     display: inline-block; 
     position: relative;
     z-index: 2;
@@ -75,7 +74,7 @@ header #nav_gnb nav > ul >li {
 header #nav_gnb nav > ul > li > a{
     display: block; 
     position:relative; 
-    width:140px; 
+    width:160px; 
     height: 70px; 
     font-size: 20px; 
     color: #000000; 
@@ -99,7 +98,7 @@ header #nav_gnb nav > ul > li > a:after {
     z-index: 99999;
 }
 #main_nav a:hover{
-    color: red;
+    color: #184B9F;
     cursor: pointer;
 }
 header #nav_gnb nav > ul > li:hover > a:after{
@@ -165,8 +164,62 @@ header #nav_gnb nav > ul ul a:hover :after {
 .more{
     opacity: 1;
 }
-/* @media screen and (max-width:1070px){
-    #nav_gnb nav li{
-        visibility:collapse;
+
+#media_m{
+    display: none;
+    opacity: 0;
+}
+
+/* 미디어쿼리 */
+
+@media (max-width:1024px) {
+    header {
+        width: 1024px;
     }
-} */
+
+    header #nav_gnb nav > ul ul a{
+        font-size: 16px;
+    }
+    header #nav_gnb nav > ul ul{
+        padding-left: 14%;
+    }
+    #nav_gnb .header_wrap {
+        width: 100%;
+    }
+    header #nav_gnb {
+        width: 100%;
+        padding-right: 0;       
+    }
+    #main_nav {
+        padding-right: 14%;
+        width: 100%;
+    }
+    header #nav_gnb nav > ul > li > a  {
+        width: 110px;
+    }
+    header >a{
+        right: 7%;
+    }
+    .logo_re {
+        margin-right: 28%;
+    }
+    .logo img {
+        left: 12%;
+    }
+
+}
+
+@media (max-width:768px){
+    header{
+        width: 768px;
+    }
+    header #nav_gnb nav > ul > li > a{
+        opacity: 1;
+        visibility: hidden;
+    }
+    #media_m{
+        display: block;
+        opacity: 1;
+        border-bottom: 1px solid #ffffff;
+    }
+}
