@@ -22,7 +22,7 @@ header #nav_gnb nav > ul > li > a {
     /* left: -68%; */
     display: block;
     position: relative;
-    width: 140px;
+    width: 160px;
     height: 70px;
     font-size: 20px;
     color: white;
@@ -94,10 +94,12 @@ header #nav_gnb nav > ul ul {
 }
 
 .white_logo img{
-    position: absolute;
+    /* position: absolute; */
     width: 133px;
     height: 30px;
-    left: -300%;
+    top: 3%;
+    left: 20%;
+    /* left: -103%; */
 }
 
 header >a {
@@ -113,9 +115,13 @@ header .menubar:hover  nav + div{
     opacity: 1;
 }
 header .white_logo {
-    position: absolute;
-    left: 30px;
+    /* position: absolute; */
+    width: 133px;
+    text-align: left;
     top: 30px;
+    left: -1.5%;
+    /* left: 30px;
+    top: 30px; */
     z-index: 100;
     margin-left: 20%;
     height: 30px;
@@ -255,9 +261,59 @@ header.active .menubar{
     position: fixed;
 } 
 
-/* @media screen and (max-width:1070px){
-    #nav_gnb nav li{
-        visibility:collapse;
+#media_m{
+    display: none;
+    opacity: 0;
+}
+
+@media (max-width:1024px) {
+    header {
+        width: 1024px;
+    }
+
+    header #nav_gnb nav > ul ul a{
+        font-size: 16px;
+    }
+    header #nav_gnb nav > ul ul{
+        padding-left: 14%;
+    }
+    #nav_gnb .header_wrap {
+        width: 100%;
+    }
+    header #nav_gnb {
+        width: 100%;
+        padding-right: 0;       
+    }
+    #main_nav {
+        padding-right: 14%;
+        width: 100%;
+    }
+    header #nav_gnb nav > ul > li > a  {
+        width: 110px;
+    }
+    header >a{
+        right: 7%;
+    }
+    .logo_re {
+        margin-right: 28%;
+    }
+    .logo img {
+        left: 12%;
+    }
+
+}
+
+@media (max-width:768px){
+    header{
+        width: 768px;
+    }
+    header #nav_gnb nav > ul > li > a{
+        opacity: 1;
+        visibility: hidden;
+    }
+    #media_m{
+        display: block;
+        opacity: 1;
+        border-bottom: 1px solid #ffffff;
     }
 }
- */

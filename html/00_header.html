@@ -15,10 +15,11 @@
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" /> -->
     <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" /> -->
+    </style>    
 </head>
 <body>
     <header class="header">
-        <a class="white_logo" href="">
+        <a class="white_logo" href="#">
             <img src="../img/00.logo.svg" alt="로고">
         </a>
         <div id="nav_gnb">
@@ -26,7 +27,7 @@
             <ul id="main_nav">
                 <li><a href="sub02.html">회사소개</a>
                     <ul class="nav_menu close">
-                        <a href="sub02.html">회사소개</a>
+                        <li><a id="media_m" href="sub02.html">회사소개</a></li>
                         <li><a href="sub02.html#intro">REsoft소개</a></li>
                         <li><a href="sub02.html#his_timeline">연혁</a></li>
                         <li><a href="sub02.html#organi">조직도</a></li>
@@ -36,7 +37,7 @@
                 </li>
                 <li><a href="sub03.html">사업현황</a>
                     <ul class="nav_menu close">
-                        <a href="sub03.html">사업현황</a>
+                        <li><a id="media_m" href="sub03.html">사업현황</a></li>
                         <li><a href="sub03.html#ecoce">ECOCE</a></li>
                         <li><a href="sub03.html#moado">moaDo</a></li>
                         <li><a href="sub03.html#etc">Etc</a></li>
@@ -45,7 +46,7 @@
                 <li><a href="sub04.html">정보마당</a>
                     <ul class="nav_menu close">
                         <li>
-                            <a href="sub04.html">정보마당</a>
+                            <li><a id="media_m" href="sub04.html">정보마당</a></li>
                             <a href="">REsoft소식</a>
                         </li>
                     </ul>
@@ -79,10 +80,18 @@
                 <div><img src="../img/04.slide2.png" alt=""></div>
                 <div><img src="../img/04.slide3.png" alt=""></div>
             </div>
-            
         </div>
     </header>
     <script src="../js/00_header.js"></script>
     <script src="../js/00_header2.js"></script>
+    <script>
+        $(window).on('scroll',function(){
+            if($(window).scrollTop()){
+                $('.header').addClass('active');
+            }else{
+                $('.header').removeClass('active');
+            }
+        });
+</script>
 </body>
 </html>
