@@ -206,6 +206,9 @@ header #nav_gnb nav > ul ul a:hover :after {
     .logo img {
         left: 12%;
     }
+    .infonav_text {
+        width: 100%;
+    }
 
 }
 

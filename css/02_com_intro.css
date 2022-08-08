@@ -6,7 +6,7 @@
     background-color: #F9F9F9;
 }
 .intro{
-    margin-top: 300px;
+    /* margin-top: 300px; */
 }
 .intro, .his_timeline, .organi, .certifi, .map {
     width: 100%;
