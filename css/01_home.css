@@ -2,7 +2,7 @@
     /* Colors: */
     --black-color-1E1E1E: #1E1E1E;
     --lightgray-color-C8C8C8: #C8C8C8;
-    --unnamed-color-184B9F: #184B9F;
+    --blue-color-184B9F: #184B9F;
     --white-color-fffff: #ffffff;
 }
 
@@ -20,18 +20,23 @@
     border-radius: 20px;
 }
 
-.resoft_news .News_Cardlist .NewsCard_img:hover img{
+.resoft_news .News_Cardlist:hover .NewsCard_img > img{
     transform: scale(1.2);
     transition: 1s;
     max-width: 300px;
     object-fit: cover;
     
 }
+
 .resoft_news .News_Cardlist .NewsCard_txt{
     font-size: 18px;
     font-weight: bold;
     color: var(--black-color-1E1E1E);
     height: 52px;
+    margin-top: 10px;
+}
+.resoft_news .News_Cardlist:hover .NewsCard_txt{
+    color: var(--blue-color-184B9F);
 }
 .resoft_news .News_Cardlist .NewsCard_txt > p{
     display: block;
@@ -244,6 +249,21 @@
     transform: scale(1.2);
     transition: 1s;
 }
+.txt_front{
+    text-align: center;
+    position: absolute;
+    top: 42%;
+    left: 24%;
+    line-height: 20px;
+}
+
+.txt_back{
+    text-align: center;
+    position: absolute;
+    top: 38%;
+    left: 28%;
+    line-height: 20px;
+}
 .resoft_service .seritems_wrap .ser_card:hover .txt_front{
     display: none;
     transition: 1s;
@@ -251,6 +271,11 @@
 .resoft_service .seritems_wrap .ser_card:hover .txt_back{
     display: block;
     transition: 1s;
+    text-align: center;
+    position: absolute;
+    top: 42%;
+    left: 24%;
+    line-height: 20px;
 }
 #serCard_bg01{
     /* backdrop-filter: url(../img/service_02.png) grayscale(30%) saturate(150%); */
@@ -275,13 +300,9 @@
     background: rgba(0, 0, 0, 0.3) url(../img/service_04.png);
     background-size: cover;   
 }
-.txt_front,.txt_back{
-    text-align: center;
-    position: absolute;
-    top: 42%;
-    left: 24%;
-    line-height: 20px;
-}
+
+
+
 .front_title{
     font-size: 20px;
 }
