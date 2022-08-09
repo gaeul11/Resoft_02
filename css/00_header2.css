@@ -8,7 +8,6 @@ body{
 }
 #header {
     z-index: 99999;
-    /* position: absolute; */
     position: relative;
 }
 #nav_gnb{
@@ -47,7 +46,6 @@ header >a  {
 header #nav_gnb {
     text-align: end;
     padding-right: 5%;
-    /* position: absolute;  */
     left: 0; 
     top: 0; 
     padding: 10px 232px 5px; 
@@ -82,7 +80,6 @@ header #nav_gnb nav > ul > li > a{
     text-decoration: none; 
     top: 0px; 
     font: normal normal bold 20px/70px Noto Sans KR;
-    /* z-index: 10;  */
     text-align: center; 
 }
 header #nav_gnb nav > ul > li > a:after {
@@ -123,18 +120,15 @@ header #nav_gnb nav > ul ul a {
     z-index: 10;
 }
 header #nav_gnb nav > ul ul a:hover :after {
-    /* left: 0;  */
     width: 100%;
 }
 .infonav_text {
     position: relative;
 }
 .infonav_text img{
-    /* background-image: url(../img/04.infonav.png); */
     filter: brightness(70%);
     width: 100%;
     height: 300px;
-    /* border: 5px ridge red; */
 }
 .text_p {
     position: absolute;
@@ -172,11 +166,10 @@ header #nav_gnb nav > ul ul a:hover :after {
 
 /* 미디어쿼리 */
 
-@media (max-width:1024px) {
+@media (max-width:1280px) {
     header {
-        width: 1024px;
+        width: 1280px;
     }
-
     header #nav_gnb nav > ul ul a{
         font-size: 16px;
     }
@@ -202,9 +195,6 @@ header #nav_gnb nav > ul ul a:hover :after {
     }
     .logo_re {
         margin-right: 28%;
-    }
-    .logo img {
-        left: 12%;
     }
     .infonav_text {
         width: 100%;
