@@ -9,7 +9,6 @@
 header #nav_gnb {
     text-align: end;
     padding-right: 5%;
-    position: absolute; 
     left: 0; 
     top: 0; 
     padding: 10px 232px 5px; 
@@ -19,7 +18,6 @@ header #nav_gnb {
     border-bottom: 1px solid #ffffff;
 }
 header #nav_gnb nav > ul > li > a {
-    /* left: -68%; */
     display: block;
     position: relative;
     width: 160px;
@@ -94,12 +92,10 @@ header #nav_gnb nav > ul ul {
 }
 
 .white_logo img{
-    /* position: absolute; */
     width: 133px;
     height: 30px;
     top: 3%;
     left: 20%;
-    /* left: -103%; */
 }
 
 header >a {
@@ -115,13 +111,10 @@ header .menubar:hover  nav + div{
     opacity: 1;
 }
 header .white_logo {
-    /* position: absolute; */
     width: 133px;
     text-align: left;
-    top: 30px;
-    left: -1.5%;
-    /* left: 30px;
-    top: 30px; */
+    top:2.9%;
+    left: -1.9%;
     z-index: 100;
     margin-left: 20%;
     height: 30px;
@@ -217,20 +210,16 @@ header .visual .slide img{
 }
 
 /* nav 상단고정 */
-
-.header #nav_gnb{
+#header {
+    z-index: 99999;
+    position: relative;
+}
+#nav_gnb{
     position: fixed;
     z-index: 100;
 }
-
-.header>a>img{
+.fix, .fix img{
     position: fixed;
-    z-index: 101;
-}
-
-.header .white_logo{
-    position: fixed;
-    z-index: 100;
 }
 
 /* nav 내렸을떄 css */
@@ -249,16 +238,12 @@ header.active .white_logo{
 header.active #nav_gnb nav > ul > li > a {
     color: #000000;
 }
-/* header.active #nav_gnb nav > ul ul a {
-    font-size: 20px;
-    color: #000000;
-} */
+
 header .menubar{
     filter: brightness();
 }
 header.active .menubar{
     filter: brightness(0);
-    position: fixed;
 } 
 
 #media_m{
@@ -266,11 +251,10 @@ header.active .menubar{
     opacity: 0;
 }
 
-@media (max-width:1024px) {
+@media (max-width:1280px) {
     header {
-        width: 1024px;
+        width: 1280px;
     }
-
     header #nav_gnb nav > ul ul a{
         font-size: 16px;
     }
@@ -297,10 +281,6 @@ header.active .menubar{
     .logo_re {
         margin-right: 28%;
     }
-    .logo img {
-        left: 12%;
-    }
-
 }
 
 @media (max-width:768px){

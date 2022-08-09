@@ -113,7 +113,7 @@
     letter-spacing: 1px;
     opacity: 1;
     margin-top: 16px;
-    margin-bottom: 8px;
+    margin-bottom: 8px; 
 }
 
 .year {
@@ -129,36 +129,36 @@
 }
 
 /* di 미디어쿼리 */
-@media (max-width:1024px) {
+
+@media (max-width:1280px) {
     .info {
-        max-width: 1024px;
+        max-width: 1280px;
     }
     .info_wrap {
-        width: 800px;
+        width: 1000px;
         margin: 0 auto;
     }
     .news_list {
-        width: 810px;
+        width: 1110px;
     }
     .news_list_item .text {
-        width: 380px;
+        width: 480px;
         white-space: pre-line;
         margin-bottom: 30px;
     }
     .news_list_item .year{
-        width: 380px;
+        width: 480px;
     }
     .img_mr {
         margin-right: 40px;
     }
     .news_list_item img{
-        width: 380px;
+        width: 480px;
     }
     .news_list a:hover img{
-        width: 380px;
+        width: 480px;
     }
 }
-
 @media (max-width:768px){
     .info {
         max-width: 768px;
