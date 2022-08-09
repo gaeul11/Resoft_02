@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>page03</title>
     <!-- css -->
-    <link rel="stylesheet" href="./css/00_header2.css">
-    <link rel="stylesheet" href="./css/03_business.css">
-    <link rel="stylesheet" href="./css/06_footer.css">
-    <link rel="stylesheet" href="./css/basic.css">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="../css/00_header2.css">
+    <link rel="stylesheet" href="../css/03_business.css">
+    <link rel="stylesheet" href="../css/06_footer.css">
+    <link rel="stylesheet" href="../css/basic.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/animate.css">
     
     
     <!-- js -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-    <script src="./js/00_header2.js"></script>
+    <script src="../js/00_header2.js"></script>
     <script src="https://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
      <!-- slick - slider script  -->
@@ -30,211 +30,223 @@
      <!-- wow 라이브러리를 위한 js -->
      <script src="../js/wow.min.js"></script>
      <script>new WOW().init();</script>
-    
 </head>
 <body>
-    <header id="header">
-        <a class="logo fix" href="index.html"><img src="./img/00.logo.svg" alt="로고"></a>
-        <div id="nav_gnb">
-            <nav>
-                <ul id="main_nav">
-                    <li><a href="sub02.html">회사소개</a>
-                        <ul class="nav_menu close">
-                            <li><a href="sub02.html#intro">REsoft소개</a></li>
-                            <li><a href="sub02.html#his_timeline">연혁</a></li>
-                            <li><a href="sub02.html#organi">조직도</a></li>
-                            <li><a href="sub02.html#certifi">특허&인증</a></li>
-                            <li><a href="sub02.html#kakaomap">오시는 길</a></li>
-                        </ul>
-                </li>
-                    <li><a href="sub03.html">사업현황</a>
-                    <ul class="nav_menu close">
-                        <li><a href="">ECOCE</a></li>
-                        <li><a href="">moaDo</a></li>
-                        <li><a href="">Etc</a></li>
-                    </ul>
-                </li>
-                    <li><a href="sub04.html">정보마당</a>
-                    <ul class="nav_menu close">
-                        <li><a href="sub04.html">REsoft소식</a></li>
-                    </ul>
-                    </li>
-                </ul>
-            </nav>  
-        <div class="nav_menu close"></div>
-        </div>
-        <a class="menubar fix"><img src="./img/04.menu.svg" alt="" ></a>
-        <div class="infonav_text">
-            <img src="./img/02_intromenu.png" alt="">
-            <div class="text_p">
-                <p>사업현황</p>
-            </div>
-        </div>
-    </header>
-    <!-- header end -->
-        <div class="container">
-            <!-- 에코스 부분-->
-                <div class="st-wrap400">
-                <section id="ecoce">
-                    <div class="ecoce-left">
-                        <div class="ecoce-left-top">
-                            <p class="main_title">에코스</p>
-                            <p class="sub_title">ECO-Clean Earth</p>
-                        </div>
-                        <div class="ecoce-left-bottom">
-                            <img src="./img/에코스 (2).png" alt="">
-                        </div>
-                    </div>
-                    <div class="ecoce-right">
-                        <p class="ex_text">국내 최초<br>탄소중립 실천인증 플랫폼</p>
-                        <img src="./img/그룹 76.png" alt="">
-                        <p class="sub-logo">ECO-Clean Earth</p>
-                        <div class="ecoce-store">
-                            <div class="app-store">
-                                <a href="">
-                                    <img src="./img/그룹 100.png" alt="">
-                                    <span>Play Store에서 다운로드</span>
-                                </a>
-                            </div>
-                            <div class="app-store">
-                                <a href="">
-                                    <img src="./img/그룹 102.png" alt="">
-                                    <span>App Store에서 다운로드</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+  <header id="header">
+      <a class="logo fix" href="../index.html"><img src="../img/00.logo.svg" alt="로고"></a>
+      <div id="nav_gnb">
+          <nav>
+              <ul id="main_nav">
+                  <li><a href="sub02.html">회사소개</a>
+                      <ul class="nav_menu close">
+                        <li><a  id="media_m" href="../sub02.html">회사소개</a></li>
+                          <li><a href="sub02.html#intro">REsoft소개</a></li>
+                          <li><a href="sub02.html#his_timeline">연혁</a></li>
+                          <li><a href="sub02.html#organi">조직도</a></li>
+                          <li><a href="sub02.html#certifi">특허&인증</a></li>
+                          <li><a href="sub02.html#kakaomap">오시는 길</a></li>
+                      </ul>
+                  </li>
+                      <li><a href="sub03.html">사업현황</a>
+                      <ul class="nav_menu close">
+                        <li><a id="media_m" href="sub03.html">사업현황</a></li>
+                          <li><a href="sub03.html#ecoce">ECOCE</a></li>
+                          <li><a href="sub03.html#moado">moaDo</a></li>
+                          <li><a href="sub03.html#etc">Etc</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="sub04.html">정보마당</a>
+                  <ul class="nav_menu close">
+                    <li><a id="media_m" href="sub04.html">정보마당</a></li>
+                      <li><a href="sub04.html">REsoft소식</a></li>
+                  </ul>
+                  </li>
+              </ul>
+          </nav>  
+      <div class="nav_menu close"></div>
+      </div>
+      <a class="menubar fix"><img src="../img/04.menu.svg" alt="" ></a>
+      <div class="infonav_text">
+          <img src="../img/사각형 64.png" alt="">
+          <div class="text_p">
+              <p>사업현황</p>
+          </div>
+      </div>
+  </header>
+  <!-- header end -->
+  <div class="container">
+      <!-- 에코스 부분-->
+      <section id="ecoce">
+          <div class="ecoce-back">
+          <div class="ecoce-wrap">
+          <div class="ecoce-title">
+            <p class="main_title">에코스</p>
+            <p class="sub_title">ECO-Clean Earth</p>
+          </div>
+        <div class="ecoce">
+            <div class="ecoce-left">
+                <div class="ecoce-left-bottom">
+                    <img src="../img/에코스 (2).png" alt="">
                 </div>
-              </div>
-            <!-- 모아두 부분-->
-            <div class="moado-back">
-                <section id="moado">
-                    <div class="moado-left">
-                        <div class="moado-title">
-                            <p class="main_title">모아두</p>
-                            <p class="sub_title">moaDo</p>
-                        </div>
-                        <div class="moado-left-bottom">
-                            <img src="./img/모아두 (2).png" alt="">
-                        </div>
-                    </div>
-                    <img class="moado-middle" src="./img/main-visual.png" alt="">
-                    <div class="moado-right">
-                        <p>내 손안의 모바일 회원수첩</p>
-                        <img class="moado-logo" src="./img/패스 649.png" alt="">
-                        <div class="site-button">
-                            <a href="">
-                                <span>사이트 바로가기</span>
-                            </a>
-                        </div>
-                    </div>
-                </section>
             </div>
-            <!-- ETC 부분 -->
-            <section id="etc">
-                <p class="main_title">ETC</p>
-                <p class="sub_title">moaDo</p>
-                <!--ETC 이미지 부분 -->
-                  <div class="etc_slider">
-                    <div class="slider-div">
-                      <div class="slide_box">
-                        <div class="slide_list">
-                          <div class="slide_list_item">
-                            <img src="./img/마스크 그룹 22.png" alt="slide 01">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="slide_box">
-                        <div class="slide_list">
-                          <div class="slide_list_item">
-                            <img src="./img/마스크 그룹 21.png" alt="slide 01">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="slide_box">
-                        <div class="slide_list">
-                          <div class="slide_list_item">
-                            <img src="./img/마스크 그룹 20.png" alt="slide 01">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="slide_box">
-                        <div class="slide_list">
-                          <div class="slide_list_item">
-                            <img src="./img/마스크 그룹 23.png" alt="slide 01">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="slide_box">
-                        <div class="slide_list">
-                          <div class="slide_list_item">
-                            <img src="./img/마스크 그룹 24.png" alt="slide 01">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="slide_box">
-                        <div class="slide_list">
-                          <div class="slide_list_item">
-                            <img src="./img/마스크 그룹 22.png" alt="slide 01">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="slide_box">
-                        <div class="slide_list">
-                          <div class="slide_list_item">
-                            <img src="./img/마스크 그룹 21.png" alt="slide 01">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="slide_box">
-                        <div class="slide_list">
-                          <div class="slide_list_item">
-                            <img src="./img/마스크 그룹 20.png" alt="slide 01">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="slide_box">
-                        <div class="slide_list">
-                          <div class="slide_list_item">
-                            <img src="./img/마스크 그룹 23.png" alt="slide 01">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="slide_box">
-                        <div class="slide_list">
-                          <div class="slide_list_item">
-                            <img src="./img/마스크 그룹 24.png" alt="slide 01">
-                          </div>
-                        </div>
-                      </div>
+            <div class="ecoce-right">
+                <p class="ex_text">국내 최초<br>탄소중립 실천인증 플랫폼</p>
+                <img src="../img/그룹 76.png" alt="">
+                <p class="sub-logo">ECO-Clean Earth</p>
+                <div class="ecoce-store">
+                    <div class="app-store">
+                        <a href="https://play.google.com/store/apps/details?id=com.resoft.ecoce">
+                            <img src="../img/그룹 100.png" alt="">
+                            <span>Play Store에서 다운로드</span>
+                        </a>
+                    </div>
+                    <div class="app-store">
+                        <a href="https://apps.apple.com/kr/app/%EC%97%90%EC%BD%94%EC%8A%A4-%ED%83%84%EC%86%8C%EB%B0%9C%EC%9E%90%EA%B5%AD-%EA%B3%84%EC%82%B0-%ED%83%84%EC%86%8C%EC%A0%80%EA%B0%90%ED%99%9C%EB%8F%99-%EC%B1%8C%EB%A6%B0%EC%A7%80%EC%B0%B8%EC%97%AC/id1613634019">
+                            <img src="../img/그룹 102.png" alt="">
+                            <span>App Store에서 다운로드</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+      <!-- 모아두 부분-->
+      <section id="moado" class="moado">
+      <div class="moado-back">
+        <div class="moado-wrap">
+          <div class="moado-title">
+            <p class="main_title">모아두</p>
+            <p class="sub_title">moaDo</p>
+          </div>
+          <div class="moado-body">
+              <div class="moado-left">
+                  <div class="moado-left-bottom">
+                      <img src="../img/모아두 (2).png" alt="">
+                  </div>
+              </div>
+              <img class="moado-middle" src="../img/main-visual.png" alt="">
+              <div class="moado-right">
+                  <p>내 손안의 모바일 회원수첩</p>
+                  <img class="moado-logo" src="../img/패스 649.png" alt="">
+                  <div class="site-button">
+                      <a href="#">
+                          <span>사이트 바로가기</span>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+      </section>
+      <!-- ETC 부분 -->
+      <section id="etc" >
+        <div class="etc_title">
+          <p class="main_title">ETC</p>
+          <p class="sub_title">PROJECTS</p>
+        </div>
+          <!--ETC 이미지 부분 -->
+            <div class="etc_slider">
+              <div class="slider-div">
+                <div class="slide_box">
+                  <div class="slide_list">
+                    <div class="slide_list_item">
+                      <img src="../img/마스크 그룹 22.png" alt="slide 01">
                     </div>
                   </div>
-            </section>
-        <script src="./js/03_business.js"></script>
-    <!-- container end -->
-    <footer class="footer">
-        <div class="footer_wrap">
-            <div class="footer_top">
-                    <span><img src="../img/color_logo01.svg" alt=""></span>
-                    <span>© RESOFT CO.LTD. All Rights Reserved.</span>
+                </div>
+                <div class="slide_box">
+                  <div class="slide_list">
+                    <div class="slide_list_item">
+                      <img src="../img/마스크 그룹 21.png" alt="slide 01">
+                    </div>
+                  </div>
+                </div>
+                <div class="slide_box">
+                  <div class="slide_list">
+                    <div class="slide_list_item">
+                      <img src="../img/마스크 그룹 20.png" alt="slide 01">
+                    </div>
+                  </div>
+                </div>
+                <div class="slide_box">
+                  <div class="slide_list">
+                    <div class="slide_list_item">
+                      <img src="../img/마스크 그룹 23.png" alt="slide 01">
+                    </div>
+                  </div>
+                </div>
+                <div class="slide_box">
+                  <div class="slide_list">
+                    <div class="slide_list_item">
+                      <img src="../img/마스크 그룹 24.png" alt="slide 01">
+                    </div>
+                  </div>
+                </div>
+                <div class="slide_box">
+                  <div class="slide_list">
+                    <div class="slide_list_item">
+                      <img src="../img/마스크 그룹 22.png" alt="slide 01">
+                    </div>
+                  </div>
+                </div>
+                <div class="slide_box">
+                  <div class="slide_list">
+                    <div class="slide_list_item">
+                      <img src="../img/마스크 그룹 21.png" alt="slide 01">
+                    </div>
+                  </div>
+                </div>
+                <div class="slide_box">
+                  <div class="slide_list">
+                    <div class="slide_list_item">
+                      <img src="../img/마스크 그룹 20.png" alt="slide 01">
+                    </div>
+                  </div>
+                </div>
+                <div class="slide_box">
+                  <div class="slide_list">
+                    <div class="slide_list_item">
+                      <img src="../img/마스크 그룹 23.png" alt="slide 01">
+                    </div>
+                  </div>
+                </div>
+                <div class="slide_box">
+                  <div class="slide_list">
+                    <div class="slide_list_item">
+                      <img src="../img/마스크 그룹 24.png" alt="slide 01">
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="footer_bottom">
-                <div class="footer_bottomL">
-                    <span>
-                        상호 : (주)리소프트 <br>
-                        사업자등록번호 : 722-81-02219<br>
-                        주소 : (41260) 대구광역시 동구 동대구로 465, 대구스케일업허브(DASH) 713호 (신천동 106)
-                    </span>
-                </div>
-                <div class="footer_bottomR">
-                    <span>
-                        대표이사 : 오유나 개인정보책임자 : 이현지<br>
-                        전화 : (053) 475-2110 팩스 : (0504) 257-5966 이메일 : call@resoft.kr
-                    </span>
-                </div>
-                </div>
-            </div>
-    </footer>
+      </section>
+  </div>
+  <script src="../js/03_business.js"></script>
+  <!-- container end -->
+  <footer class="footer">
+      <div class="footer_wrap">
+          <div class="footer_top">
+                  <span><img src="../img/color_logo01.svg" alt=""></span>
+                  <span>© RESOFT CO.LTD. All Rights Reserved.</span>
+          </div>
+          <div class="footer_bottom">
+              <div class="footer_bottomL">
+                  <span>
+                      상호 : (주)리소프트 <br>
+                      사업자등록번호 : 722-81-02219<br>
+                      주소 : (41260) 대구광역시 동구 동대구로 465, 대구스케일업허브(DASH) 713호 (신천동 106)
+                  </span>
+              </div>
+              <div class="footer_bottomR">
+                  <span>
+                      대표이사 : 오유나 개인정보책임자 : 이현지<br>
+                      전화 : (053) 475-2110 팩스 : (0504) 257-5966 이메일 : call@resoft.kr
+                  </span>
+              </div>
+              </div>
+          </div>
+  </footer>
 </body>
 </html>
