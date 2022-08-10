@@ -146,6 +146,7 @@
 }
 .organi_click {
     width: 150px;
+    cursor: pointer;
 }
 .organi_container ol{
     list-style: none;

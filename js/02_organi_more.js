@@ -24,9 +24,9 @@ function appear(data) {
     const organiAppear = document.getElementsByClassName('organi_container');
     if(!!data){        
         $(organiAppear).fadeOut(400)
-        data = false;
+        data = 1;
     } else {
         $(organiAppear).fadeIn(800)
-        data = true;
+        data = 0;
     }
 };

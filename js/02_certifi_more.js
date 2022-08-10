@@ -46,7 +46,7 @@ function fn_screenMax768() {
 
 function changeText() {
     const btn = document.getElementById('more_btn');
-    let runData = 1
+    let runData = 1;
     if(btn.value === '더보기') {
         btn.value = '접기';
         runData = 0;
