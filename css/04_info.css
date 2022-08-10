@@ -59,7 +59,12 @@
     height: 73px;
     width: 200px;
 }
-
+.button:hover{
+    background-color: #184B9F;
+}
+.button:hover p{
+    color: #FFFFFF;
+}
 .button p {
     font: var(--unnamed-font-style-normal) normal medium 20px/29px var(--unnamed-font-family-noto-sans-kr);
     text-align: center;
