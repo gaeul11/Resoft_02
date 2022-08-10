@@ -20,14 +20,15 @@
     <!-- animation img js -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <!-- main slide -->
+    <link rel="stylesheet" href="./css/00_slick.css">
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <link rel="stylesheet" href="./css/00_slick.css">
+    
 </head> 
 <body>
     <header class="header">
-        <a class="white_logo" href="#">
+        <a class="white_logo fix" href="#">
             <img src="./img/00.logo.svg" alt="로고">
         </a>
         <div id="nav_gnb">
@@ -63,7 +64,7 @@
         </nav>  
         <div class="nav_menu close"></div>
     </div>
-        <a class="menubar">
+        <a class="menubar fix">
             <img src="./img/00.menu.svg" alt="" >
         </a>
         <div class="header_text-wrap">
@@ -91,17 +92,9 @@
         </div>
     </header>
     <!-- header js -->
-    <script>
-            $(window).on('scroll',function(){
-                if($(window).scrollTop()){
-                    $('.header').addClass('active');
-                }else{
-                    $('.header').removeClass('active');
-                }
-            });
-    </script>
     <script src="./js/00_header.js"></script>
     <script src="./js/00_header2.js"></script>
+    <script src="./js/00_scroll.js"></script>
     <!-- heder end -->
     <div class="container">
         <!-- st-wrap : 각 섹션 위아래 마진값 및 패딩 class  -->
