@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>page2</title>
     <!-- css  -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/basic.css">
     <link rel="stylesheet" href="./css/00_header2.css">
     <link rel="stylesheet" href="./css/02_com_intro.css">
     <link rel="stylesheet" href="./css/06_footer.css">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/basic.css">
     <!-- 폰트 -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <!-- js -->
@@ -21,6 +21,7 @@
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b5738d59a1234aafad1f9ad8f0979df6"></script>
     <!--기능  js -->
     <script src="./js/02_certifi_more.js"></script>
+    <script src="./js/02_organi_more.js"></script>
     <!--header js -->
     <script src="./js/00_header2.js"></script>
 
@@ -198,8 +199,10 @@
         <!-- Di organization chart -->
         <section id="organi" class="organi">            
             <div class="organi_wrap">
-                <h2 class="main_title">조직도</h2>
-                <p class="sub_title">organization</p>
+                <div class="organi_click" value="false" onclick="valueChange()">
+                    <h2 class="main_title">조직도</h2>
+                    <p class="sub_title">organization</p>
+                </div>
                 <div class="organi_container margin50">
                     <div class="level-1-wrap">
                         <p class="level-1 organi_box">대표이사</p>

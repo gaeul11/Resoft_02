@@ -144,6 +144,9 @@
     position: relative;
     right: 20px;
 }
+.organi_click {
+    width: 150px;
+}
 .organi_container ol{
     list-style: none;
 }
@@ -348,7 +351,6 @@ li .organi_box {
 
         /* di 220725 중간정렬 */
         max-width: 1000px;
-        margin: 0 auto;
     }
 
     
@@ -502,7 +504,6 @@ li .organi_box {
 
         /* di 220725 중간정렬 */
         max-width: 704px;
-        margin: 0 auto;
     }
 
     
