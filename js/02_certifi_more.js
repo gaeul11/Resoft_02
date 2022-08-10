@@ -4,8 +4,9 @@
  */
 //현재 화면에 보이는 웹 브라우저 페이지 크기
 window.onresize = function(event) {
-    let innerWidth = window.innerWidth;
-    if(innerWidth<768) {
+    const innerWidth = window.innerWidth;
+    const pageWidth = 768;
+    if(innerWidth<pageWidth) {
         fn_screenMax768();
     } else{
         fn_screenMin768();
@@ -20,8 +21,9 @@ window.onresize = function(event) {
 
 //768px 이하 width로 로드되었을때 보여지는 특허&인증 카드갯수
 window.addEventListener('DOMContentLoaded', function(){
-    let innerWidth = window.innerWidth;
-    if(innerWidth<768) {
+    const innerWidth = window.innerWidth;
+    const pageWidth = 768;
+    if(innerWidth<pageWidth) {
         fn_screenMax768();
     } else{
         fn_screenMin768();
@@ -34,14 +36,16 @@ function fn_screenMin768() {
 };
 
 function fn_screenMax768() {
-    let btn = document.getElementById('more_btn');
+    const btn = document.getElementById('more_btn');
     btn.value='더보기';
-    $('.certifi_container>.certifi_grid').slice(6,9).hide();
-    $('.certifi_container>.certifi_front').slice(6,9).hide();
+    const x = 6;
+    const y = 9;
+    $('.certifi_container>.certifi_grid').slice(x,y).hide();
+    $('.certifi_container>.certifi_front').slice(x,y).hide();
 }
 
 function changeText() {
-    let btn = document.getElementById('more_btn');
+    const btn = document.getElementById('more_btn');
     let runData = 1
     if(btn.value === '더보기') {
         btn.value = '접기';
@@ -53,14 +57,20 @@ function changeText() {
     fn_more_less(runData)
 }
 
-function fn_more_less(data) {
+function fn_more_less(data) {    
+    const x = 6;
+    const y = 9;
+    const fadeAppear = 600;
+    const fadeDisappear =300;
+    const cardBack = document.getElementsByClassName('certifi_grid');
+    const cardFront = document.getElementsByClassName('certifi_front');
     if(data !== 1) {
         $(".certifi_img_wrap").css({"height":"auto"});
         $(".certifi_container").css({"height":"auto"});
-        $('.certifi_container>.certifi_grid').slice(6,9).fadeIn(600);
-        $('.certifi_container>.certifi_front').slice(6,9).fadeIn(600);
+        $(cardBack).slice(x,y).fadeIn(fadeAppear);
+        $(cardFront).slice(x,y).fadeIn(fadeAppear);
     } else {
-        $('.certifi_container>.certifi_grid').slice(6,9).fadeOut(300);
-        $('.certifi_container>.certifi_front').slice(6,9).fadeOut(300);
+        $(cardBack).slice(x,y).fadeOut(fadeDisappear);
+        $(cardFront).slice(x,y).fadeOut(fadeDisappear);
     }
 }
