@@ -94,8 +94,12 @@ header #nav_gnb nav > ul > li > a:after {
     border-radius: 20px;
     z-index: 99999;
 }
-#main_nav a:hover{
+#main_nav >li> a:hover{
     color: #184B9F;
+    cursor: pointer;
+}
+#main_nav a:hover{
+    color: #AAAAAA;
     cursor: pointer;
 }
 header #nav_gnb nav > ul > li:hover > a:after{

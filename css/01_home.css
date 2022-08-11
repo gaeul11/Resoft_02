@@ -239,6 +239,12 @@
     display: flex; justify-content: space-around;  
 }
 .resoft_service .seritems_wrap .ser_card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     width: 280px;
     height: 340px;
     border-radius: 20px;
@@ -247,32 +253,33 @@
 }
 .resoft_service .seritems_wrap .ser_card:hover{
     transform: scale(1.2);
-    transition: 1s;
+    transition: 0.4s;
 }
 .txt_front{
     text-align: center;
-    position: absolute;
+    /* position: absolute;
     top: 42%;
-    left: 24%;
+    left: 24%; */
     line-height: 20px;
 }
 
 .txt_back{
+    opacity: 0;
     text-align: center;
     position: absolute;
-    top: 38%;
-    left: 28%;
+    /* top: 38%;
+    left: 28%; */
     line-height: 20px;
 }
 .resoft_service .seritems_wrap .ser_card:hover .txt_front{
-    display: none;
+    /* display: none; */
     transition: 1s;
 }
 .resoft_service .seritems_wrap .ser_card:hover .txt_back{
     display: block;
     transition: 1s;
     text-align: center;
-    position: absolute;
+    /* position: absolute; */
     top: 42%;
     left: 24%;
     line-height: 20px;
@@ -306,9 +313,9 @@
 .front_title{
     font-size: 20px;
 }
-.txt_back{
+/* .txt_back{
     display: none;
-}
+} */
 
 /* 태블릿  */
 @media (max-width : 1280px) {
