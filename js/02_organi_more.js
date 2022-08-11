@@ -1,6 +1,6 @@
 //화면이 로드될때 조직도가 보여지는 방법
 window.addEventListener('DOMContentLoaded',function(){
-    fn_organiVeiw();
+    fn_organiView();
 });
 
 //위에서 선언한 함수로 처음 로드될 때 보이지 않는 상태로 띄움
