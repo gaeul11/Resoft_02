@@ -82,7 +82,8 @@
     color: var(--blue-color-184B9F);
     font-weight: var(--unnamed-font-weight-bold);
     font-size: 32px;
-    float: right;
+    float: right;   
+    
 }
 .his_container .circle {
     position: absolute;
