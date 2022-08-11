@@ -23,7 +23,7 @@ body{
     width: 133px;
     height: 30px;
     top: 3%;
-    left: 20%;
+    left: 13%;
 }
 
 header .logo {
@@ -205,6 +205,9 @@ header #nav_gnb nav > ul ul a:hover :after {
 @media (max-width:768px){
     header{
         width: 768px;
+    }
+    .menubar img {
+        top: 3%;
     }
     header #nav_gnb nav > ul > li > a{
         opacity: 1;
