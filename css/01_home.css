@@ -150,6 +150,8 @@
     transform: scale(1.1);
     transition: 1s;
     object-fit: cover;
+    filter: brightness(0.5);
+    max-height: 389px;
 }
 .card_text > div {
     display:none;

@@ -11,8 +11,7 @@ window.onresize = function(event) {
     } else{
         fn_screenMin769();
     }
-}
-
+};
 
 /**
  * load는 돔트리,리소스까지 로드되고 실행
@@ -44,7 +43,7 @@ function fn_screenMax769() {
     const y = 9;
     $('.certifi_container>.certifi_grid').slice(x,y).hide();
     $('.certifi_container>.certifi_front').slice(x,y).hide();
-}
+};
 
 //버튼 value를 클릭했을때 변하는 value값 설정
 function changeText() {
@@ -57,8 +56,8 @@ function changeText() {
         btn.value = '더보기';
         runData = 1;
     }
-    fn_more_less(runData)
-}
+    fn_more_less(runData);
+};
 
 /**
  * changeText에서 runData값을 받아 더보기를 눌렀을때 보여지는 height의 높이와
@@ -80,4 +79,4 @@ function fn_more_less(data) {
         $(cardBack).slice(x,y).fadeOut(spdDisappear);
         $(cardFront).slice(x,y).fadeOut(spdDisappear);
     }
-}
+};
