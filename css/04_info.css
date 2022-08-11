@@ -36,7 +36,8 @@
 }
 
 .news_list {
-    width: 1530px;
+    /* width: 1530px; */
+    width: 100%;
     margin-top: 50px;
     display: inline-block;
 }

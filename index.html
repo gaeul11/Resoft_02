@@ -266,22 +266,22 @@
                                 <p class="front_title"> 앱 (APP) 개발</p>
                                 <p class="front_sub"> android / ios </p>
                             </div>
-                            <ul class="txt_back">
-                                <li> Android 앱개발</li>
-                                <li> iOS 앱개발</li>
-                                <li> 플랫폼 기획 및 설계 </li>
-                            </ul>
+                            <div class="txt_back">
+                                <p> Android 앱개발</p>
+                                <p> iOS 앱개발</p>
+                                <p> 플랫폼 기획 및 설계 </p>
+                            </div>
                         </div>
                         <div class="card_right ser_card" id="serCard_bg02">
                             <div class="txt_front">
                                 <p class="front_title"> 웹(WEB) 구축 </p>
                                 <p class="front_sub"> RESPONSIVE WEB </p>
                             </div>
-                            <ul class="txt_back">
-                                <li> 반응형 홈페이지 구축</li>
-                                <li> 데이터베이스 구축</li>
-                                <li> 빅데이터구축 </li>
-                            </ul>
+                            <div class="txt_back">
+                                <p> 반응형 홈페이지 구축</p>
+                                <p> 데이터베이스 구축</p>
+                                <p> 빅데이터구축 </p>
+                            </div>
                         </div>
                     </div>
                     <div class="card_bottom cards" >
@@ -290,26 +290,38 @@
                                 <p class="front_title"> AI기반 기술 개발</p>
                                 <p class="front_sub"> AI BIGDATA </p>
                             </div>
-                            <ul class="txt_back">
-                                <li> AI 대화형 챗봇</li>
-                                <li> 자동객체 인시 검출기</li>
-                                <li> 딥러닝 학습 모델 </li>
-                            </ul>
+                            <div class="txt_back">
+                                <p> AI 대화형 챗봇</p>
+                                <p> 자동객체 인시 검출기</p>
+                                <p> 딥러닝 학습 모델 </p>
+                            </div>
                         </div>
                         <div class="card_right ser_card" id="serCard_bg04">
                             <div class="txt_front">
                                 <p class="front_title"> XR 컨텐츠 구현 </p>
                                 <p class="front_sub"> METAVERSE </p>
                             </div>
-                            <ul class="txt_back">
-                                <li> 실감형 플랫폼 구축</li>
-                                <li> 가상현실 콘텐츠 제작</li>
-                                <li> 게임 콘텐츠 제작 </li>
-                            </ul>
+                            <div class="txt_back">
+                                <p> 실감형 플랫폼 구축</p>
+                                <p> 가상현실 콘텐츠 제작</p>
+                                <p> 게임 콘텐츠 제작 </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <script>
+                $(".ser_card").on({
+            "mouseover":function(){
+            $(this).children(".txt_front").css({'transform':'translate(-50px, -50px)', 'opacity':'0', 'transition':'0.4s'});
+            $(this).children(".txt_back").css({'transform':'translate(0, 0)', 'opacity':'1', 'transition':'0.4s'});
+        },
+            "mouseout":function(){
+            $(this).children(".txt_front").css({'transform':'translate(0,0)', 'opacity':'1', 'transition':'0.4s'});
+            $(this).children(".txt_back").css({'transform':'translate(50px, 50px)', 'opacity':'0', 'transition':'0.4s'});
+        }
+        });     
+            </script>
         </section>
         <!--             resoft_Sevice End             -->
         <section class="resoft_reference st-wrap">
