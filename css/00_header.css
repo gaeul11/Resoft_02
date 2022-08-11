@@ -1,6 +1,10 @@
 
-#main_nav a:hover{
+#main_nav >li> a:hover{
     color: #184B9F;
+    cursor: pointer;
+}
+#main_nav a:hover{
+    color: #AAAAAA;
     cursor: pointer;
 }
 .menubar:hover {
@@ -32,6 +36,7 @@ header #nav_gnb nav > ul > li > a {
     font: normal normal bold 20px/70px Noto Sans KR;
 }
 
+/* 메뉴 밑줄 */
 header #nav_gnb nav > ul > li > a:after {
     content: ""; 
     position: absolute; 
@@ -48,6 +53,7 @@ header #nav_gnb nav > ul > li:hover > a:after{
     width: 50%;
 }
 
+/* 메뉴배경 */
 header #nav_gnb nav + div {
     position:absolute; 
     left: 0; 
@@ -75,7 +81,6 @@ header #nav_gnb nav > ul ul a {
     color: white;
     z-index: 10;
 }
-
 
 header #nav_gnb nav > ul ul a:hover :after {
     width: 100%;
