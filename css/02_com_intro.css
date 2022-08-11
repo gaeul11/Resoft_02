@@ -145,8 +145,14 @@
     right: 20px;
 }
 .organi_click {
-    width: 150px;
+    width: 130px;
     cursor: pointer;
+}
+.organi_click:hover .main_title {
+    color: rgb(167, 239, 215);
+}
+.organi_click:hover .sub_title {
+    color: rgb(196, 140, 187);
 }
 .organi_container ol{
     list-style: none;
@@ -425,7 +431,7 @@ li .organi_box {
     
 
     /* 
-     *1280 certifi media
+     *1280 organi media
      */
     .organi_container {
         max-width: 1000px;
@@ -564,6 +570,13 @@ li .organi_box {
     /* 
      *768 organization media
      */
+
+     /* 
+    *LEVEL-3 STYLES 
+    */
+    .level-3-wrapper li {
+        padding-left: 23%;
+    }
     
 
     /* 
