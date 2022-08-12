@@ -13,27 +13,37 @@
     display: grid; grid-template-columns: 25% 75%;
 }
 .inforNews_right .InfoNews_turn{
-    height: 42px; width: 300px;
+    margin: 37px 0;
+    display: flex;
+    justify-content: flex-start;
+    height: 42px;
+    width: 150px;
 }
 .inforNews_right .InfoNews_turn .trun_icon{
+
     width: 42px;
+    height: 42px;
     margin-right: 20px;
     background: url(../img/05.retrunblack.svg) no-repeat;
     background-size: cover;
+    z-index: 100;
 }
 .InfoNews_turn:hover .trun_icon{
     background: url(../img/05.retrunblue.svg);
-}
 
-.InfoNews_turn:hover .trun_text{
-    color: var(--blue-color-184B9F);
 }
 .InfoNews_turn .trun_text{
     line-height: 42px;
     font-size:16px;
     font-weight: bold;
 }
+.InfoNews_turn:hover .trun_text{
+    color: var(--blue-color-184B9F);
+}
 
+.InfoNews_lists{
+    margin-top: 130px;
+}
 .InfoNews_lists .InfoNews_list .News_headline{
     margin-bottom: 30px;
 }
@@ -97,6 +107,9 @@
     }
     .InfoNews_wrap .InfoNews_Title{
         display: flex; justify-content: space-between;
+    }
+    .inforNews_right .InfoNews_turn{
+        text-align: end;
     }
     
     /* 제목 */

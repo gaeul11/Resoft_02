@@ -248,7 +248,7 @@ html {
   }
 
 /*화면조정*/
-@media screen and (max-width:4000px){
+/* @media screen and (max-width:4000px){
     #ecoce{
         height:100%;
     }
@@ -263,7 +263,7 @@ html {
         height:100%;
     }
 
-}
+} */
 @media screen and (max-width:1280px){
 
 

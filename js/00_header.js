@@ -1,4 +1,4 @@
-console.clear();
+// console.clear();
         $('.slide').slick({
             autoplay: true,
             autoplaySpeed:1500,

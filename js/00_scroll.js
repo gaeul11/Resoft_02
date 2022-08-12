@@ -1,7 +1,8 @@
 $(window).on('scroll',function(){
+    const fix_header = document.getElementsByClassName('.header')
     if($(window).scrollTop()){
-        $('.header').addClass('active');
+        $(fix_header).addClass('active');
     }else{
-        $('.header').removeClass('active');
+        $(fix_header).removeClass('active');
     }
 });
