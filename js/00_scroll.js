@@ -1,5 +1,5 @@
 $(window).on('scroll',function(){
-    const fix_header = document.getElementsByClassName('.header')
+    const fix_header = document.getElementsByClassName('header');
     if($(window).scrollTop()){
         $(fix_header).addClass('active');
     }else{
