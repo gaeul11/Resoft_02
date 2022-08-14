@@ -122,11 +122,15 @@
 .proj_cardItems #proj_bg01{
     background: url(../img/proj_bg01-1.png) no-repeat;
     background-size: cover;
+    max-height: 387px;
+    border-radius: 30px;
 }
 
 .proj_cardItems #proj_bg02{
     background: url(../img/proj_bg_img02.svg) no-repeat;
     background-size: cover;
+    max-height: 387px;
+    border-radius: 30px;
 }
 .radius30{
     border-radius: 30px; 
@@ -136,35 +140,49 @@
     color:var(--white-color-fffff);
     position: relative;
     overflow: hidden;    
+    max-height: 387px;
+    border-radius: 30px;
 }
 .card_text:hover{
     background-color:rgba(0, 0, 0, 0.3);
     border-radius: 30px;
 }
+#proj_bg01:hover, #proj_bg02:hover {
+    /* filter: brightness(.7); */
+}
 .card_text > img{
-    text-align: end;
+    text-align: center;
     height: 100%;
     border-radius: 30px;
 }
+.card_text .eco {
+    margin-left: 6%;
+}
+.card_text .moa {
+    margin-left: 20%;
+    margin-top: 5%;
+}
 .card_text:hover > img{
-    transform: scale(1.1);
-    transition: 1s;
+    transform: scale(1.25);
+    transition: .3s;
     object-fit: cover;
-    filter: brightness(0.5);
-    max-height: 389px;
+    filter: brightness(.7);
+    max-height: 387px;
 }
 .card_text > div {
     display:none;
+    filter: none;
+    color: #ffffff;
 }
 .card_text:hover > div{
     display: block;
     position: absolute;
-    top: 70%;
-    left: 10%;
+    text-align: left;
+    bottom: 7%;
+    left: 5.8%;
 }
 .card_tit{
     font-size: 18px;
-    margin-bottom: 10px;
 }
 .card_sub{
     font-size: 14px;

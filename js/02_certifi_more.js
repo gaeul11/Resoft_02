@@ -49,14 +49,22 @@ function fn_screenMax769() {
 function changeText() {
     const btn = document.getElementById('more_btn');
     let runData = 1;
+    
+    // console.log('btn.value     최초00000:',btn.value);
     if(btn.value === '더보기') {
         btn.value = '접기';
         runData = 0;
+        
+        // console.log('btn.value     11111:',btn.value);
     } else {
         btn.value = '더보기';
         runData = 1;
+
+        // console.log('btn.value     22222:',btn.value);
     }
     fn_more_less(runData);
+
+    // console.log('btn.value     33333:',btn.value);
 };
 
 /**
@@ -70,13 +78,20 @@ function fn_more_less(data) {
     const spdDisappear =300;
     const cardBack = document.getElementsByClassName('certifi_grid');
     const cardFront = document.getElementsByClassName('certifi_front');
+
+    // console.log('data     최초44444:',data);
     if(data !== 1) {
         $(".certifi_img_wrap").css({"height":"auto"});
         $(".certifi_container").css({"height":"auto"});
         $(cardBack).slice(x,y).fadeIn(spdAppear);
         $(cardFront).slice(x,y).fadeIn(spdAppear);
+
+        // console.log('data     55555:',data);
     } else {
         $(cardBack).slice(x,y).fadeOut(spdDisappear);
         $(cardFront).slice(x,y).fadeOut(spdDisappear);
+
+        // console.log('data     66666:',data);
     }
+    // console.log('data     77777:',data);
 };

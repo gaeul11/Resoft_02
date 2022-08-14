@@ -11,23 +11,34 @@ function fn_organiView() {
 
 //onclick 함수로 클릭할때마다 value값 변경
 function valueChange() {
-    const divValue = document.getElementsByClassName('organi_click')
-    if(divValue.value == false) {
-        divValue.value = true;
+    const inputVal = document.getElementById('organi_chk')
+    let valChange = true;
+    // console.log('inputVal     최초00000 : ', inputVal.value)
+    if(inputVal.value == "false") {
+        inputVal.value = true;
+        valChange = true;
+        // console.log('inputVal     11111 : ', inputVal.value)
     } else {
-        divValue.value = false;
+        inputVal.value = false;
+        valChange = false;
+        // console.log('inputVal     22222 : ', inputVal.value)
     }
-    appear(divValue.value);
+    appear(valChange);
+    // console.log('inputVal     33333 : ', inputVal.value)
 }
 
-//divValue.value 값을 가져와서 클릭시마다 조직도가 보이기, 숨기기 상태로 바뀌게 구현
+//inputVal.value 값을 가져와서 클릭시마다 조직도가 보이기, 숨기기 상태로 바뀌게 구현
 function appear(data) {
     const organiAppear = document.getElementsByClassName('organi_container');
-    if(!!data){        
+    // console.log('data     최초44444 : ', data)
+    if(!!data){
         $(organiAppear).fadeOut(400)
         data = true;
+    // console.log('data     55555 : ', data)
     } else {
         $(organiAppear).fadeIn(800)
-        data = false;
+        data = false;        
+        // console.log('data     66666 : ', data)
     }
+    // console.log('data     77777 : ', data)
 };
