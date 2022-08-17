@@ -1,64 +1,67 @@
 :root {
-    /* Colors: */
-    --black-color-1E1E1E: #1E1E1E;
-    --lightgray-color-C8C8C8: #C8C8C8;
-    --blue-color-184B9F: #184B9F;
-    --white-color-fffff: #ffffff;
-    }
-
-*{
-    box-sizing: border-box; font-family:'Noto Sans KR', sans-serif;
+	/* Colors: */
+	--black-color-1E1E1E: #1e1e1e;
+	--lightgray-color-C8C8C8: #c8c8c8;
+	--blue-color-184B9F: #184b9f;
+	--white-color-fffff: #ffffff;
+}
+html {
+	scroll-behavior: smooth;
+}
+* {
+	box-sizing: border-box;
+	font-family: 'Noto Sans KR', sans-serif;
 }
 a {
-    text-decoration: none; 
-    color: var(--black-color-1E1E1E);
-}    
-/* 영역 margin  - 개인 영역간에 st-wrap class명 추가해 주세요 */
-.container{
-    overflow: hidden;
+	text-decoration: none;
+	color: var(--black-color-1E1E1E);
 }
-.st-wrap{
-    margin: 0 auto;
-    max-width:1440px;
-    margin-top: 100px;
+/* 영역 margin  - 개인 영역간에 st-wrap class명 추가해 주세요 */
+.container {
+	overflow: hidden;
+}
+.st-wrap {
+	margin: 0 auto;
+	max-width: 1440px;
+	margin-top: 100px;
 }
 /* .st-wrap400 {
     /* margin-top: 400px; }*/
 
-
 /* Character Styles */
 .header_title {
-    font-size: 40px;
-    font-weight: bold;
-    color: var(--white-color-fffff)
+	font-size: 40px;
+	font-weight: bold;
+	color: var(--white-color-fffff);
 }
 .main_title {
-    font-weight: bold;
-    font-size: 40px;
-    color: var(--black-color-1E1E1E);
+	font-weight: bold;
+	font-size: 40px;
+	color: var(--black-color-1E1E1E);
 }
 .sub_title {
-    font-size: 18px;
-    color: var(--lightgray-color-C8C8C8);
-    text-transform: uppercase;
+	font-size: 18px;
+	color: var(--lightgray-color-C8C8C8);
+	text-transform: uppercase;
 }
 .ex_text {
+
     font-size: 26px;
     font-weight: bold;
     color: var(--black-color-1E1E1E);
+
 }
-.margin50{
-    margin-top: 50px;
+.margin50 {
+	margin-top: 50px;
 }
 
-@media(max-width:1280px) {
-    .st-wrap {
-        max-width: 1000px;
-    }
+@media (max-width: 1280px) {
+	.st-wrap {
+		max-width: 1000px;
+	}
 }
-@media(max-width:768px) {
-    .st-wrap {
-        max-width: 704px;
-    }
-    
+@media (max-width: 768px) {
+	.st-wrap {
+		max-width: 704px;
+	}
 }
