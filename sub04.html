@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/00_header2.css">
     <link rel="stylesheet" href="./css/04_info.css">
     <link rel="stylesheet" href="./css/06_footer.css">
+    <link rel="stylesheet" href="./css/animate.css">
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <!-- js -->
@@ -19,8 +20,11 @@
     <script src="./js/00_header2.js"></script>    
     <script src="./js/04_info.js"></script>
         <!-- wow 라이브러리를 위한 js -->
-        <script src="../js/wow.min.js"></script>
-        <script>new WOW().init();</script>
+        <script>$(document).ready(function(){
+            new WOW().init();
+        });
+        </script>
+        <script src="./js/wow.min.js"></script>
     <style>
         html{scroll-behavior: smooth;}
     </style>
