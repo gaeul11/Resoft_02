@@ -1,251 +1,254 @@
-html {
-    scroll-behavior: smooth;
-}
-.container{
-    width: 100%;
-    height: 100%;
+.container {
+	width: 100%;
+	height: 100%;
 }
 
-.main_title{
-    font-family: Noto Sans KR, Bold;
-    color: #1E1E1E;
-    line-height: 58px;
-    text-align: left;
+.main_title {
+	font-family: Noto Sans KR, Bold;
+	color: #1e1e1e;
+	line-height: 58px;
+	text-align: left;
 }
-.sub_title{
-    font-family: Noto Sans KR, Medium;
-    letter-spacing: 0px;
-    color: #C8C8C8;
-    font-size: 18px;
-    line-height: 26px;
-    text-align: left;
+.sub_title {
+	font-family: Noto Sans KR, Medium;
+	letter-spacing: 0px;
+	color: #c8c8c8;
+	font-size: 18px;
+	line-height: 26px;
+	text-align: left;
 }
-.sub-logo{
-    font: normal normal bold 22px/32px Noto Sans KR;
-    letter-spacing: 0px;
-    color: #1E1E1E;
-    opacity: 1;
+.sub-logo {
+	font: normal normal bold 22px/32px Noto Sans KR;
+	letter-spacing: 0px;
+	color: #1e1e1e;
+	opacity: 1;
 }
-.ex_text{
-    text-align:right;
-    font: normal bold 30px Noto Sans KR;
-    color: #1E1E1E;
-    opacity: 1;
-    margin:0%;
-    word-break:normal;
-    align-items: right;
-    margin-bottom:20%;
+.ex_text {
+	text-align: right;
+	font: normal bold 30px Noto Sans KR;
+	color: #1e1e1e;
+	opacity: 1;
+	margin: 0%;
+	word-break: normal;
+	align-items: right;
+	margin-bottom: 20%;
 }
 
 .ecoce {
-    height: 100%;
-    margin:0 auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: nowrap;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: nowrap;
 }
-.ecoce-wrap{
-    margin: 0 auto;
-    max-width:1440px;
+.ecoce-wrap {
+	margin: 0 auto;
+	max-width: 1440px;
 }
-.ecoce-left{
-    width: 50%;
-    margin: 0;
-    box-sizing: border-box;
+.ecoce-left {
+	width: 50%;
+	margin: 0;
+	box-sizing: border-box;
 }
-.ecoce-title{
-    margin: 0 auto;
-    margin-bottom:54px;
-    padding-top:100px;
+.ecoce-title {
+	margin: 0 auto;
+	margin-bottom: 54px;
+	padding-top: 100px;
 }
-.ecoce-left-bottom{
-    background: url("../img/에코스\ \(1\).png") no-repeat;
-    background-size: 100%;
+.ecoce-left-bottom {
+	background: url('../img/에코스\ \(1\).png') no-repeat;
+	background-size: 100%;
 }
-.ecoce-left-bottom img{
-    width: 100%;
-    padding: 8% 0 0 35%;
+.ecoce-left-bottom img {
+	width: 100%;
+	padding: 8% 0 0 35%;
 }
 
 .ecoce-right {
-    width: 50%;
-    margin: 0;
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: flex-end;
-    flex-direction: column;
-    padding-bottom:6%;
+	width: 50%;
+	margin: 0;
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: flex-end;
+	flex-direction: column;
+	padding-bottom: 6%;
 }
-.ecoce-right p:nth-child(1){
-    font-size:30px;
+.ecoce-right p:nth-child(1) {
+	font-size: 30px;
 }
 
-.ecoce-right .sub-logo{
-    text-align:right;
-    margin-top:32px;
-    width:auto;
+.ecoce-right .sub-logo {
+	text-align: right;
+	margin-top: 32px;
+	width: auto;
 }
-.ecoce-right .ecoce-store{
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 20%;
+.ecoce-right .ecoce-store {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 20%;
 }
-.ecoce-store .app-store{
-    width: 188px;
-    height: 57px;
-    background-color: #1e1e1e;
-    border-radius: 30px;
-    margin-left: 6%;
+.ecoce-store .app-store {
+	width: 188px;
+	height: 57px;
+	background-color: #1e1e1e;
+	border-radius: 30px;
+	margin-left: 6%;
 }
-.ecoce-store a{
-    width: 188px;
-    height: 57px;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    cursor: pointer;
+.ecoce-store a {
+	width: 188px;
+	height: 57px;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	cursor: pointer;
 }
-.ecoce-store img{
-    word-break: keep-all;
-    padding: 11px 12px 11px 20px;
+.ecoce-store img {
+	word-break: keep-all;
+	padding: 11px 12px 11px 20px;
 }
-.ecoce-store span{
-    display: inline-block;
-    width: 93px;
-    height: 42px;
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 22px;
-    color: #fff;
-    word-break: keep-all;
-    font-family:Noto Sans KR, Medium;
+.ecoce-store span {
+	display: inline-block;
+	width: 93px;
+	height: 42px;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 22px;
+	color: #fff;
+	word-break: keep-all;
+	font-family: Noto Sans KR, Medium;
 }
-.moado-back{
-    width: 100%;
-    height: auto;
-    background: linear-gradient(180deg, rgba(255,255,255,1), rgba(255,0,0,0) 100%), linear-gradient(30deg, #339be14c, rgba(0,255,0,0) 30.71%), linear-gradient(300deg, #e4cde8, rgba(0,0,255,0) 70.71%);
+.moado-back {
+	width: 100%;
+	height: auto;
+	background: linear-gradient(
+			180deg,
+			rgba(255, 255, 255, 1),
+			rgba(255, 0, 0, 0) 100%
+		),
+		linear-gradient(30deg, #339be14c, rgba(0, 255, 0, 0) 30.71%),
+		linear-gradient(300deg, #e4cde8, rgba(0, 0, 255, 0) 70.71%);
 }
-.moado-wrap{
-    margin: 0 auto;
-    max-width:1440px;
+.moado-wrap {
+	margin: 0 auto;
+	max-width: 1440px;
 }
-.moado-title{
-    padding-top:100px;
-    margin-bottom:54px;
+.moado-title {
+	padding-top: 100px;
+	margin-bottom: 54px;
 }
-.moado-body{
-    max-width:1440px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: nowrap;
-    position: relative;
+.moado-body {
+	max-width: 1440px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: nowrap;
+	position: relative;
 }
-.moado-left{
-    width: 50%;
-    margin: 0;
-    box-sizing: border-box;
+.moado-left {
+	width: 50%;
+	margin: 0;
+	box-sizing: border-box;
 }
-.moado-left-bottom img{
-    width: 115%;
-    padding: 0% 0 22% 0;
+.moado-left-bottom img {
+	width: 115%;
+	padding: 0% 0 22% 0;
 }
-.moado-middle{
-    width: 44%;
-    height: 67%;
-    position: absolute;
-    left: 31%;
-    bottom:0%;
+.moado-middle {
+	width: 44%;
+	height: 67%;
+	position: absolute;
+	left: 31%;
+	bottom: 0%;
 }
-.moado-right{
-    width: 50%;
-    margin: 0;
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: flex-end;
-    flex-direction: column;
-    padding-bottom:10%;
+.moado-right {
+	width: 50%;
+	margin: 0;
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: flex-end;
+	flex-direction: column;
+	padding-bottom: 10%;
 }
-.moado-right p:nth-child(1){
-    font-size: 30px;
-    font-family:Noto Sans KR;
-     font-weight: bold;
-     line-height: 44px;
-    text-align: right;
-    margin-bottom: 18%;
+.moado-right p:nth-child(1) {
+	font-size: 30px;
+	font-family: Noto Sans KR;
+	font-weight: bold;
+	line-height: 44px;
+	text-align: right;
+	margin-bottom: 18%;
 }
-.moado-logo{
-    width: 62%;
-    margin-bottom: 18%;
+.moado-logo {
+	width: 62%;
+	margin-bottom: 18%;
 }
 .moado-right .site-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.moado-right .site-button a{
-    width: 153px;
-    height: 57px;
-    border-radius: 69px;
-    background-color: #1e1e1e;
-    text-decoration: none;
-    color: #fff;
+.moado-right .site-button a {
+	width: 153px;
+	height: 57px;
+	border-radius: 69px;
+	background-color: #1e1e1e;
+	text-decoration: none;
+	color: #fff;
 }
-.moado-right .site-button span{
-    display: inline-block;
-    width: 153px;
-    height: 57px;
-    font-size: 14px;
-    font-weight:normal;
-    font-family:Noto Sans KR, Medium;
-    line-height: 57px;
-    text-align: center;
+.moado-right .site-button span {
+	display: inline-block;
+	width: 153px;
+	height: 57px;
+	font-size: 14px;
+	font-weight: normal;
+	font-family: Noto Sans KR, Medium;
+	line-height: 57px;
+	text-align: center;
 }
-#etc{
-    width: 1440px;
-    height: auto;
-    margin:0 auto;
+#etc {
+	width: 1440px;
+	height: auto;
+	margin: 0 auto;
 }
-.etc_title{
-    padding-top:100px;
-    margin: 0 auto;
-    margin-bottom:50px;
+.etc_title {
+	padding-top: 100px;
+	margin: 0 auto;
+	margin-bottom: 50px;
 }
 .etc_slider {
-    max-width: 100%;
-    clear: both;
-    margin:0 auto;
-    margin-bottom:200px;
-  }
-  .etc_slider .slide_box{
-    overflow: hidden;
-  } 
-  .slide_box .slide_list {
-    background-color: #fff;
-    box-sizing: border-box;
-  }
-  .slide_box .slide_list .slide_list_item{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-    padding: 5% 37.5px;
-    box-sizing: border-box;
-  }
-  .slide_box .slide_list_item:hover img{
-    transform: scale(1.2);
-  }
-  .slide_box img {
-    width: 100%;
-    transform: scale(1);
-    transition: transform .3s;
-    object-fit: contain;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, .16);
-  }
+	max-width: 100%;
+	clear: both;
+	margin: 0 auto;
+	margin-bottom: 200px;
+}
+.etc_slider .slide_box {
+	overflow: hidden;
+}
+.slide_box .slide_list {
+	background-color: #fff;
+	box-sizing: border-box;
+}
+.slide_box .slide_list .slide_list_item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	padding: 5% 37.5px;
+	box-sizing: border-box;
+}
+.slide_box .slide_list_item:hover img {
+	transform: scale(1.2);
+}
+.slide_box img {
+	width: 100%;
+	transform: scale(1);
+	transition: transform 0.3s;
+	object-fit: contain;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
+}
 
 /*화면조정*/
 /* @media screen and (max-width:4000px){
@@ -264,33 +267,38 @@ html {
     }
 
 } */
-@media screen and (max-width:1280px){
+@media screen and (max-width: 1280px) {
+	#ecoce,
+	.moado-wrap,
+	#etc {
+		max-width: 1000px;
+		margin: 0 auto;
+	}
 
-
-    #ecoce, .moado-wrap, #etc{
-        max-width: 1000px; margin:0 auto;
-    }
-
-    .moado-back{
-        margin-top:-6%;
-    }
-
+	.moado-back {
+		margin-top: -6%;
+	}
 }
 
 /*768px(모바일) 기준*/
-@media screen and (max-width:768px){
-    .moado-right .site-button {
-        z-index:2;
-    }
-    .moado-body, #etc, .ecoce-wrap, .moado-title, .ecoce-title{
-        max-width:708px; margin:0 auto;
-    }
+@media screen and (max-width: 768px) {
+	.moado-right .site-button {
+		z-index: 2;
+	}
+	.moado-body,
+	#etc,
+	.ecoce-wrap,
+	.moado-title,
+	.ecoce-title {
+		max-width: 708px;
+		margin: 0 auto;
+	}
 
-    .moado-body{
-        margin-top:50px;
-    }
-    .ecoce-right p:nth-child(1), .moado-right p:nth-child(1){
-        font-size:20px;
-    }
-
+	.moado-body {
+		margin-top: 50px;
+	}
+	.ecoce-right p:nth-child(1),
+	.moado-right p:nth-child(1) {
+		font-size: 20px;
+	}
 }
