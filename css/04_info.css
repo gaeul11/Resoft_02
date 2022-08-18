@@ -3,190 +3,192 @@
    License: none (public domain)
 */
 :root {
-    /* Colors: */
-    --black-color-1E1E1E: #1E1E1E;
-    --lightgray-color-C8C8C8: #C8C8C8;
-    --unnamed-color-184B9F: #184B9F;
-    --white-color-fffff: #ffffff;
+	/* Colors: */
+	--black-color-1E1E1E: #1e1e1e;
+	--lightgray-color-C8C8C8: #c8c8c8;
+	--unnamed-color-184B9F: #184b9f;
+	--white-color-fffff: #ffffff;
 }
-.info{    
-    width: 100%;
-    display: block;
+.info {
+	width: 100%;
+	display: block;
 }
-.info_news, .text, .year{
-    text-align: left;
-}
-
-.main_title{
-    font-size: 40px;
-    padding: 0 auto;
+.info_news,
+.text,
+.year {
+	text-align: left;
 }
 
-.sub_title{
-    font-size: 18px;
-    
+.main_title {
+	font-size: 40px;
+	padding: 0 auto;
+}
+
+.sub_title {
+	font-size: 18px;
 }
 .img_mr {
-    margin-right: 75px;
+	margin-right: 75px;
 }
 
 .news_list_item {
-    height: 360px;
-    display: inline-block;
+	height: 360px;
+	display: inline-block;
 }
 
 .news_list {
-    /* width: 1530px; */
-    width: 100%;
-    margin-top: 50px;
-    display: inline-block;
+	/* width: 1530px; */
+	width: 100%;
+	margin-top: 50px;
+	display: inline-block;
 }
 
-.button{
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid var(--black-color-1E1E1E);
-    border-radius: 43px;
-    opacity: 1;
-    margin: 0 auto;
-    display: block;
-    height: 73px;
-    width: 200px;
+.button {
+	background: #ffffff 0% 0% no-repeat padding-box;
+	border: 1px solid var(--black-color-1E1E1E);
+	border-radius: 43px;
+	opacity: 1;
+	margin: 0 auto;
+	display: block;
+	height: 73px;
+	width: 200px;
 }
-.button:hover{
-    background-color: #184B9F;
+.button:hover {
+	background-color: #184b9f;
 }
-.button:hover p{
-    color: #FFFFFF;
+.button:hover p {
+	color: #ffffff;
 }
 .button p {
-    font: var(--unnamed-font-style-normal) normal medium 20px/29px var(--unnamed-font-family-noto-sans-kr);
-    text-align: center;
-    font: normal normal medium 20px/29px Noto Sans KR;
-    letter-spacing: 1px;
-    color: var(--black-color-1E1E1E);
-    opacity: 1;
-    font-size: 20px;
-    cursor: pointer;
+	font: var(--unnamed-font-style-normal) normal medium 20px/29px
+		var(--unnamed-font-family-noto-sans-kr);
+	text-align: center;
+	font: normal normal medium 20px/29px Noto Sans KR;
+	letter-spacing: 1px;
+	color: var(--black-color-1E1E1E);
+	opacity: 1;
+	font-size: 20px;
+	cursor: pointer;
 }
 
-.btn{
-    padding-top: 50px;
-    padding-bottom: 100px;
+.btn {
+	padding-top: 50px;
+	padding-bottom: 100px;
 }
 
 .scale {
-    width: 680px;
-    height: 360px;
-    overflow: hidden;
-    border-radius: 20px;
-    border: 1px solid #707070;
+	width: 680px;
+	height: 360px;
+	overflow: hidden;
+	border-radius: 20px;
+	border: 1px solid #707070;
 }
 
-.news_list img{
-    object-fit:cover;
-    width: 680px;
-    transition: all 0.3s linear;
-    transform: scale(1);
-    
+.news_list img {
+	object-fit: cover;
+	width: 680px;
+	transition: all 0.3s linear;
+	transform: scale(1);
 }
 
-.news_list a:hover img{
-    width: 680px;
-    transform:scale(1.2);
-    opacity: 1;
-    cursor: pointer;
+.news_list a:hover img {
+	width: 680px;
+	transform: scale(1.2);
+	filter: brightness(0.7);
+	opacity: 1;
+	cursor: pointer;
 }
 
-.news_list_item p{
-    color: var(--black-color-1E1E1E);
+.news_list_item p {
+	color: var(--black-color-1E1E1E);
 }
 
-.news_list_item a:hover p{
-    color: var(--unnamed-color-184B9F);
+.news_list_item a:hover p {
+	color: var(--unnamed-color-184B9F);
 }
 
-.text{
-    width: 680px;
-    height: 29px;
-    color: var(--black-color-1E1E1E);
-    font-weight: bold;
-    font-size: 20px;
-    letter-spacing: 1px;
-    opacity: 1;
-    margin-top: 16px;
-    margin-bottom: 8px; 
+.text {
+	width: 680px;
+	height: 29px;
+	color: var(--black-color-1E1E1E);
+	font-weight: bold;
+	font-size: 20px;
+	letter-spacing: 1px;
+	opacity: 1;
+	margin-top: 16px;
+	margin-bottom: 8px;
 }
 
 .year {
-    width: 680px;
-    height: 24px;
-    color: #AAAAAA;
-    font-size: 16px;
-    letter-spacing: 0.8px;
+	width: 680px;
+	height: 24px;
+	color: #aaaaaa;
+	font-size: 16px;
+	letter-spacing: 0.8px;
 }
 
-.infonav_text img{
-    width: 100%;
+.infonav_text img {
+	width: 100%;
 }
 
 /* di 미디어쿼리 */
 
-@media (max-width:1280px) {
-    .info {
-        max-width: 1280px;
-    }
-    .news_list {
-        width: 1110px;
-    }
-    .news_list_item .text {
-        width: 480px;
-        white-space: pre-line;
-        margin-bottom: 30px;
-    }
-    .news_list_item .year{
-        width: 480px;
-    }
-    .img_mr {
-        margin-right: 40px;
-    }
-    .scale {
-        width: 480px;
-        height: 270px;
-        overflow: hidden;
-        border-radius: 20px;
-        border: 1px solid #707070;
-    }
-    .news_list_item img{
-        width: 480px;
-    }
-    .news_list a:hover img{
-        width: 480px;
-    }
+@media (max-width: 1280px) {
+	.info {
+		max-width: 1280px;
+	}
+	.news_list {
+		width: 1110px;
+	}
+	.news_list_item .text {
+		width: 480px;
+		white-space: pre-line;
+		margin-bottom: 30px;
+	}
+	.news_list_item .year {
+		width: 480px;
+	}
+	.img_mr {
+		margin-right: 40px;
+	}
+	.scale {
+		width: 480px;
+		height: 270px;
+		overflow: hidden;
+		border-radius: 20px;
+		border: 1px solid #707070;
+	}
+	.news_list_item img {
+		width: 480px;
+	}
+	.news_list a:hover img {
+		width: 480px;
+	}
 }
-@media (max-width:768px){
-    .info {
-        max-width: 768px;
-    }
-    .container_news {
-        margin-left: calc(100% - 88%);
-    }
-    .news_list {
-        width: 100%;
-    }
-    .news_list_item {
-        width: 480px;
-        margin-top: 40px;
-    }
-    .news_list_item:first-child {
-        margin-top: 0px;
-    }
-    .img_mr {
-        margin-right: 0px;
-    }
-    .news_list_item img{
-        width: 480px;
-    }
-    .news_list a:hover img{
-        width: 480px;
-    }
+@media (max-width: 768px) {
+	.info {
+		max-width: 768px;
+	}
+	.container_news {
+		margin-left: calc(100% - 88%);
+	}
+	.news_list {
+		width: 100%;
+	}
+	.news_list_item {
+		width: 480px;
+		margin-top: 40px;
+	}
+	.news_list_item:first-child {
+		margin-top: 0px;
+	}
+	.img_mr {
+		margin-right: 0px;
+	}
+	.news_list_item img {
+		width: 480px;
+	}
+	.news_list a:hover img {
+		width: 480px;
+	}
 }
