@@ -239,9 +239,9 @@
 	padding: 5% 37.5px;
 	box-sizing: border-box;
 }
-.slide_box .slide_list_item:hover img {
+/* .slide_box .slide_list_item:hover img {
 	transform: scale(1.2);
-}
+} */
 .slide_box img {
 	width: 100%;
 	transform: scale(1);
@@ -277,6 +277,9 @@
 
 	.moado-back {
 		margin-top: -6%;
+	}
+	.slide_box .slide_list_item:hover img {
+		transform: scale(1.1);
 	}
 }
 
