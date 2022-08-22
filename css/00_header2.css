@@ -95,6 +95,7 @@ header #nav_gnb nav > ul > li > a:after {
     border-radius: 20px;
     z-index: 99999;
 }
+
 #main_nav >li> a:hover{
     color: #184B9F;
     cursor: pointer;
@@ -158,7 +159,7 @@ header #nav_gnb nav > ul ul a:hover :after {
 }
 .close{
     opacity: 0; 
-    display: none;
+    animation-duration: 5s;
 }
 .more{
     opacity: 1;
