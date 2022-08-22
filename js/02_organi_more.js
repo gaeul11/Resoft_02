@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', function () {
 //위에서 선언한 함수로 처음 로드될 때 보이지 않는 상태로 띄움
 function fn_organiView() {
 	const organiAppear = document.getElementsByClassName('organi_container');
-	$(organiAppear).hide();
+	$(organiAppear).css({ visibility: 'hidden' });
 }
 
 //onclick 함수로 클릭할때마다 value값 변경
@@ -33,10 +33,10 @@ function appear(data) {
 	const organiAppear = document.getElementsByClassName('organi_container');
 	// console.log('data     최초44444 : ', data)
 	if (!!data) {
-		$(organiAppear).fadeOut(400);
+		$(organiAppear).css({ visibility: 'hidden' });
 		// console.log('data     55555 : ', data)
 	} else {
-		$(organiAppear).fadeIn(800);
+		$(organiAppear).css({ visibility: 'visible' });
 		// console.log('data     66666 : ', data)
 	}
 	// console.log('data     77777 : ', data)
