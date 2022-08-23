@@ -171,6 +171,9 @@
 .organi_click:hover .sub_title {
 	color: rgb(196, 140, 187);
 }
+.organi_chk {
+	width: 150px;
+}
 .organi_container ol {
 	list-style: none;
 }
