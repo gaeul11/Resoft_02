@@ -159,13 +159,14 @@ header .visual .slide img{
     background: transparent;
 }
 
-
 .close{
-    opacity: 0; 
-    animation-duration:5s;
+    visibility:hidden;
+    animation: fadeOut 1s;
 }
+
 .more{
-    opacity: 1; 
+    opacity: 1;
+    animation: fadeIn 1s;
 }
 
 .header .header_text-wrap {
