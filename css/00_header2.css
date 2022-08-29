@@ -158,11 +158,12 @@ header #nav_gnb nav > ul ul a:hover :after {
     letter-spacing: 0px;
 }
 .close{
-    opacity: 0; 
-    animation-duration: 5s;
+    visibility:hidden;
+    animation: fadeOut 1s;
 }
 .more{
     opacity: 1;
+    animation: fadeIn 1s;
 }
 
 .media_m{
