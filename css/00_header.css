@@ -162,7 +162,7 @@ header .visual .slide img{
 
 .close{
     opacity: 0; 
-    display: none;
+    animation-duration:5s;
 }
 .more{
     opacity: 1; 
